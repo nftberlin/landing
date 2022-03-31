@@ -18,6 +18,29 @@
       border-right: 1px solid var(--green) !important;
     }
   }
+  .ticket {
+    .title-container {
+      h2 {
+        font-family: var(--voyage);
+        font-size: 4.5rem;
+        font-weight: 400;
+        line-height: 125%;
+        color: #00ff00;
+      }
+      h1 {
+        font-family: var(--voyage);
+        font-weight: 700;
+        line-height: 125%;
+        color: #00ff00;
+      }
+      h1:nth-child(2) {
+        font-size: 5.5rem;
+      }
+      h1:nth-child(3) {
+        font-size: 4.5rem;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -374,6 +397,12 @@
 
   .mobile-open-social {
     display: none !important;
+  }
+
+  .buy-button {
+    .account {
+      font-size: 0.8rem;
+    }
   }
 }
 

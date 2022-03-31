@@ -1,22 +1,33 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
+import Ticket from "../views/Ticket.vue";
+import ManageTicket from "../views/ManageTicket.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
-
-]
+  {
+    path: "/ticket",
+    name: "Ticket",
+    component: Ticket,
+  },
+  {
+    path: "/manage-ticket",
+    name: "ManageTicket",
+    component: ManageTicket,
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
