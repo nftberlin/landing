@@ -45,9 +45,7 @@
                   </div>
                 </div>
                 <Transition
-                  name="custom-fade"
-                  enter-active-class="animate__animated animate__fadeInDown"
-                  leave-active-class="animate__animated animate__fadeOutUp"
+                  name="slide"
                 >
                   <ul v-show="open" class="dropdown__items">
                     <li

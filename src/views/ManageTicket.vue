@@ -33,11 +33,7 @@
                       <i v-if="open" class="ms-3 fa-solid fa-caret-down"></i>
                     </div>
                   </div>
-                  <Transition
-                    name="custom-fade"
-                    enter-active-class="animate__animated animate__fadeInDown"
-                    leave-active-class="animate__animated animate__fadeOutUp"
-                  >
+                  <Transition name="slide">
                     <ul v-show="open" class="dropdown__items">
                       <li
                         v-for="nft in nfts"
