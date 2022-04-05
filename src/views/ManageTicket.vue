@@ -83,7 +83,7 @@
                 <h5>IF YOU SELL THIS NFT THE CLAIMING WILL BE REJECTED</h5>
               </div>
             </div>
-            <div v-if="nfts.length === 0 && noNfts">You don't have NFTs</div>
+            <h3 v-if="nfts.length === 0 && noNfts">You don't have NFTs</h3>
           </div>
         </div>
       </div>
