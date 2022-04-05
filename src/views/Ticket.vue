@@ -29,9 +29,9 @@
         </div>
         <div class="col-12 col-md-12 col-lg-5">
           <div class="mt-5">
-            <div v-if="boo_product !== ''">
+            <div v-if="info[boo_product].price !== undefined && boo_product !== ''">
               <h5>Price</h5>
-              <h4>{{ tiers[boo_product] }}€</h4>
+              <h4>{{ info[boo_product].price }}€</h4>
             </div>
             <!-- <div v-if="!isSelected && loaded" class="ticket-select"> -->
             <div v-if="!isSelected && loaded && this.$route.params.id === ''" class="ticket-select">

@@ -33,6 +33,7 @@ svg {
   --worksans: "Work Sans", sans-serif;
   --voyage: "Voyage";
   --display: "MultiType Pixel Display Narrow";
+  --display-ext: "MultiType Pixel Display";
   --neuebit: "NeueBit";
 }
 
@@ -53,7 +54,7 @@ body {
 
 @mixin text {
   color: var(--white);
-  font-family: var(--worksans);
+  font-family: var(--neuebit);
 }
 
 .hideDesktop {
@@ -61,7 +62,7 @@ body {
 }
 
 .title-dbw {
-  font-family: var(--voyage);
+  font-family: var(--display-ext);
   color: var(--green);
   font-size: 5rem;
   text-align: start;
@@ -94,6 +95,20 @@ body {
   }
 }
 
+.marquee {
+  box-sizing: border-box;
+  border-bottom: 1px solid #00ff00;
+  padding-bottom: 1.5rem;
+  .banner-text {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 1;
+    color: #ffffff;
+    box-sizing: border-box;
+  }
+}
+
 /* ===== >>>>> NAVBAR <<<<< ===== */
 
 .navbar {
@@ -116,12 +131,12 @@ body {
       justify-content: center;
       a {
         color: var(--green);
-        font-family: var(--worksans);
+        font-family: var(--neuebit);
         text-transform: uppercase;
         margin: 0 1rem;
         text-decoration: none;
         transition: 0.2s ease-in-out;
-
+        font-size: 1.5rem;
         &:hover {
           color: var(--white);
         }
@@ -157,6 +172,12 @@ body {
   @include text();
   padding-top: 8.5rem;
 
+  p {
+    font-family: var(--neuebit);
+    font-size: 1.5rem;
+    line-height: 125%;
+  }
+
   .col-lg-6:nth-child(1) {
     @include border-right();
     text-align: left;
@@ -167,18 +188,19 @@ body {
 
       h3,
       h1 {
-        font-family: var(--voyage);
-        color: var(--green);
         font-weight: 700;
-        font-size: 1.5rem;
       }
       h3 {
-        text-decoration: underline;
+        color: var(--white);
+        font-size: 2.5rem;
+        font-family: var(--display);
       }
 
       h1 {
-        font-size: 5rem;
+        font-family: var(--display-ext);
+        font-size: 4rem;
         line-height: 125%;
+        color: var(--green);
       }
 
       div {
@@ -239,7 +261,7 @@ body {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     color: var(--green);
-    font-family: var(--voyage);
+    font-family: var(--display-ext);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,9 +306,9 @@ body {
 
       h1 {
         color: var(--green);
-        font-family: var(--voyage);
+        font-family: var(--display-ext);
         font-weight: 700;
-        font-size: 6rem;
+        font-size: 4.5rem;
         text-align: start;
       }
 
@@ -307,7 +329,8 @@ body {
           }
           p {
             @include text();
-            font-size: 1.5rem;
+            font-size: 2rem;
+            font-family: var(--neuebit);
           }
         }
       }
@@ -319,8 +342,8 @@ body {
       .row {
         justify-content: center;
         h3 {
-          color: var(--green);
-          font-family: var(--voyage);
+          color: var(--white);
+          font-family: var(--display);
           position: relative;
           font-size: 2.5rem;
           font-weight: 700;
@@ -342,7 +365,7 @@ body {
 
       h3 {
         color: var(--green);
-        font-family: var(--voyage);
+        font-family: var(--display);
         font-size: 2rem;
         font-weight: 700;
         padding: 2rem 3.5rem;
@@ -377,7 +400,7 @@ body {
         p {
           margin: 0;
           color: var(--green);
-          font-family: var(--voyage);
+          font-family: var(--display);
           font-weight: 700;
           /* padding: 1rem; */
         }
@@ -389,7 +412,7 @@ body {
 
       h1 {
         color: var(--green);
-        font-family: var(--voyage);
+        font-family: var(--display-ext);
         font-weight: 700;
         font-size: 4rem;
         text-align: start;
@@ -404,7 +427,8 @@ body {
     .what-text {
       @include text();
       text-align: start;
-      font-size: 1.25rem;
+      font-size: 2rem;
+      line-height: 105%;
 
       span {
         color: var(--green);
@@ -604,11 +628,11 @@ body {
 /* ===== >>>>>  SPONSORS <<<<< ===== */
 
 .sponsors {
-  padding-top: 12rem;
+  padding-top: 6rem;
   padding-bottom: 7.25rem;
 
   h3 {
-    font-family: var(--voyage);
+    font-family: var(--neuebit);
     color: var(--white);
     font-size: 2.5rem;
     font-weight: 700;
@@ -676,7 +700,7 @@ body {
     display: flex;
 
     h1 {
-      font-family: var(--voyage);
+      font-family: var(--display-ext);
       color: var(--green);
       font-size: 4rem;
       font-weight: 700;
@@ -1290,7 +1314,8 @@ footer {
   display: flex;
   align-items: center;
   color: #00ff00;
-  font-size: 1rem;
+  font-size: 1.6rem;
+  font-family: var(--neuebit);
   i {
     margin-right: 1rem;
   }

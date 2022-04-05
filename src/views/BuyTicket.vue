@@ -22,7 +22,7 @@
         <div class="mt-1">
           <p>Have you bought your ticket yet?</p>
           <a href="/manage-ticket">
-            <div class="btn-mint">MANAGE MY TICKET</div>
+            <div class="btn-mint">MANAGE MY TICKETS</div>
           </a>
         </div>
       </div>
@@ -38,7 +38,7 @@
           <div class="ticket-card">
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="white">EARLY BIRD</h5>
-              <h5 class="green">139€</h5>
+              <h5 class="green">{{ info["EARLYBIRD"].price }}€</h5>
             </div>
             <div class="mt-3 p-3">
               <div class="d-flex">
@@ -92,7 +92,7 @@
           <div class="ticket-card">
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="white">PUBLIC</h5>
-              <h5 class="green">355€</h5>
+              <h5 class="green">{{ info["FIRSTWAVE"].price }}€</h5>
             </div>
             <div class="mt-3 p-3">
               <div class="d-flex">
@@ -146,7 +146,7 @@
           <div class="ticket-card">
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="white">PATRON</h5>
-              <h5 class="green">1200€</h5>
+              <h5 class="green">{{ info["VIP"].price }}€</h5>
             </div>
             <div class="mt-3 p-3">
               <div class="d-flex">
@@ -277,6 +277,7 @@ export default {
         process.env.VUE_APP_API_URL + "/nfts/minted"
       );
       app.info = info.data.minted;
+      console.log(info);
       app.loaded = true;
     },
   },

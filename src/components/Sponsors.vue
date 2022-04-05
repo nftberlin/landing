@@ -1,7 +1,7 @@
 <template>
   <div class="sponsors pad-x">
     <div class="container-fluid">
-      <h1 class="title-dbw">Our <span>sponsors</span></h1>
+      <!-- <h1 class="title-dbw">Our <span>sponsors</span></h1> -->
       <h3>Looks Rare</h3>
       <div class="row rare">
         <div class="col-6">

@@ -13,7 +13,16 @@
     </div>
 
     <Speakers /><!-- NOT in phase 1 -->
+
     <div id="sponsors">
+      <div class="marquee">
+        <MarqueeText>
+          <div class="banner-text">
+            OUR SPONSORS OUR SPONSORS OUR SPONSORS OUR SPONSORS OUR SPONSORS OUR
+            SPONSORS OUR SPONSORS
+          </div>
+        </MarqueeText>
+      </div>
       <Sponsors />
     </div>
 
@@ -40,6 +49,7 @@ import Events from "@/components/Events.vue";
 import Footer from "@/components/Footer.vue";
 import Why from "@/components/Why.vue";
 import TeamSwiper from "../components/TeamSwiper.vue";
+import MarqueeText from "vue-marquee-text-component";
 
 export default {
   name: "Home",
@@ -56,6 +66,7 @@ export default {
     Footer,
     Why,
     TeamSwiper,
+    MarqueeText,
   },
 };
 </script>
