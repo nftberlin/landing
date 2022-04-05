@@ -255,19 +255,14 @@ export default {
       });
       const provider = await web3Modal.connect();
       app.web3 = await new Web3(provider);
-      // Checking if networkId matches
-      const netId = await app.web3.eth.net.getId();
-      if (parseInt(netId) !== app.networks[app.network]) {
-        alert("Switch to " + app.network + " network!");
-      } else {
-        const accounts = await app.web3.eth.getAccounts();
-        if (accounts.length > 0) {
-          app.balance = await app.web3.eth.getBalance(accounts[0]);
-          app.account = accounts[0];
-          app.balance = parseFloat(
-            app.web3.utils.fromWei(app.balance, "ether")
-          ).toFixed(10);
-        }
+
+      const accounts = await app.web3.eth.getAccounts();
+      if (accounts.length > 0) {
+        app.balance = await app.web3.eth.getBalance(accounts[0]);
+        app.account = accounts[0];
+        app.balance = parseFloat(
+          app.web3.utils.fromWei(app.balance, "ether")
+        ).toFixed(10);
       }
     },
     async askPaymentDetails() {
