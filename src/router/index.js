@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Ticket from "../views/Ticket.vue";
 import ManageTicket from "../views/ManageTicket.vue";
+import BuyTicket from "../views/BuyTicket.vue";
 
 Vue.use(VueRouter);
 
@@ -13,14 +14,19 @@ const routes = [
     component: Home,
   },
   {
-    path: "/ticket",
-    name: "Ticket",
+    path: "/ticket/:id",
+    name: "Buy",
     component: Ticket,
   },
   {
     path: "/manage-ticket",
     name: "ManageTicket",
     component: ManageTicket,
+  },
+  {
+    path: "/ticket",
+    name: "Ticket",
+    component: BuyTicket,
   },
 ];
 

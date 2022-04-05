@@ -32,6 +32,8 @@ svg {
   --white: #ffffff;
   --worksans: "Work Sans", sans-serif;
   --voyage: "Voyage";
+  --display: "MultiType Pixel Display Narrow";
+  --neuebit: "NeueBit";
 }
 
 body {
@@ -917,7 +919,16 @@ footer {
   }
 }
 
-/* ===== >>>>> MINTING <<<<< ===== */
+/* ===== >>>>> MINTING TICKETS <<<<< ===== */
+
+.white {
+  color: white !important;
+}
+
+.green {
+  color: #00ff00 !important;
+}
+
 .ticket {
   width: 100vw;
   min-height: 100vh;
@@ -927,23 +938,30 @@ footer {
   p {
     color: #00ff00;
   }
+
+  h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 2.3rem;
+  }
+
   h5 {
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 125%;
-    font-family: var(--voyage);
+    font-family: var(--display);
     color: #00ff00;
     margin: 0;
   }
   h4 {
-    font-family: var(--voyage);
+    font-family: var(--display);
     font-weight: 700;
     font-size: 4rem;
     line-height: 125%;
     color: #ffffff;
   }
   p {
-    font-family: var(--worksans);
+    font-family: var(--neuebit);
     font-size: 1rem;
   }
   /* == >> / FONTS << == */
@@ -960,7 +978,7 @@ footer {
       color: #000000;
       background-color: #00ff00;
       padding: 0.5rem 1.5rem;
-      font-family: var(--voyage);
+      font-family: var(--display);
       font-weight: 600;
     }
     * {
@@ -977,29 +995,61 @@ footer {
       }
     }
   }
+
   input {
     background-color: #272727;
     border: 1px solid #00ff00;
-    padding: 12px 21px;
+    padding: 7px 21px;
     color: white;
-    font-family: var(--worksans);
+    font-family: var(--neuebit);
+    font-size: 1.5rem !important;
   }
+
   span {
     background-color: #00ff00;
     border: 1px solid #00ff00;
     border-radius: 0;
     font-weight: 500;
   }
+
+  .ticket-card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #00ff00;
+    margin: 20px 0;
+    .list-circle {
+      width: 20px;
+      height: 10px;
+      background-color: #00ff00;
+      border-radius: 10px;
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+    h5 {
+      font-family: var(--display);
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 125%;
+    }
+    p {
+      font-family: var(--neuebit);
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1;
+      color: white;
+    }
+  }
   .title-container {
     h2 {
-      font-family: var(--voyage);
+      font-family: var(--display);
       font-size: 2.5rem;
       font-weight: 400;
       line-height: 125%;
       color: #00ff00;
     }
     h1 {
-      font-family: var(--voyage);
+      font-family: var(--display);
       font-weight: 700;
       line-height: 125%;
       color: #00ff00;
@@ -1011,18 +1061,19 @@ footer {
       font-size: 2.5rem;
     }
     .location {
-      font-size: 1rem;
+      font-size: 2rem;
       color: white;
-      font-family: var(--worksans);
+      font-family: var(--neuebit);
       margin-left: 1.5rem;
       i {
         margin-right: 0.5rem;
       }
     }
   }
+
   .ticket-select {
     p {
-      font-family: var(--worksans);
+      font-family: var(--display);
       font-style: normal;
       font-weight: 400;
       font-size: 1.5rem;
@@ -1045,8 +1096,8 @@ footer {
       &__text {
         display: flex;
         justify-content: space-between;
-        font-size: 1rem;
-        font-family: var(--worksans);
+        font-size: 1.5rem;
+        font-family: var(--neuebit);
       }
 
       &__face {
@@ -1056,7 +1107,7 @@ footer {
         padding: 12px 24px;
         border-radius: 25px;
         color: white;
-        font-family: var(--worksans);
+        font-family: var(--neuebit);
         border: 1px solid var(--btn-prymary-color);
         cursor: pointer;
       }
@@ -1078,7 +1129,7 @@ footer {
         transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
         color: white;
         text-align: left;
-        font-family: var(--worksans);
+        font-family: var(--neuebit);
         &::before {
           content: "";
           background-color: transparent;
@@ -1101,8 +1152,10 @@ footer {
       }
     }
   }
+
   .label {
-    font-family: var(--worksans);
+    font-family: var(--neuebit);
+    font-size: 1.5rem;
   }
 }
 
@@ -1112,7 +1165,7 @@ footer {
   display: inline-block;
   background-color: #000000;
   color: #00ff00;
-  font-family: var(--worksans);
+  font-family: var(--display);
   text-transform: uppercase;
   transition: all 0.3s;
   cursor: pointer;
@@ -1127,28 +1180,81 @@ footer {
   }
 }
 
+.btn-ticket {
+  width: 100%;
+  padding: 10px 16px;
+  display: inline-block;
+  border: 2px solid #00ff00;
+  background-color: #00ff00;
+
+  transition: all 0.3s;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-family: var(--neuebit);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+  &:hover {
+    background-color: black;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+  }
+}
+
+.btn-disabled {
+  background-color: #7f7f7f;
+  border: 2px solid #7f7f7f;
+  cursor: not-allowed;
+  &:hover {
+    background-color: #7f7f7f;
+    color: black;
+    border: 2px solid #7f7f7f;
+  }
+}
+
 .buy-button {
   h2 {
-    font-family: var(--voyage);
+    font-family: var(--display);
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 125%;
     color: #00ff00;
   }
   h5 {
-    font-family: var(--worksans);
-    font-size: 1.25rem;
+    font-family: var(--neuebit);
+    font-size: 1.6rem;
     color: white;
     font-weight: 400;
+  }
+  a {
+    h5 {
+      font-family: var(--neuebit);
+      font-size: 1.6rem;
+      color: white;
+      font-weight: 400;
+    }
+    &:hover {
+      text-decoration: underline;
+      color: #00ff00;
+    }
   }
   i {
     color: #00ff00;
     font-size: 1.5rem;
   }
   .account {
-    font-family: var(--worksans);
+    font-family: var(--neuebit);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.6rem;
     color: #ffffff;
     display: inline-block;
     vertical-align: middle;
@@ -1156,7 +1262,7 @@ footer {
     border: 1px solid #00ff00;
   }
   .cta {
-    font-family: var(--worksans);
+    font-family: var(--neuebit);
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
@@ -1164,7 +1270,7 @@ footer {
     color: #ffffff;
   }
   .label {
-    font-family: var(--worksans);
+    font-family: var(--neuebit);
   }
   input {
     min-width: 80%;

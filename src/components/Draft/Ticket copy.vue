@@ -3,11 +3,11 @@
     <Navbar />
     <MenuMobile class="hideDesktop" />
     <div class="gap hideMobile"></div>
-    <div class="container pb-5" :class="{ 'mt-5': !isMobile }">
+    <div class="container" :class="{ 'mt-5': !isMobile }">
       <div class="row">
         <div class="col-12 col-md-12 col-lg-7">
           <div class="title-container mt-5">
-            <h2 class="white">Buy your ticket</h2>
+            <h2>Buy your ticket</h2>
             <h1>One ticket for all days</h1>
             <h1>Wed, Friday 25th-27th</h1>
             <div class="d-flex align-items-center">
@@ -33,8 +33,7 @@
               <h5>Price</h5>
               <h4>{{ tiers[boo_product] }}€</h4>
             </div>
-            <!-- <div v-if="!isSelected && loaded" class="ticket-select"> -->
-            <div v-if="!isSelected && loaded && this.$route.params.id === ''" class="ticket-select">
+            <div v-if="!isSelected && loaded" class="ticket-select">
               <p>Select your ticket</p>
               <div class="dropdown">
                 <div class="dropdown__face" @click="open = !open">
@@ -45,7 +44,9 @@
                     <i v-if="open" class="ms-3 fa-solid fa-caret-down"></i>
                   </div>
                 </div>
-                <Transition name="slide">
+                <Transition
+                  name="slide"
+                >
                   <ul v-show="open" class="dropdown__items">
                     <li
                       @click="
@@ -167,7 +168,7 @@ import BuyButton from "@/components/BuyButton.vue";
 import axios from "axios";
 
 export default {
-  name: "buy",
+  name: "ticket",
   components: {
     Navbar,
     MenuMobile,
@@ -177,8 +178,8 @@ export default {
     return {
       tiers: {
         EARLYBIRD: 139,
-        FIRSTWAVE: 355,
-        VIP: 1200,
+        FIRSTWAVE: 349,
+        VIP: 1119,
       },
       isMobile: false,
       open: false,
@@ -196,7 +197,6 @@ export default {
   },
   mounted() {
     const app = this;
-    app.getChoosenTicket();
     app.getTicketsInfo();
     if (window.innerWidth < 992) {
       app.isMobile = true;
@@ -227,21 +227,6 @@ export default {
       app.info = info.data.minted;
       app.loaded = true;
     },
-    getChoosenTicket() {
-      const app = this;
-      if (app.$route.params.id === "earlybird") {
-        app.boo_product = "EARLYBIRD";
-        console.log("slug", app.$route.params.id);
-      }
-      if (app.$route.params.id === "public") {
-        app.boo_product = "FIRSTWAVE";
-        console.log("slug", app.$route.params.id);
-      }
-      if (app.$route.params.id === "patron") {
-        app.boo_product = "VIP";
-        console.log("slug", app.$route.params.id);
-      }
-    },
   },
 };
 </script>
@@ -262,15 +247,5 @@ footer {
 }
 a {
   text-decoration: none !important;
-}
-
-@media (min-width: 1400px) {
-  .container-xl,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 1440px;
-  }
 }
 </style>

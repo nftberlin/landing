@@ -27,3 +27,30 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'NeueBit';
+  src: url('NeueBit-Regular.woff2') format('woff2'),
+      url('NeueBit-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MultiType Pixel Display';
+  src: url('MultiTypePixel-Display.woff2') format('woff2'),
+      url('MultiTypePixel-Display.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MultiType Pixel Display Narrow';
+  src: url('MultiTypePixel-DisplayNarrow.woff2') format('woff2'),
+      url('MultiTypePixel-DisplayNarrow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

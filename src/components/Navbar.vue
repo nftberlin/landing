@@ -10,13 +10,19 @@
             <!-- NOT IN PHASE 1 -->
             <a href="#sponsors">Sponsors</a>
             <a href="/ticket">Ticket</a>
-            <a href="https://www.notion.so/wearefloc/301a733ed69c4c45bfcfa9fe632f8b36?v=be21a3c063ef45d18ab9c074c5769e78" target="_blank">• Media Kit</a>
+            <a
+              href="https://www.notion.so/wearefloc/301a733ed69c4c45bfcfa9fe632f8b36?v=be21a3c063ef45d18ab9c074c5769e78"
+              target="_blank"
+              >• Media Kit</a
+            >
             <!-- / NOT IN PHASE 1 -->
             <!-- <a href="#team">Team</a> -->
           </div>
         </div>
         <div class="col-2 text-center">
-          <img src="../assets/logo.svg" alt="logo" draggable="false" />
+          <a href="/">
+            <img src="../assets/logo.svg" alt="logo" draggable="false"
+          /></a>
         </div>
         <div class="col-5">
           <div class="nav-social hideMobile">
@@ -81,5 +87,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

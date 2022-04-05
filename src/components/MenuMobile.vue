@@ -24,7 +24,7 @@
           </button>
         </div>
         <div class="col text-center">
-          <img src="../assets/logo.svg" alt="" />
+          <a href="/"> <img src="../assets/logo.svg" alt="" /></a>
         </div>
         <div class="col">
           <div class="mobile-social">

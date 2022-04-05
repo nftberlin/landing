@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-12 col-md-12 col-lg-7 mt-5">
           <div class="title-container">
-            <h2 class="white">Manage ticket</h2>
+            <h2>Manage ticket</h2>
             <h1>Claim your Ticket now</h1>
             <h1>You can claim it up to 24H before the event</h1>
           </div>
@@ -15,7 +15,7 @@
             <div class="btn-mint" @click="connect()">Connect Wallet</div>
           </div>
         </div>
-        <div class="col-12 col-md-12 col-lg-4 offset-lg-1 mt-5">
+        <div class="col-12 col-md-12 col-lg-5 mt-5">
           <div class="workingMessage" v-if="isWorking">
             <i class="fas fa-spinner fa-pulse"></i>
             {{ workingMessage }}...
@@ -225,15 +225,5 @@ export default {
 }
 a {
   text-decoration: none !important;
-}
-
-@media (min-width: 1400px) {
-  .container-xl,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 1440px;
-  }
 }
 </style>
