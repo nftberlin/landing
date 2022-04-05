@@ -5,10 +5,10 @@
         <div class="col-5">
           <div class="nav-links hideIpad">
             <!-- <a href="#team">Team</a> -->
-            <a href="#events">Event</a>
-            <a href="#what">What/Why?</a>
+            <a href="/#events">Event</a>
+            <a href="/#what">What/Why?</a>
             <!-- NOT IN PHASE 1 -->
-            <a href="#sponsors">Sponsors</a>
+            <a href="/#sponsors">Sponsors</a>
             <a href="/ticket">Ticket</a>
             <a
               href="https://www.notion.so/wearefloc/301a733ed69c4c45bfcfa9fe632f8b36?v=be21a3c063ef45d18ab9c074c5769e78"
@@ -84,6 +84,17 @@
 <script>
 export default {
   name: "Navbar",
+  data() {
+    return {
+      isHome: false,
+    };
+  },
+  mounted() {
+    const app = this;
+    if (app.$route.params.name === "Home") {
+      app.isHome = true;
+    }
+  },
 };
 </script>
 
