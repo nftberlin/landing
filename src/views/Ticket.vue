@@ -175,15 +175,11 @@ export default {
   },
   data() {
     return {
-      tiers: {
-        EARLYBIRD: 139,
-        FIRSTWAVE: 355,
-        VIP: 1200,
-      },
       isMobile: false,
       open: false,
       loaded: false,
-      stripe_key: "pk_test_hfFnYFjLsrdKfFw7IPEF6TzR",
+      stripe_key: "pk_live_51KjN71FWMXWoRBMitAi1AZTXxmv4jkV7zNu0E90Bt7r4UTn7jGGqY7x5aZenRpL9rw2aQkZRKWTamZlrbRdhlfd200Dm1ARgR8",
+      
       network: "rinkeby",
       boo_product: "",
       boo_endpoint: process.env.VUE_APP_API_URL,

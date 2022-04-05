@@ -296,6 +296,7 @@ export default {
           if (app.debug) {
             console.log("PAYMENT DETAILS", payment_details.data);
           }
+          console.log('Payment response is:', payment_details.data)
           if (!payment_details.data.error) {
             app.payment = payment_details.data.payment;
             // Automatically init Stripe Payment
@@ -308,8 +309,7 @@ export default {
               app.initStripeElements();
             }
           } else if (payment_details.data.payment !== undefined) {
-            app.workingMessage = "Payment is paid yet, restoring flow..";
-            if (payment_details.data.payment.message === "Payment exists") {
+            app.workingMessage = "Payment exists yet, restoring flow..";
               app.payment = payment_details.data.payment;
               const check = await app.axios.post(
                 app.boo_endpoint + "/payments/check",
@@ -317,7 +317,8 @@ export default {
                   payment_id: payment_details.data.payment.paymentId,
                 }
               );
-              if (check.data.error) {
+              console.log("Checked payment response is:", check.data)
+              if (check.data.error === true) {
                 app.isWorking = false;
                 app.workingMessage = "";
                 app.initStripeElements();
@@ -329,14 +330,6 @@ export default {
                   app.checkPayment();
                 }, 4000);
               }
-            } else {
-              setTimeout(function () {
-                app.isWorking = false;
-                app.workingMessage = "";
-                app.payment = payment_details.data.payment;
-                app.checkPayment();
-              }, 4000);
-            }
           } else {
             app.isWorking = false;
             app.workingMessage = "";
