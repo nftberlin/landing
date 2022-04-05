@@ -29,12 +29,31 @@
         </div>
         <div class="col-12 col-md-12 col-lg-5">
           <div class="mt-5">
-            <div v-if="info[boo_product] !== undefined && boo_product !== ''">
+            <div
+              v-if="
+                info[boo_product] !== undefined &&
+                info[boo_product].active === false
+              "
+            >
+              <h5>
+                The sale of this ticket is not active at the moment, please
+                retry later.
+              </h5>
+            </div>
+            <div
+              v-if="
+                info[boo_product] !== undefined &&
+                info[boo_product].active === true
+              "
+            >
               <h5>Price</h5>
               <h4>{{ info[boo_product].price }}€</h4>
             </div>
             <!-- <div v-if="!isSelected && loaded" class="ticket-select"> -->
-            <div v-if="!isSelected && loaded && this.$route.params.id === ''" class="ticket-select">
+            <div
+              v-if="!isSelected && loaded && this.$route.params.id === ''"
+              class="ticket-select"
+            >
               <p>Select your ticket</p>
               <div class="dropdown">
                 <div class="dropdown__face" @click="open = !open">
@@ -115,42 +134,51 @@
                 </Transition>
               </div>
             </div>
+
             <div class="workingMessage pt-2 mt-5 mb-5" v-if="!loaded">
               <i class="fas fa-spinner fa-pulse"></i>
               Reading tickets from blockchain, please wait..
             </div>
-            <div v-if="boo_product === 'EARLYBIRD'">
-              <BuyButton
-                :stripe_key="stripe_key"
-                :network="network"
-                boo_product="EARLYBIRD"
-                :boo_endpoint="boo_endpoint"
-                :infuraId="infuraId"
-                :processor="processor"
-                v-on:selected="isSelected = true"
-              />
-            </div>
-            <div v-if="boo_product === 'FIRSTWAVE'">
-              <BuyButton
-                :stripe_key="stripe_key"
-                :network="network"
-                boo_product="FIRSTWAVE"
-                :boo_endpoint="boo_endpoint"
-                :infuraId="infuraId"
-                :processor="processor"
-                v-on:selected="isSelected = true"
-              />
-            </div>
-            <div v-if="boo_product === 'VIP'">
-              <BuyButton
-                :stripe_key="stripe_key"
-                :network="network"
-                boo_product="VIP"
-                :boo_endpoint="boo_endpoint"
-                :infuraId="infuraId"
-                :processor="processor"
-                v-on:selected="isSelected = true"
-              />
+
+            <div
+              v-if="
+                info[boo_product] !== undefined &&
+                info[boo_product].active === true
+              "
+            >
+              <div v-if="boo_product === 'EARLYBIRD'">
+                <BuyButton
+                  :stripe_key="stripe_key"
+                  :network="network"
+                  boo_product="EARLYBIRD"
+                  :boo_endpoint="boo_endpoint"
+                  :infuraId="infuraId"
+                  :processor="processor"
+                  v-on:selected="isSelected = true"
+                />
+              </div>
+              <div v-if="boo_product === 'FIRSTWAVE'">
+                <BuyButton
+                  :stripe_key="stripe_key"
+                  :network="network"
+                  boo_product="FIRSTWAVE"
+                  :boo_endpoint="boo_endpoint"
+                  :infuraId="infuraId"
+                  :processor="processor"
+                  v-on:selected="isSelected = true"
+                />
+              </div>
+              <div v-if="boo_product === 'VIP'">
+                <BuyButton
+                  :stripe_key="stripe_key"
+                  :network="network"
+                  boo_product="VIP"
+                  :boo_endpoint="boo_endpoint"
+                  :infuraId="infuraId"
+                  :processor="processor"
+                  v-on:selected="isSelected = true"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -178,8 +206,9 @@ export default {
       isMobile: false,
       open: false,
       loaded: false,
-      stripe_key: "pk_live_51KjN71FWMXWoRBMitAi1AZTXxmv4jkV7zNu0E90Bt7r4UTn7jGGqY7x5aZenRpL9rw2aQkZRKWTamZlrbRdhlfd200Dm1ARgR8",
-      
+      stripe_key:
+        "pk_live_51KjN71FWMXWoRBMitAi1AZTXxmv4jkV7zNu0E90Bt7r4UTn7jGGqY7x5aZenRpL9rw2aQkZRKWTamZlrbRdhlfd200Dm1ARgR8",
+
       network: "rinkeby",
       boo_product: "",
       boo_endpoint: process.env.VUE_APP_API_URL,
@@ -192,7 +221,6 @@ export default {
   },
   mounted() {
     const app = this;
-    app.getChoosenTicket();
     app.getTicketsInfo();
     if (window.innerWidth < 992) {
       app.isMobile = true;
@@ -222,9 +250,6 @@ export default {
       );
       app.info = info.data.minted;
       app.loaded = true;
-    },
-    getChoosenTicket() {
-      const app = this;
       if (app.$route.params.id === "earlybird") {
         app.boo_product = "EARLYBIRD";
         console.log("slug", app.$route.params.id);

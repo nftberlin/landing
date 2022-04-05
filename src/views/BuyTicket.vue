@@ -70,7 +70,8 @@
               ><div
                 v-if="
                   info['EARLYBIRD'] !== undefined &&
-                  info['EARLYBIRD'].minted < info['EARLYBIRD'].limit
+                  info['EARLYBIRD'].minted < info['EARLYBIRD'].limit &&
+                  info['EARLYBIRD'].active === true
                 "
                 class="btn-ticket"
               >
@@ -80,11 +81,12 @@
             <div
               v-if="
                 info['EARLYBIRD'] !== undefined &&
-                info['EARLYBIRD'].minted === info['EARLYBIRD'].limit
+                (info['EARLYBIRD'].minted === info['EARLYBIRD'].limit ||
+                  info['EARLYBIRD'].active === false)
               "
               class="btn-ticket btn-disabled"
             >
-              SOLD OUT
+              BUY TICKET
             </div>
           </div>
         </div>
@@ -124,7 +126,8 @@
               ><div
                 v-if="
                   info['FIRSTWAVE'] !== undefined &&
-                  info['FIRSTWAVE'].minted < info['FIRSTWAVE'].limit
+                  info['FIRSTWAVE'].minted < info['FIRSTWAVE'].limit &&
+                  info['FIRSTWAVE'].active === true
                 "
                 class="btn-ticket"
               >
@@ -134,11 +137,12 @@
             <div
               v-if="
                 info['FIRSTWAVE'] !== undefined &&
-                info['FIRSTWAVE'].minted === info['FIRSTWAVE'].limit
+                (info['FIRSTWAVE'].minted === info['FIRSTWAVE'].limit ||
+                  info['FIRSTWAVE'].active === false)
               "
               class="btn-ticket btn-disabled"
             >
-              SOLD OUT
+              BUY TICKET
             </div>
           </div>
         </div>
@@ -178,7 +182,8 @@
               ><div
                 v-if="
                   info['VIP'] !== undefined &&
-                  info['VIP'].minted < info['VIP'].limit
+                  info['VIP'].minted < info['VIP'].limit &&
+                  info['VIP'].active === true
                 "
                 class="btn-ticket"
               >
@@ -188,11 +193,12 @@
             <div
               v-if="
                 info['VIP'] !== undefined &&
-                info['VIP'].minted === info['VIP'].limit
+                (info['VIP'].minted === info['VIP'].limit ||
+                  info['VIP'].active === false)
               "
               class="btn-ticket btn-disabled"
             >
-              SOLD OUT
+              BUY TICKET
             </div>
           </div>
         </div>
@@ -278,6 +284,8 @@ export default {
       );
       app.info = info.data.minted;
       app.loaded = true;
+      console.log(app.info);
+      console.log("FIRSTWAVE", app.info["FIRSTWAVE"].active);
     },
   },
 };

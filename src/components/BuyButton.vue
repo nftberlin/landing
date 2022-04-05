@@ -108,7 +108,7 @@
             <h5 class="m-0">Check transaction status at:</h5>
             <a
               :href="
-                'https://mumbai.polygonscan.com/tx/' + txid.transactionHash
+                'https://polygonscan.com/tx/' + txid.transactionHash
               "
               target="_blank"
             >

@@ -23,7 +23,7 @@
           <div class="mt-5">
             <p>Have you bought your ticket yet?</p>
             <a href="/manage-ticket">
-              <div class="btn-mint">MANAGE MY TICKET</div>
+              <div class="btn-mint">MANAGE MY TICKETS</div>
             </a>
           </div>
         </div>

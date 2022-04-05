@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-12 col-md-12 col-lg-7 mt-5">
           <div class="title-container">
-            <h2 class="white">Manage ticket</h2>
+            <h2 class="white">Manage tickets</h2>
             <h1>Claim your Ticket now</h1>
             <h1>You can claim it up to 24H before the event</h1>
           </div>

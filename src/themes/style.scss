@@ -953,6 +953,11 @@ footer {
   color: #00ff00 !important;
 }
 
+.p-FieldLabel {
+  color: white !important;
+  font-family: var(--neuebit) !important;
+}
+
 .ticket {
   width: 100vw;
   min-height: 100vh;
@@ -989,6 +994,8 @@ footer {
     font-size: 1rem;
   }
   /* == >> / FONTS << == */
+
+
   .bordered {
     border: 1px solid #00ff00;
     padding: 10px;
