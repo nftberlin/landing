@@ -29,7 +29,7 @@
         </div>
         <div class="col-12 col-md-12 col-lg-5">
           <div class="mt-5">
-            <div v-if="info[boo_product].price !== undefined && boo_product !== ''">
+            <div v-if="info[boo_product] !== undefined && boo_product !== ''">
               <h5>Price</h5>
               <h4>{{ info[boo_product].price }}€</h4>
             </div>
