@@ -277,7 +277,6 @@ export default {
         process.env.VUE_APP_API_URL + "/nfts/minted"
       );
       app.info = info.data.minted;
-      console.log(info);
       app.loaded = true;
     },
   },
