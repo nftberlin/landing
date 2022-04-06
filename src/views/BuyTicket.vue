@@ -3,18 +3,19 @@
     <Navbar />
     <MenuMobile class="hideDesktop" />
     <div class="gap hideMobile"></div>
-    <div class="container pb-5" :class="{ 'pt-5': !isMobile }">
+    <div class="container mb-5" :class="{ 'pt-5': !isMobile }">
       <div>
         <div class="title-container mt-5">
-          <h2 class="white">Buy your ticket</h2>
-          <h1>One ticket for all days</h1>
-          <h1>Wed, Friday 25th-27th</h1>
-          <div class="d-flex align-items-center">
-            <h2>May</h2>
+          <h1 class="m-0">2-DAYs</h1>
+          <h2 class="m-0">ticket</h2>
+          <h3 class="m-0">nftberlin</h3>
+          <h3 class="m-0">uncoference</h3>
+          <div class="specs-location d-flex align-items-start mt-4">
+            <h4>25 -- 26 May, 2022</h4>
             <a href="https://goo.gl/maps/eZZQap8PjCvQzVAM6" target="_blank">
-              <div class="d-flex location">
+              <div class="d-flex align-items-center location">
                 <i class="fa-solid fa-location-dot"></i>
-                Alte Münze, Berlin
+                <p>Alte Münze, Berlin</p>
               </div></a
             >
           </div>
@@ -25,45 +26,80 @@
             <div class="btn-mint">MANAGE MY TICKETS</div>
           </a>
         </div>
+        <div class="cta-section mt-5">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-2 col-lg-2">
+              <div class="cat">
+                <img src="../assets/cat.png" alt="" />
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="cta-text">
+                money can’t buy happiness but it can buy nftberlin tickets
+              </div>
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-2">
+              <div class="cat">
+                <img src="../assets/cat.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container mt-5 mb-5">
+    <div class="container mb-5">
       <h3 class="mb-4">Select your ticket</h3>
       <div class="workingMessage pt-2 mt-5 mb-5" v-if="!loaded">
         <i class="fas fa-spinner fa-pulse"></i>
         Reading tickets from blockchain, please wait..
       </div>
       <div v-if="loaded" class="row">
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="ticket-card">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="white">EARLY BIRD</h5>
-              <h5 class="green">{{ info["EARLYBIRD"].price }}€</h5>
-            </div>
-            <div class="mt-3 p-3">
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
+            <div>
+              <div>
+                <div
+                  class="ticket-title"
+                  :class="{
+                    green: info['EARLYBIRD'].active === true,
+                    green_inactive: info['EARLYBIRD'].active === false,
+                  }"
+                >
+                  Bird / 2-day admission/
+                </div>
+                <div class="ticket-title red">-60% discount LFG!!!</div>
+                <div
+                  class="ticket-price"
+                  :class="{
+                    green: info['EARLYBIRD'].active === true,
+                    green_inactive: info['EARLYBIRD'].active === false,
+                  }"
+                >
+                  {{ info["EARLYBIRD"].price }}€
+                </div>
               </div>
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
-              </div>
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
-              </div>
-              <div class="d-flex align-items-start">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
+              <div
+                class="mt-3 p-3"
+                :class="{
+                  white: info['EARLYBIRD'].active === true,
+                  white_inactive: info['EARLYBIRD'].active === false,
+                }"
+              >
+                <div class="ticket-text">
+                  ^ 2-day admission to the unconference on May 25-26, 2022 at
+                  Alte Münze, Berlin
+                </div>
+
+                <div class="ticket-text">
+                  ^ Eligible for an NFT crypto art ticket
+                </div>
+
+                <div class="ticket-text">^ Claimable official swag</div>
+
+                <div class="ticket-text">
+                  ^ Admission to the NFTBERLIN After-Party
+                </div>
               </div>
             </div>
             <a href="/ticket/earlybird"
@@ -86,40 +122,43 @@
               "
               class="btn-ticket btn-disabled"
             >
-              BUY TICKET
+              COMING SOON
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="ticket-card">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="white">PUBLIC</h5>
-              <h5 class="green">{{ info["FIRSTWAVE"].price }}€</h5>
-            </div>
-            <div class="mt-3 p-3">
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
+            <div>
+              <div
+                :class="{
+                  green: info['FIRSTWAVE'].active === true,
+                  green_inactive: info['FIRSTWAVE'].active === false,
+                }"
+              >
+                <div class="ticket-title">Public / 2-day admission/</div>
+                <div class="ticket-price" style="margin-top:2rem">{{ info["FIRSTWAVE"].price }}€</div>
               </div>
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
-              </div>
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
-              </div>
-              <div class="d-flex align-items-start">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
+              <div
+                class="mt-3 p-3"
+                :class="{
+                  white: info['FIRSTWAVE'].active === true,
+                  white_inactive: info['FIRSTWAVE'].active === false,
+                }"
+              >
+                <div class="ticket-text">
+                  ^ 2-day admission to the unconference on May 25-26, 2022 at
+                  Alte Münze, Berlin
+                </div>
+
+                <div class="ticket-text">
+                  ^ Eligible for an NFT crypto art ticket
+                </div>
+
+                <div class="ticket-text">^ Claimable official swag</div>
+
+                <div class="ticket-text">
+                  ^ Admission to the NFTBERLIN After-Party
+                </div>
               </div>
             </div>
             <a href="/ticket/public"
@@ -142,40 +181,49 @@
               "
               class="btn-ticket btn-disabled"
             >
-              BUY TICKET
+              COOMING SOON
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="ticket-card">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="white">PATRON</h5>
-              <h5 class="green">{{ info["VIP"].price }}€</h5>
-            </div>
-            <div class="mt-3 p-3">
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
+            <div>
+              <div
+                :class="{
+                  green: info['VIP'].active === true,
+                  green_inactive: info['VIP'].active === false,
+                }"
+              >
+                <div class="ticket-title">
+                  Patron / 2-day admission<br />
+                  + Private event
+                </div>
+                <div class="ticket-price">{{ info["VIP"].price }}€</div>
               </div>
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
-              </div>
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
-              </div>
-              <div class="d-flex align-items-start">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
+              <div
+                class="mt-3 p-3"
+                :class="{
+                  white: info['VIP'].active === true,
+                  white_inactive: info['VIP'].active === false,
+                }"
+              >
+                <div class="ticket-text">
+                  ^ 2-day admission to the unconference on May 25-26, 2022 at
+                  Alte Münze, Berlin
+                </div>
+                <div class="ticket-text">
+                  ^ Eligible for an NFT crypto art ticket
+                </div>
+                <div class="ticket-text">
+                  ^ Eligible for rare NFT crypto art collectibles
+                </div>
+                <div class="ticket-text">^ Claimable official swag</div>
+                <div class="ticket-text">
+                  ^ Admission to the NFTBERLIN After-Party
+                </div>
+                <div class="ticket-text">
+                  ^ Admission to a private event with speakers and artists
+                </div>
               </div>
             </div>
             <a href="/ticket/patron"
@@ -198,47 +246,12 @@
               "
               class="btn-ticket btn-disabled"
             >
-              BUY TICKET
+              COMING SOON
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="ticket-card">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="white">SPEAKER</h5>
-              <h5 class="green">REEDEM</h5>
-            </div>
-            <div class="mt-3 p-3">
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
-              </div>
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
-              </div>
-              <div class="d-flex">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
-              </div>
-              <div class="d-flex align-items-start">
-                <div class="list-circle"></div>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor.
-                </p>
-              </div>
-            </div>
-            <a href="/manage-ticket"><div class="btn-ticket">REEDEM</div></a>
           </div>
         </div>
       </div>
-      <div class="" :class="{ gap: isMobile }"></div>
+      <div class="gap"></div>
     </div>
   </div>
 </template>

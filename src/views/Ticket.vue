@@ -7,15 +7,16 @@
       <div class="row">
         <div class="col-12 col-md-12 col-lg-7">
           <div class="title-container mt-5">
-            <h2 class="white">Buy your ticket</h2>
-            <h1>One ticket for all days</h1>
-            <h1>Wed, Friday 25th-27th</h1>
-            <div class="d-flex align-items-center">
-              <h2>May</h2>
+            <h1 class="m-0">2-DAYs</h1>
+            <h2 class="m-0">ticket</h2>
+            <h3 class="m-0">nftberlin</h3>
+            <h3 class="m-0">uncoference</h3>
+            <div class="specs-location d-flex align-items-start mt-4">
+              <h4>25 -- 26 May, 2022</h4>
               <a href="https://goo.gl/maps/eZZQap8PjCvQzVAM6" target="_blank">
-                <div class="d-flex location">
+                <div class="d-flex align-items-center location">
                   <i class="fa-solid fa-location-dot"></i>
-                  Alte Münze, Berlin
+                  <p>Alte Münze, Berlin</p>
                 </div></a
               >
             </div>
@@ -206,8 +207,14 @@ export default {
       isMobile: false,
       open: false,
       loaded: false,
+      // FOR TESTING
+      // stripe_key: "pk_test_hfFnYFjLsrdKfFw7IPEF6TzR",
+      // END FOR TESTING
+
+      //FOR PRODUCTION
       stripe_key:
         "pk_live_51KjN71FWMXWoRBMitAi1AZTXxmv4jkV7zNu0E90Bt7r4UTn7jGGqY7x5aZenRpL9rw2aQkZRKWTamZlrbRdhlfd200Dm1ARgR8",
+      // END FOR PRODUCTION
 
       network: "rinkeby",
       boo_product: "",

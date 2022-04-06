@@ -103,7 +103,8 @@
       </div>
       <div class="mt-5" v-if="processCompleted">
         <div>
-          <h2>Congratulations, you have purchased your ticket!</h2>
+          <h2>Congratulations!</h2>
+          <h5>You have purchased your ticket!</h5>
           <div class="mt-4 mb-4" v-if="txid">
             <h5 class="m-0">Check transaction status at:</h5>
             <a
@@ -129,7 +130,7 @@
               </h5>
             </a>
           </div>
-          <h2>We look forward to seeing you at the event!</h2>
+          <h5>We look forward to seeing you at the event!</h5>
         </div>
       </div>
     </div>
