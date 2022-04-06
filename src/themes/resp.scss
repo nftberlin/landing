@@ -404,6 +404,16 @@
       font-size: 0.8rem;
     }
   }
+  .ticket {
+    .ticket-card {
+      .ticket-title {
+        font-size: 1.5rem;
+      }
+      .ticket-price {
+        line-height: 1;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {

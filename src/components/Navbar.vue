@@ -9,12 +9,7 @@
             <a href="/#what">What/Why?</a>
             <!-- NOT IN PHASE 1 -->
             <a href="/#sponsors">Sponsors</a>
-            <a href="/ticket">Ticket</a>
-            <a
-              href="https://www.notion.so/wearefloc/301a733ed69c4c45bfcfa9fe632f8b36?v=be21a3c063ef45d18ab9c074c5769e78"
-              target="_blank"
-              >• Media Kit</a
-            >
+            <a href="/ticket">Tickets</a>
             <!-- / NOT IN PHASE 1 -->
             <!-- <a href="#team">Team</a> -->
           </div>
@@ -74,6 +69,11 @@
                 />
               </svg>
             </a>
+            <a href="/manage-ticket">
+              <div class="btn-mint" style="margin-left: 3rem">
+                My Account
+              </div></a
+            >
           </div>
         </div>
       </div>

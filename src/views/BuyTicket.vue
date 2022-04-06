@@ -59,48 +59,63 @@
           <div class="ticket-card">
             <div>
               <div>
-                <div
-                  class="ticket-title"
-                  :class="{
-                    green: info['EARLYBIRD'].active === true,
-                    green_inactive: info['EARLYBIRD'].active === false,
-                  }"
-                >
-                  Bird / 2-day admission/
+                <div :class="{'d-flex': isMobile}">
+                  <div
+                    class="ticket-title"
+                    :class="{
+                      green: info['EARLYBIRD'].active === true,
+                      green_inactive: info['EARLYBIRD'].active === false,
+                    }"
+                  >
+                    Bird / 2-day admission/
+                  </div>
+                  <div class="ticket-title red">-60% discount LFG!!!</div>
                 </div>
-                <div class="ticket-title red">-60% discount LFG!!!</div>
-                <div
-                  class="ticket-price"
-                  :class="{
-                    green: info['EARLYBIRD'].active === true,
-                    green_inactive: info['EARLYBIRD'].active === false,
-                  }"
-                >
-                  {{ info["EARLYBIRD"].price }}€
-                </div>
-              </div>
-              <div
-                class="mt-3 p-3"
-                :class="{
-                  white: info['EARLYBIRD'].active === true,
-                  white_inactive: info['EARLYBIRD'].active === false,
-                }"
-              >
-                <div class="ticket-text">
-                  ^ 2-day admission to the unconference on May 25-26, 2022 at
-                  Alte Münze, Berlin
-                </div>
-
-                <div class="ticket-text">
-                  ^ Eligible for an NFT crypto art ticket
-                </div>
-
-                <div class="ticket-text">^ Claimable official swag</div>
-
-                <div class="ticket-text">
-                  ^ Admission to the NFTBERLIN After-Party
+                <div class="d-flex align-items-center justify-content-between">
+                  <div
+                    class="ticket-price"
+                    :class="{
+                      green: info['EARLYBIRD'].active === true,
+                      green_inactive: info['EARLYBIRD'].active === false,
+                    }"
+                  >
+                    {{ info["EARLYBIRD"].price }}€
+                  </div>
+                  <div
+                    v-if="isMobile"
+                    class="ticket-details"
+                    @click="openDetails1 = !openDetails1"
+                  >
+                    details <span v-if="openDetails1">+</span>
+                    <span v-if="!openDetails1">-</span>
+                  </div>
                 </div>
               </div>
+              <Transition name="slide">
+                <div
+                  v-if="openDetails1"
+                  class="mt-3 p-3"
+                  :class="{
+                    white: info['EARLYBIRD'].active === true,
+                    white_inactive: info['EARLYBIRD'].active === false,
+                  }"
+                >
+                  <div class="ticket-text">
+                    ^ 2-day admission to the unconference on May 25-26, 2022 at
+                    Alte Münze, Berlin
+                  </div>
+
+                  <div class="ticket-text">
+                    ^ Eligible for an NFT crypto art ticket
+                  </div>
+
+                  <div class="ticket-text">^ Claimable official swag</div>
+
+                  <div class="ticket-text">
+                    ^ Admission to the NFTBERLIN After-Party
+                  </div>
+                </div>
+              </Transition>
             </div>
             <a href="/ticket/earlybird"
               ><div
@@ -136,7 +151,9 @@
                 }"
               >
                 <div class="ticket-title">Public / 2-day admission/</div>
-                <div class="ticket-price" style="margin-top:2rem">{{ info["FIRSTWAVE"].price }}€</div>
+                <div class="ticket-price" style="margin-top: 2rem">
+                  {{ info["FIRSTWAVE"].price }}€
+                </div>
               </div>
               <div
                 class="mt-3 p-3"
@@ -273,6 +290,9 @@ export default {
       open: false,
       loaded: false,
       info: {},
+      openDetails1: false,
+      openDetails2: false,
+      openDetails3: false,
     };
   },
   mounted() {
@@ -280,12 +300,25 @@ export default {
     app.getTicketsInfo();
     if (window.innerWidth < 992) {
       app.isMobile = true;
+      app.openDetails1 = false;
+      app.openDetails2 = false;
+      app.openDetails3 = false;
+    } else {
+      app.openDetails1 = true;
+      app.openDetails2 = true;
+      app.openDetails3 = true;
     }
     window.addEventListener("resize", function () {
       if (window.innerWidth > 992) {
         app.isMobile = false;
+        app.openDetails1 = true;
+        app.openDetails2 = true;
+        app.openDetails3 = true;
       } else {
         app.isMobile = true;
+        app.openDetails1 = false;
+        app.openDetails2 = false;
+        app.openDetails3 = false;
       }
     });
   },

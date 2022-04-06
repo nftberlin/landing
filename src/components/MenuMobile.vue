@@ -47,14 +47,14 @@
     <div v-if="isOpen" class="side-menu animate__animated animate__slideInLeft">
       <div class="container-fluid">
         <div class="mobile-links">
-          <a href="#events" @click="toggleMenu()">Event</a>
-          <a href="#what" @click="toggleMenu()">What/Why?</a>
-          <a href="#sponsors" @click="toggleMenu()">Sponsors</a>
+          <a href="/#events" @click="toggleMenu()">Event</a>
+          <a href="/#what" @click="toggleMenu()">What/Why?</a>
+          <a href="/#sponsors" @click="toggleMenu()">Sponsors</a>
           <a
-            href="https://www.notion.so/wearefloc/301a733ed69c4c45bfcfa9fe632f8b36?v=be21a3c063ef45d18ab9c074c5769e78"
+            href="/ticket"
             @click="toggleMenu()"
             target="_blank"
-            >• Media Kit</a
+            >TICKETS</a
           >
           <!-- <a href="#team" @click="toggleMenu()">Team</a> -->
         </div>
@@ -109,7 +109,11 @@
               />
             </svg>
           </a>
+
         </div>
+                  <a href="/manage-ticket">
+            <div class="btn-mint" style="margin-top: 3rem">My Account</div></a
+          >
       </div>
     </div>
   </div>
