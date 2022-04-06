@@ -5,8 +5,8 @@
     <div class="gap hideMobile"></div>
     <div class="container mb-5" :class="{ 'pt-5': !isMobile }">
       <div>
-        <div class="title-container mt-5">
-          <h1 class="m-0">2-DAYs</h1>
+        <div class="title-container" :class="{ 'mt-5': !isMobile }">
+          <h1 class="m-0">2-DAY</h1>
           <h2 class="m-0">ticket</h2>
           <h3 class="m-0">nftberlin</h3>
           <h3 class="m-0">uncoference</h3>
@@ -20,16 +20,10 @@
             >
           </div>
         </div>
-        <div class="mt-1">
-          <p>Have you bought your ticket yet?</p>
-          <a href="/manage-ticket">
-            <div class="btn-mint">MANAGE MY TICKETS</div>
-          </a>
-        </div>
         <div class="cta-section mt-5">
           <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-2 col-lg-2">
-              <div class="cat">
+              <div class="cat hideMobile">
                 <img src="../assets/cat.png" alt="" />
               </div>
             </div>
@@ -38,9 +32,8 @@
                 money can’t buy happiness but it can buy nftberlin tickets
               </div>
             </div>
-
             <div class="col-12 col-md-2 col-lg-2">
-              <div class="cat">
+              <div class="cat hideMobile">
                 <img src="../assets/cat.png" alt="" />
               </div>
             </div>
@@ -49,17 +42,16 @@
       </div>
     </div>
     <div class="container mb-5">
-      <h3 class="mb-4">Select your ticket</h3>
       <div class="workingMessage pt-2 mt-5 mb-5" v-if="!loaded">
         <i class="fas fa-spinner fa-pulse"></i>
         Reading ticket informations from blockchain, please wait..
       </div>
       <div v-if="loaded" class="row">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-12 col-lg-4">
           <div class="ticket-card">
             <div>
               <div>
-                <div :class="{'d-flex': isMobile}">
+                <div :class="{ 'd-flex': isMobile }">
                   <div
                     class="ticket-title"
                     :class="{
@@ -141,7 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-12 col-lg-4" :class="{ 'mt-5': isMobile }">
           <div class="ticket-card">
             <div>
               <div
@@ -151,32 +143,52 @@
                 }"
               >
                 <div class="ticket-title">Public / 2-day admission/</div>
-                <div class="ticket-price" style="margin-top: 2rem">
-                  {{ info["FIRSTWAVE"].price }}€
+                <div class="d-flex align-items-center justify-content-between">
+                  <div
+                    class="ticket-price"
+                    :class="{
+                      green: info['FIRSTWAVE'].active === true,
+                      green_inactive: info['FIRSTWAVE'].active === false,
+                    }"
+                  >
+                    {{ info["FIRSTWAVE"].price }}€
+                  </div>
+                  <div
+                    v-if="isMobile"
+                    class="ticket-details"
+                    @click="openDetails2 = !openDetails2"
+                  >
+                    details <span v-if="openDetails2">+</span>
+                    <span v-if="!openDetails2">-</span>
+                  </div>
                 </div>
               </div>
-              <div
-                class="mt-3 p-3"
-                :class="{
-                  white: info['FIRSTWAVE'].active === true,
-                  white_inactive: info['FIRSTWAVE'].active === false,
-                }"
-              >
-                <div class="ticket-text">
-                  ^ 2-day admission to the unconference on May 25-26, 2022 at
-                  Alte Münze, Berlin
-                </div>
 
-                <div class="ticket-text">
-                  ^ Eligible for an NFT crypto art ticket
-                </div>
+              <Transition name="slide">
+                <div
+                  v-if="openDetails2"
+                  class="mt-3 p-3"
+                  :class="{
+                    white: info['FIRSTWAVE'].active === true,
+                    white_inactive: info['FIRSTWAVE'].active === false,
+                  }"
+                >
+                  <div class="ticket-text">
+                    ^ 2-day admission to the unconference on May 25-26, 2022 at
+                    Alte Münze, Berlin
+                  </div>
 
-                <div class="ticket-text">^ Claimable official swag</div>
+                  <div class="ticket-text">
+                    ^ Eligible for an NFT crypto art ticket
+                  </div>
 
-                <div class="ticket-text">
-                  ^ Admission to the NFTBERLIN After-Party
+                  <div class="ticket-text">^ Claimable official swag</div>
+
+                  <div class="ticket-text">
+                    ^ Admission to the NFTBERLIN After-Party
+                  </div>
                 </div>
-              </div>
+              </Transition>
             </div>
             <a href="/ticket/public"
               ><div
@@ -202,7 +214,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-12 col-lg-4" :class="{ 'mt-5': isMobile }">
           <div class="ticket-card">
             <div>
               <div
@@ -215,33 +227,54 @@
                   Patron / 2-day admission<br />
                   + Private event
                 </div>
-                <div class="ticket-price">{{ info["VIP"].price }}€</div>
-              </div>
-              <div
-                class="mt-3 p-3"
-                :class="{
-                  white: info['VIP'].active === true,
-                  white_inactive: info['VIP'].active === false,
-                }"
-              >
-                <div class="ticket-text">
-                  ^ 2-day admission to the unconference on May 25-26, 2022 at
-                  Alte Münze, Berlin
-                </div>
-                <div class="ticket-text">
-                  ^ Eligible for an NFT crypto art ticket
-                </div>
-                <div class="ticket-text">
-                  ^ Eligible for rare NFT crypto art collectibles
-                </div>
-                <div class="ticket-text">^ Claimable official swag</div>
-                <div class="ticket-text">
-                  ^ Admission to the NFTBERLIN After-Party
-                </div>
-                <div class="ticket-text">
-                  ^ Admission to a private event with speakers and artists
+                <div class="d-flex align-items-center justify-content-between">
+                  <div
+                    class="ticket-price"
+                    :class="{
+                      green: info['VIP'].active === true,
+                      green_inactive: info['VIP'].active === false,
+                    }"
+                  >
+                    {{ info["VIP"].price }}€
+                  </div>
+                  <div
+                    v-if="isMobile"
+                    class="ticket-details"
+                    @click="openDetails3 = !openDetails3"
+                  >
+                    details <span v-if="openDetails3">+</span>
+                    <span v-if="!openDetails3">-</span>
+                  </div>
                 </div>
               </div>
+              <Transition name="slide">
+                <div
+                  v-if="openDetails3"
+                  class="mt-3 p-3"
+                  :class="{
+                    white: info['VIP'].active === true,
+                    white_inactive: info['VIP'].active === false,
+                  }"
+                >
+                  <div class="ticket-text">
+                    ^ 2-day admission to the unconference on May 25-26, 2022 at
+                    Alte Münze, Berlin
+                  </div>
+                  <div class="ticket-text">
+                    ^ Eligible for an NFT crypto art ticket
+                  </div>
+                  <div class="ticket-text">
+                    ^ Eligible for rare NFT crypto art collectibles
+                  </div>
+                  <div class="ticket-text">^ Claimable official swag</div>
+                  <div class="ticket-text">
+                    ^ Admission to the NFTBERLIN After-Party
+                  </div>
+                  <div class="ticket-text">
+                    ^ Admission to a private event with speakers and artists
+                  </div>
+                </div>
+              </Transition>
             </div>
             <a href="/ticket/patron"
               ><div

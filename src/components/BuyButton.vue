@@ -2,12 +2,13 @@
   <div class="buy-button">
     <div class="fadeIn" v-if="account">
       <div class="mt-4 mb-4" :class="{ 'mb-4': isMobile }">
-        <h5 class="mb-2">Hello!</h5>
-        <p class="m-0">
+        <h5 class="mb-2">Attendee details:</h5>
+        <!-- <p class="m-0">
           You will receive the "{{ boo_product }}" nft ticket to:
-        </p>
+        </p> -->
+        <p class="m-0">The ticket will be sent directly to a wallet address:</p>
         <div class="account">
-          {{ account }}
+          {{ account.substr(0, 8) + "..." + account.substr(-8) }}
         </div>
       </div>
       <div v-if="debug">
@@ -44,7 +45,7 @@
           <div id="payment-element"></div>
           <br />
           <div v-if="!isWorking" class="btn-mint" @click="payWithStripe()">
-            Confirm payment
+            BUY NFTBERLIN TICKET
           </div>
         </div>
         <div class="workingMessage pt-2 mt-5 mb-5" v-if="isWorking">
@@ -54,8 +55,17 @@
       </div>
       <div class="mt-5" v-if="processCompleted">
         <div>
-          <h2>Congratulations!</h2>
-          <h5>You have purchased your ticket!</h5>
+          <div
+            class="cta-section d-flex align-items-center justify-content-around"
+          >
+          <div class="cta">
+            <img src="../assets/cat.png" alt="">
+          </div>
+            <div class="cta-text">
+              success<br /><br />
+              see you soon in berlin
+            </div>
+          </div>
           <div class="mt-4 mb-4" v-if="txid">
             <h5 class="m-0">Check transaction status at:</h5>
             <a
@@ -79,7 +89,7 @@
               </h5>
             </a>
           </div>
-          <h5>We look forward to seeing you at the event!</h5>
+          <a href=""><div class="btn-ticket">MANAGE MY TICKETS</div></a>
         </div>
       </div>
     </div>
@@ -138,8 +148,7 @@ export default {
   },
   async mounted() {
     const app = this;
-    const stripe_boo = await app.axios.get(
-      app.boo_endpoint + "/stripe");
+    const stripe_boo = await app.axios.get(app.boo_endpoint + "/stripe");
     if (stripe_boo.data.stripe_pubkey !== undefined) {
       app.stripe = Stripe(stripe_boo.data.stripe_pubkey);
       if (app.debug) {
@@ -201,14 +210,12 @@ export default {
       const accounts = await app.web3.eth.getAccounts();
       if (accounts.length > 0) {
         app.account = accounts[0];
-        app.askPaymentDetails()
+        app.askPaymentDetails();
       }
     },
     async askPaymentDetails() {
       const app = this;
-      if (
-        !app.isWorking
-      ) {
+      if (!app.isWorking) {
         this.$emit("selected", true);
         app.isWorking = true;
         app.workingMessage = "Asking for payment details, please wait..";

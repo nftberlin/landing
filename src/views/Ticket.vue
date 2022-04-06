@@ -4,31 +4,95 @@
     <MenuMobile class="hideDesktop" />
     <div class="gap hideMobile"></div>
     <div class="container pb-5" :class="{ 'mt-5': !isMobile }">
+      <h1 class="buying-title mb-3 pt-3">NOW BUYING...</h1>
+      <div class="workingMessage pt-2 mt-5 mb-5" v-if="!loaded">
+        <i class="fas fa-spinner fa-pulse"></i>
+        Reading tickets from blockchain, please wait..
+      </div>
       <div class="row">
-        <div class="col-12 col-md-12 col-lg-7">
-          <div class="title-container mt-5">
-            <h1 class="m-0">2-DAYs</h1>
-            <h2 class="m-0">ticket</h2>
-            <h3 class="m-0">nftberlin</h3>
-            <h3 class="m-0">uncoference</h3>
-            <div class="specs-location d-flex align-items-start mt-4">
-              <h4>25 -- 26 May, 2022</h4>
-              <a href="https://goo.gl/maps/eZZQap8PjCvQzVAM6" target="_blank">
-                <div class="d-flex align-items-center location">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <p>Alte Münze, Berlin</p>
-                </div></a
-              >
+        <div
+          v-if="loaded && boo_product !== undefined"
+          class="col-12 col-md-12 col-lg-4"
+        >
+          <div class="ticket-checkout-specs">
+            <div>
+              <div>
+                <div
+                  v-if="boo_product === 'EARLYBIRD'"
+                  class="checkout-ticket-title"
+                >
+                  bird ticket
+                </div>
+                <div
+                  v-if="boo_product === 'FIRSTWAVE'"
+                  class="checkout-ticket-title"
+                >
+                  public ticket
+                </div>
+                <div v-if="boo_product === 'VIP'" class="checkout-ticket-title">
+                  public ticket
+                </div>
+                <div class="specs-location d-flex align-items-center mt-2">
+                  <h4 class="m-0">25 -- 26 May, 2022</h4>
+                  <a
+                    href="https://goo.gl/maps/eZZQap8PjCvQzVAM6"
+                    target="_blank"
+                  >
+                    <div class="d-flex align-items-center location">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>Alte Münze, Berlin</p>
+                    </div></a
+                  >
+                </div>
+
+                <div class="d-flex align-items-center justify-content-end">
+                  <div
+                    v-if="isMobile"
+                    class="ticket-details"
+                    @click="openDetails = !openDetails"
+                  >
+                    details <span v-if="openDetails">+</span>
+                    <span v-if="!openDetails">-</span>
+                  </div>
+                </div>
+              </div>
+              <Transition name="slide">
+                <div v-if="openDetails" class="mt-2 mb-2">
+                  <div class="ticket-text">
+                    ^ 2-day admission to the unconference on May 25-26, 2022 at
+                    Alte Münze, Berlin
+                  </div>
+
+                  <div class="ticket-text">
+                    ^ Eligible for an NFT crypto art ticket
+                  </div>
+
+                  <div class="ticket-text">^ Claimable official swag</div>
+
+                  <div class="ticket-text">
+                    ^ Admission to the NFTBERLIN After-Party
+                  </div>
+                </div>
+              </Transition>
             </div>
           </div>
-          <div class="mt-5">
-            <p>Have you bought your ticket yet?</p>
-            <a href="/manage-ticket">
-              <div class="btn-mint">MANAGE MY TICKETS</div>
-            </a>
+          <div class="ascii-text mb-3 hideMobile">
+            //////////<br />
+            ////////<br />
+            //////<br />
+            ////<br />
+            //<br />
+            /
           </div>
+          <p class="info-ticket" v-if="info[boo_product] !== undefined">
+            Ticket price is € {{ info[boo_product].price }}
+          </p>
+          <div class="btn-ticket">connect wallet to buy</div>
+          <a href="https://metamask.io" target="_blank">
+            <div class="info-wallet mt-3">What is a wallet?</div></a
+          >
         </div>
-        <div class="col-12 col-md-12 col-lg-5">
+        <div class="col-12 col-md-12 col-lg-5 offset-lg-3">
           <div class="mt-5">
             <div
               v-if="
@@ -41,16 +105,9 @@
                 retry later.
               </h5>
             </div>
-            <div
-              v-if="
-                info[boo_product] !== undefined &&
-                info[boo_product].active === true
-              "
-            >
-              <h5>Price</h5>
-              <h4>{{ info[boo_product].price }}€</h4>
-            </div>
             <!-- <div v-if="!isSelected && loaded" class="ticket-select"> -->
+
+            <!-- TICKET SELECTION HIDE -->
             <div
               v-if="!isSelected && loaded && this.$route.params.id === ''"
               class="ticket-select"
@@ -135,11 +192,7 @@
                 </Transition>
               </div>
             </div>
-
-            <div class="workingMessage pt-2 mt-5 mb-5" v-if="!loaded">
-              <i class="fas fa-spinner fa-pulse"></i>
-              Reading tickets from blockchain, please wait..
-            </div>
+            <!-- TICKET SELECTION HIDE -->
 
             <div
               v-if="
@@ -202,6 +255,7 @@ export default {
   data() {
     return {
       isMobile: false,
+      openDetails: false,
       open: false,
       loaded: false,
       network: "ethereum",
@@ -217,9 +271,7 @@ export default {
   mounted() {
     const app = this;
     app.getTicketsInfo();
-    if (window.innerWidth < 992) {
-      app.isMobile = true;
-    }
+
     if (window.location.href.indexOf("plan") !== -1) {
       let parameters = window.location.href.split("&");
       for (let k in parameters) {
@@ -229,11 +281,22 @@ export default {
         }
       }
     }
+
+    if (window.innerWidth < 992) {
+      app.isMobile = true;
+      app.openDetails = false;
+    } else {
+      app.openDetails = true;
+      app.isMobile = false;
+    }
+
     window.addEventListener("resize", function () {
       if (window.innerWidth > 992) {
         app.isMobile = false;
+        app.openDetails = true;
       } else {
         app.isMobile = true;
+        app.openDetails = false;
       }
     });
   },
