@@ -58,19 +58,56 @@
               </div>
               <Transition name="slide">
                 <div v-if="openDetails" class="mt-2 mb-2">
-                  <div class="ticket-text">
-                    ^ 2-day admission to the unconference on May 25-26, 2022 at
-                    Alte Münze, Berlin
+                  <div v-if="boo_product === 'EARLYBIRD'">
+                    <div class="ticket-text">
+                      ^ 2-day admission to the unconference on May 25-26, 2022
+                      at Alte Münze, Berlin
+                    </div>
+
+                    <div class="ticket-text">
+                      ^ Eligible for an NFT crypto art ticket
+                    </div>
+
+                    <div class="ticket-text">^ Claimable official swag</div>
+
+                    <div class="ticket-text">
+                      ^ Admission to the NFTBERLIN After-Party
+                    </div>
                   </div>
+                  <div v-if="boo_product === 'FIRSTWAVE'">
+                    <div class="ticket-text">
+                      ^ 2-day admission to the unconference on May 25-26, 2022
+                      at Alte Münze, Berlin
+                    </div>
 
-                  <div class="ticket-text">
-                    ^ Eligible for an NFT crypto art ticket
+                    <div class="ticket-text">
+                      ^ Eligible for an NFT crypto art ticket
+                    </div>
+
+                    <div class="ticket-text">^ Claimable official swag</div>
+
+                    <div class="ticket-text">
+                      ^ Admission to the NFTBERLIN After-Party
+                    </div>
                   </div>
-
-                  <div class="ticket-text">^ Claimable official swag</div>
-
-                  <div class="ticket-text">
-                    ^ Admission to the NFTBERLIN After-Party
+                  <div v-if="boo_product === 'VIP'">
+                    <div class="ticket-text">
+                      ^ 2-day admission to the unconference on May 25-26, 2022
+                      at Alte Münze, Berlin
+                    </div>
+                    <div class="ticket-text">
+                      ^ Eligible for an NFT crypto art ticket
+                    </div>
+                    <div class="ticket-text">
+                      ^ Eligible for rare NFT crypto art collectibles
+                    </div>
+                    <div class="ticket-text">^ Claimable official swag</div>
+                    <div class="ticket-text">
+                      ^ Admission to the NFTBERLIN After-Party
+                    </div>
+                    <div class="ticket-text">
+                      ^ Admission to a private event with speakers and artists
+                    </div>
                   </div>
                 </div>
               </Transition>
