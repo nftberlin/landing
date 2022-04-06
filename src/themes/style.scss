@@ -975,7 +975,11 @@ footer {
   min-height: 100vh;
   height: auto;
   /* == >> FONTS << == */
-
+  h1.buying-title {
+    font-family: var(--display-ext);
+    font-size: 4rem;
+    color: #008d00;
+  }
   h3 {
     font-family: var(--display);
     font-weight: 600;
@@ -996,6 +1000,20 @@ footer {
     color: #00ff00;
     margin: 0;
   }
+  .info-ticket {
+    font-family: var(--neuebit);
+    color: #00ff00;
+    font-size: 2rem;
+  }
+  .info-wallet {
+    font-family: var(--neuebit);
+    color: #898989;
+    font-size: 2rem;
+    font-weight: 700;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   p {
     font-family: var(--neuebit);
     font-size: 2rem;
@@ -1007,13 +1025,17 @@ footer {
     border-radius: 0;
     font-weight: 500;
   }
-
+  .ascii-text {
+    font-family: var(--display-ext);
+    font-size: 1.5rem;
+    color: #898989;
+  }
   /* == >> / FONTS << == */
-
   .bordered {
     border: 1px solid #00ff00;
     padding: 10px;
   }
+
   .choose-pay {
     border: 2px solid #00ff00;
     padding: 5px;
@@ -1041,15 +1063,6 @@ footer {
     }
   }
 
-  input {
-    background-color: #272727;
-    border: 1px solid #00ff00;
-    padding: 7px 21px;
-    color: white;
-    font-family: var(--neuebit);
-    font-size: 1.5rem !important;
-  }
-
   .cta-section {
     padding: 3rem 0;
     border-top: 4px dashed #898989;
@@ -1073,6 +1086,46 @@ footer {
     }
   }
 
+  input {
+    background-color: #272727;
+    border: 1px solid #00ff00;
+    padding: 7px 21px;
+    color: white;
+    font-family: var(--neuebit);
+    font-size: 1.5rem !important;
+  }
+  .label {
+    font-family: var(--neuebit);
+    font-size: 1.5rem;
+  }
+
+  .specs-location {
+    h4 {
+      font-family: var(--neuebit);
+      font-size: 2rem;
+      line-height: 1;
+      color: #008d00;
+    }
+    .location {
+      margin-left: 1rem;
+      * {
+        box-sizing: border-box;
+        line-height: 1;
+        color: #898989;
+        margin: 0;
+      }
+      p {
+        font-size: 2rem;
+        font-family: var(--neuebit);
+      }
+
+      i {
+        font-size: 1rem;
+        margin: -0.2rem 0.5rem 0 0;
+      }
+    }
+  }
+
   .ticket-card {
     width: 100%;
     height: 100%;
@@ -1087,17 +1140,18 @@ footer {
       font-size: 2rem;
       line-height: 1;
     }
-    .ticket-text {
-      font-family: var(--neuebit);
-      font-weight: 700;
-      font-size: 1.5rem;
-      line-height: 150%;
-    }
+
     .ticket-price {
       font-family: var(--neuebit);
       font-weight: 700;
       font-size: 3rem;
       line-height: 150%;
+    }
+    .ticket-details {
+      color: #898989;
+      font-family: var(--neuebit);
+      font-size: 1.3rem;
+      cursor: pointer;
     }
     span {
       background: none;
@@ -1126,33 +1180,6 @@ footer {
       font-weight: 400;
       line-height: 125%;
       color: #05a605;
-    }
-
-    .specs-location {
-      h4 {
-        font-family: var(--neuebit);
-        font-size: 2rem;
-        line-height: 1;
-        color: #008d00;
-      }
-      .location {
-        margin-left: 1rem;
-        * {
-          box-sizing: border-box;
-          line-height: 1;
-          color: #898989;
-          margin: 0;
-        }
-        p {
-          font-size: 2rem;
-          font-family: var(--neuebit);
-        }
-
-        i {
-          font-size: 1rem;
-          margin: -0.2rem 0.5rem 0 0;
-        }
-      }
     }
   }
 
@@ -1238,9 +1265,20 @@ footer {
     }
   }
 
-  .label {
+  .ticket-text {
     font-family: var(--neuebit);
+    font-weight: 700;
     font-size: 1.5rem;
+    line-height: 150%;
+  }
+
+  .ticket-checkout-specs {
+    .checkout-ticket-title {
+      font-family: var(--display-ext);
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #00ff00;
+    }
   }
 }
 
@@ -1318,9 +1356,9 @@ footer {
   }
   h5 {
     font-family: var(--neuebit);
-    font-size: 1.6rem;
-    color: white;
-    font-weight: 400;
+    font-size: 2rem;
+    color: #898989;
+    font-weight: 700;
   }
   a {
     h5 {
@@ -1340,13 +1378,9 @@ footer {
   }
   .account {
     font-family: var(--neuebit);
-    font-weight: 400;
-    font-size: 1.6rem;
-    color: #ffffff;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 5px;
-    border: 1px solid #00ff00;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #00ff00;
   }
   .cta {
     font-family: var(--neuebit);
@@ -1362,9 +1396,40 @@ footer {
   input {
     min-width: 80%;
   }
-
   a {
     text-decoration: none;
+  }
+  p {
+   color: white;
+   font-family: var(--neuebit);
+   font-size: 1.5rem;
+   font-weight: 700; 
+  }
+  .btn-mint {
+    text-align: center;
+    width: 100% !important;
+  }
+  .cta-section {
+    padding: 3rem 0;
+    border-top: 4px dashed #898989;
+    border-bottom: 4px dashed #898989;
+    .cta-text {
+      font-family: var(--display-ext);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 125%;
+      text-align: center;
+      color: #898989;
+    }
+    .cat {
+      height: 87px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
   }
 }
 
