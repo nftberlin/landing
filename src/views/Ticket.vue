@@ -208,12 +208,12 @@ export default {
       open: false,
       loaded: false,
       // FOR TESTING
-      // stripe_key: "pk_test_hfFnYFjLsrdKfFw7IPEF6TzR",
+      stripe_key: "pk_test_hfFnYFjLsrdKfFw7IPEF6TzR",
       // END FOR TESTING
 
       //FOR PRODUCTION
-      stripe_key:
-        "pk_live_51KjN71FWMXWoRBMitAi1AZTXxmv4jkV7zNu0E90Bt7r4UTn7jGGqY7x5aZenRpL9rw2aQkZRKWTamZlrbRdhlfd200Dm1ARgR8",
+      // stripe_key:
+      //   "pk_live_51KjN71FWMXWoRBMitAi1AZTXxmv4jkV7zNu0E90Bt7r4UTn7jGGqY7x5aZenRpL9rw2aQkZRKWTamZlrbRdhlfd200Dm1ARgR8",
       // END FOR PRODUCTION
 
       network: "rinkeby",
