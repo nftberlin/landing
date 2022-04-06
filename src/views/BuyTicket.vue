@@ -52,7 +52,7 @@
       <h3 class="mb-4">Select your ticket</h3>
       <div class="workingMessage pt-2 mt-5 mb-5" v-if="!loaded">
         <i class="fas fa-spinner fa-pulse"></i>
-        Reading tickets from blockchain, please wait..
+        Reading ticket informations from blockchain, please wait..
       </div>
       <div v-if="loaded" class="row">
         <div class="col-12 col-md-6 col-lg-4">

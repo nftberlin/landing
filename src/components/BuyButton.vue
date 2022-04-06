@@ -17,7 +17,6 @@
         <div v-if="user !== undefined">
           Using {{ user }} as predefined user for payment.
         </div>
-
         <hr />
         <div v-if="Object.keys(payment).length > 0">
           {{ payment }}
@@ -26,54 +25,6 @@
       </div>
 
       <div v-if="!processCompleted">
-        <!-- Stripe customer details -->
-        <div v-if="processor === 'stripe' && user === undefined">
-          <div
-            v-if="!isWorking && Object.keys(payment).length === 0"
-            class="mb-3"
-          >
-            <div class="label mx-2 my-2">Name</div>
-            <input
-              type="text"
-              v-model="name"
-              placeholder="Insert your name here.."
-            />
-          </div>
-          <div
-            v-if="!isWorking && Object.keys(payment).length === 0"
-            class="mb-3"
-          >
-            <div class="label mx-2 my-2">Surname</div>
-            <input
-              type="text"
-              v-model="surname"
-              placeholder="Insert your surname here.."
-            />
-          </div>
-        </div>
-        <!-- Stripe customer details -->
-        <div
-          v-if="
-            !isWorking &&
-            Object.keys(payment).length === 0 &&
-            user === undefined
-          "
-          class="mb-3"
-        >
-          <div class="label mx-2 my-2">E-mail</div>
-          <input
-            type="text"
-            v-model="email"
-            placeholder="Insert your e-mail here.."
-          />
-        </div>
-        <div
-          class="btn-mint"
-          v-if="!isWorking && Object.keys(payment).length === 0"
-          @click="askPaymentDetails()"
-        >
-          Ask for payment details
-        </div>
         <!-- Blockchain payment -->
         <div
           v-if="
@@ -108,9 +59,7 @@
           <div class="mt-4 mb-4" v-if="txid">
             <h5 class="m-0">Check transaction status at:</h5>
             <a
-              :href="
-                'https://polygonscan.com/tx/' + txid.transactionHash
-              "
+              :href="'https://polygonscan.com/tx/' + txid.transactionHash"
               target="_blank"
             >
               <h5 class="m-0" v-if="txid.transactionHash !== undefined">
@@ -138,6 +87,7 @@
       <p class="cta">
         To purchase your ticket you need to connect your wallet.
       </p>
+      <input v-model="amount" />
       <div class="btn-mint" @click="connect()">Connect Wallet</div>
     </div>
   </div>
@@ -156,7 +106,6 @@ export default {
     "network",
     "boo_endpoint",
     "boo_product",
-    "stripe_key",
     "processor",
     "debug",
     "user",
@@ -170,14 +119,12 @@ export default {
       account: "",
       txid: "",
       balance: 0,
+      amount: 1,
       total: 0,
       isWorking: false,
       processCompleted: false,
       web3: "",
       workingMessage: "",
-      email: "",
-      name: "",
-      surname: "",
       payment: {},
       stripeElements: {},
       networks: {
@@ -189,19 +136,14 @@ export default {
       },
     };
   },
-  mounted() {
+  async mounted() {
     const app = this;
-    // Predefined user
-    if (app.user !== undefined) {
-      app.email = app.user.email;
-      app.name = app.user.name;
-      app.surname = app.user.surname;
-    }
-    // Init stripe component
-    if (app.stripe_key !== undefined) {
-      app.stripe = Stripe(app.stripe_key);
+    const stripe_boo = await app.axios.get(
+      app.boo_endpoint + "/stripe");
+    if (stripe_boo.data.stripe_pubkey !== undefined) {
+      app.stripe = Stripe(stripe_boo.data.stripe_pubkey);
       if (app.debug) {
-        console.log("STRIPE LOADED WITH KEY:", app.stripe_key);
+        console.log("STRIPE LOADED WITH KEY:", stripe_boo.data.stripe_pubkey);
       }
     }
     // Check if exists stripe callback
@@ -256,24 +198,16 @@ export default {
       });
       const provider = await web3Modal.connect();
       app.web3 = await new Web3(provider);
-
       const accounts = await app.web3.eth.getAccounts();
       if (accounts.length > 0) {
-        app.balance = await app.web3.eth.getBalance(accounts[0]);
         app.account = accounts[0];
-        app.balance = parseFloat(
-          app.web3.utils.fromWei(app.balance, "ether")
-        ).toFixed(10);
+        app.askPaymentDetails()
       }
     },
     async askPaymentDetails() {
       const app = this;
-      // TODO: Add a better e-mail validation here
       if (
-        !app.isWorking &&
-        app.email.length > 0 &&
-        app.email.indexOf("@") !== -1 &&
-        app.email.indexOf(".") !== -1
+        !app.isWorking
       ) {
         this.$emit("selected", true);
         app.isWorking = true;
@@ -287,9 +221,7 @@ export default {
             app.boo_endpoint + "/payments",
             {
               processor: processor,
-              email: app.email,
-              name: app.name,
-              surname: app.surname,
+              amount: app.amount,
               identifier: app.boo_product,
               address: app.account,
             }
@@ -297,7 +229,7 @@ export default {
           if (app.debug) {
             console.log("PAYMENT DETAILS", payment_details.data);
           }
-          console.log('Payment response is:', payment_details.data)
+          console.log("Payment response is:", payment_details.data);
           if (!payment_details.data.error) {
             app.payment = payment_details.data.payment;
             // Automatically init Stripe Payment
@@ -311,28 +243,29 @@ export default {
             }
           } else if (payment_details.data.payment !== undefined) {
             app.workingMessage = "Payment exists yet, restoring flow..";
-              app.payment = payment_details.data.payment;
-              const check = await app.axios.post(
-                app.boo_endpoint + "/payments/check",
-                {
-                  payment_id: payment_details.data.payment.paymentId,
-                }
-              );
-              console.log("Checked payment response is:", check.data)
-              if (check.data.error === true) {
+            app.payment = payment_details.data.payment;
+            const check = await app.axios.post(
+              app.boo_endpoint + "/payments/check",
+              {
+                payment_id: payment_details.data.payment.paymentId,
+              }
+            );
+            console.log("Checked payment response is:", check.data);
+            if (check.data.error === true) {
+              app.isWorking = false;
+              app.workingMessage = "";
+              app.initStripeElements();
+            } else {
+              setTimeout(function () {
                 app.isWorking = false;
                 app.workingMessage = "";
-                app.initStripeElements();
-              } else {
-                setTimeout(function () {
-                  app.isWorking = false;
-                  app.workingMessage = "";
-                  app.payment = payment_details.data.payment;
-                  app.checkPayment();
-                }, 4000);
-              }
+                app.payment = payment_details.data.payment;
+                app.checkPayment();
+              }, 4000);
+            }
           } else {
             app.isWorking = false;
+            app.account = "";
             app.workingMessage = "";
             alert(payment_details.data.message);
           }

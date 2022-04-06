@@ -149,7 +149,6 @@
             >
               <div v-if="boo_product === 'EARLYBIRD'">
                 <BuyButton
-                  :stripe_key="stripe_key"
                   :network="network"
                   boo_product="EARLYBIRD"
                   :boo_endpoint="boo_endpoint"
@@ -160,7 +159,6 @@
               </div>
               <div v-if="boo_product === 'FIRSTWAVE'">
                 <BuyButton
-                  :stripe_key="stripe_key"
                   :network="network"
                   boo_product="FIRSTWAVE"
                   :boo_endpoint="boo_endpoint"
@@ -171,7 +169,6 @@
               </div>
               <div v-if="boo_product === 'VIP'">
                 <BuyButton
-                  :stripe_key="stripe_key"
                   :network="network"
                   boo_product="VIP"
                   :boo_endpoint="boo_endpoint"
@@ -207,16 +204,7 @@ export default {
       isMobile: false,
       open: false,
       loaded: false,
-      // FOR TESTING
-      stripe_key: "pk_test_hfFnYFjLsrdKfFw7IPEF6TzR",
-      // END FOR TESTING
-
-      //FOR PRODUCTION
-      // stripe_key:
-      //   "pk_live_51KjN71FWMXWoRBMitAi1AZTXxmv4jkV7zNu0E90Bt7r4UTn7jGGqY7x5aZenRpL9rw2aQkZRKWTamZlrbRdhlfd200Dm1ARgR8",
-      // END FOR PRODUCTION
-
-      network: "rinkeby",
+      network: "ethereum",
       boo_product: "",
       boo_endpoint: process.env.VUE_APP_API_URL,
       infuraId: "57d9ea9ca92a4449933c2b7d7145187d",
