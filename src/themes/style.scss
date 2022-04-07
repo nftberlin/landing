@@ -1375,7 +1375,7 @@ footer {
   width: 100%;
   padding: 10px 16px;
   display: inline-block;
-  background-color: #FF6666;
+  background-color: #ff6666;
 
   transition: all 0.3s;
   vertical-align: middle;
@@ -1434,9 +1434,9 @@ footer {
     font-family: var(--neuebit);
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 125%;
-    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1;
+    color: #ff6666;
   }
   .label {
     font-family: var(--neuebit);

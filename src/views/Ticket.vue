@@ -289,7 +289,8 @@
               <div class="mt-5" v-if="!account && loaded">
                 <input style="display: none" v-model="amount" />
                 <p class="cta">
-                  To purchase your ticket you need to connect your wallet.
+                  To purchase your ticket you need <br />
+                  to connect your wallet.
                 </p>
               </div>
             </div>
