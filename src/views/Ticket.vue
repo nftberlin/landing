@@ -168,7 +168,7 @@
                     You will receive the "{{ boo_product }}" nft ticket to:
                    </p> -->
                   <p class="m-0">
-                    The ticket will be sent directly to a wallet address:
+                    The ticket will be sent directly to following wallet address:
                   </p>
                   <div class="account">
                     {{ account.substr(0, 8) + "..." + account.substr(-8) }}
@@ -280,7 +280,7 @@
                         </h5>
                       </a>
                     </div>
-                    <a href=""
+                    <a href="/manage-ticket"
                       ><div class="btn-ticket">MANAGE MY TICKETS</div></a
                     >
                   </div>
