@@ -99,13 +99,21 @@ body {
   box-sizing: border-box;
   border-bottom: 1px solid #00ff00;
   padding-bottom: 1.5rem;
+
   .banner-text {
     font-family: var(--display);
     font-weight: 400;
     font-size: 6rem;
     line-height: 1;
-    color: #ffffff;
+    color: #00ff00;
     box-sizing: border-box;
+
+    p {
+      font-family: var(--display);
+      font-weight: 400;
+      font-size: 6rem;
+      color: #00ff00;
+    }
   }
 }
 
@@ -130,6 +138,12 @@ body {
       max-width: 96px;
     }
 
+    .col-10 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
     .nav-links {
       display: flex;
       justify-content: center;
@@ -140,7 +154,7 @@ body {
         margin: 0 1rem;
         text-decoration: none;
         transition: 0.2s ease-in-out;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         &:hover {
           color: var(--white);
         }
@@ -153,6 +167,7 @@ body {
       align-items: center;
       svg {
         margin: 0 1rem;
+        margin-bottom: 0.3rem;
 
         path {
           transition: 0.2s ease-in-out;
@@ -179,7 +194,7 @@ body {
 
   p {
     font-family: var(--neuebit);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 125%;
   }
 
@@ -196,22 +211,31 @@ body {
         font-weight: 700;
       }
       h3 {
-        color: var(--white);
-        font-size: 2.5rem;
+        color: #989898;
+        font-size: 2rem;
         font-family: var(--display);
       }
 
       h1 {
         font-family: var(--display-ext);
-        font-size: 4rem;
+        font-size: 3rem;
         line-height: 125%;
         color: var(--green);
       }
 
-      div {
-        p:nth-child(2) {
-          margin-top: 2rem;
-        }
+      p {
+        margin-top: 4.375rem;
+      }
+
+      button {
+        background-color: #00ff00;
+        color: black;
+        font-size: 2rem;
+        font-weight: 700;
+        border: none;
+        font-family: var(--neuebit);
+        padding: 1rem 10rem;
+        margin-top: 1rem;
       }
     }
   }
@@ -268,6 +292,7 @@ body {
     color: var(--green);
     font-family: var(--display-ext);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -313,13 +338,20 @@ body {
         color: var(--green);
         font-family: var(--display-ext);
         font-weight: 700;
-        font-size: 4.5rem;
-        text-align: start;
+        font-size: 3.5rem;
+        text-align: center;
+
+        span {
+          font-size: 2.6rem;
+        }
       }
 
       .position {
         display: flex;
         align-items: baseline;
+        justify-content: center;
+        margin-top: 2rem;
+        
         h1 {
           font-weight: 400;
         }
@@ -350,7 +382,7 @@ body {
           color: var(--white);
           font-family: var(--display);
           position: relative;
-          font-size: 2.5rem;
+          font-size: 2rem;
           font-weight: 700;
           padding: 0 2rem;
         }
@@ -366,7 +398,7 @@ body {
       @include border-top-btm();
       position: relative;
       margin-bottom: 7.5rem;
-      width: fit-content;
+      width: 100%;
 
       h3 {
         color: var(--green);
@@ -419,7 +451,7 @@ body {
         color: var(--green);
         font-family: var(--display-ext);
         font-weight: 700;
-        font-size: 4rem;
+        font-size: 3.5rem;
         text-align: start;
         line-height: 110%;
 
@@ -574,7 +606,7 @@ body {
         font-family: var(--voyage);
         color: var(--green);
         font-weight: 700;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         margin-top: 1.875rem;
         max-inline-size: 85%;
       }
@@ -639,7 +671,7 @@ body {
   h3 {
     font-family: var(--neuebit);
     color: var(--white);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: start;
     margin: 3rem 0;
@@ -707,7 +739,7 @@ body {
     h1 {
       font-family: var(--display-ext);
       color: var(--green);
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-weight: 700;
     }
 
@@ -982,18 +1014,18 @@ footer {
   /* == >> FONTS << == */
   h1.buying-title {
     font-family: var(--display-ext);
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #008d00;
   }
   h3 {
     font-family: var(--display);
     font-weight: 600;
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   h4 {
     font-family: var(--display);
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3.7rem;
     line-height: 125%;
     color: #ffffff;
   }
@@ -1071,7 +1103,7 @@ footer {
       font-family: var(--display-ext);
       font-style: normal;
       font-weight: 400;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       line-height: 125%;
       text-align: center;
       color: #898989;
@@ -1092,11 +1124,11 @@ footer {
     padding: 7px 21px;
     color: white;
     font-family: var(--neuebit);
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
   }
   .label {
     font-family: var(--neuebit);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .specs-location {
@@ -1165,7 +1197,7 @@ footer {
       font-weight: 700;
       line-height: 125%;
       color: #00ff00;
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
     h2 {
       font-family: var(--display-ext);
@@ -1176,7 +1208,7 @@ footer {
     }
     h3 {
       font-family: var(--display-ext);
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 400;
       line-height: 125%;
       color: #05a605;
@@ -1188,7 +1220,7 @@ footer {
       font-family: var(--display);
       font-style: normal;
       font-weight: 400;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       line-height: 125%;
       color: white;
     }
@@ -1254,7 +1286,7 @@ footer {
         li {
           color: white;
           text-decoration: none;
-          font-size: 1.5rem;
+          font-size: 1.8rem;
           padding: 20px 16px;
           cursor: pointer;
           &:hover {
@@ -1450,7 +1482,7 @@ footer {
   p {
     color: white;
     font-family: var(--neuebit);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
   }
   .btn-mint {
@@ -1465,7 +1497,7 @@ footer {
       font-family: var(--display-ext);
       font-style: normal;
       font-weight: 400;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       line-height: 125%;
       text-align: left;
       color: #898989;

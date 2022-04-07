@@ -6,8 +6,11 @@ import './themes/resp.scss'
 import './fonts/stylesheet.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
+import MarqueeText from 'vue-marquee-text-component'
 
 
+
+Vue.component('marquee-text', MarqueeText)
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper,
 

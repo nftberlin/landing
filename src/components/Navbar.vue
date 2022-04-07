@@ -2,7 +2,12 @@
   <div class="navbar">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-5">
+        <div class="col-2 text-center">
+          <a href="/">
+            <img src="../assets/logo.svg" alt="logo" draggable="false"
+          /></a>
+        </div>
+        <div class="col-10">
           <div class="nav-links hideIpad">
             <!-- <a href="#team">Team</a> -->
             <a href="/#events">Event</a>
@@ -13,13 +18,7 @@
             <!-- / NOT IN PHASE 1 -->
             <!-- <a href="#team">Team</a> -->
           </div>
-        </div>
-        <div class="col-2 text-center">
-          <a href="/">
-            <img src="../assets/logo.svg" alt="logo" draggable="false"
-          /></a>
-        </div>
-        <div class="col-5">
+
           <div class="nav-social hideMobile">
             <a href="https://twitter.com/NFTBERLINteam" target="_blank">
               <svg
@@ -76,6 +75,10 @@
             >
           </div>
         </div>
+        
+        
+          
+        
       </div>
     </div>
   </div>

@@ -6,16 +6,14 @@
           <div class="title-content">
             <h3>The New Gestalt</h3>
             <h1>The Whole</h1>
-            <h1>Is Greater than</h1>
-            <h1>the Sum of Its Parts</h1>
+            <h1>Is Greater than the Sum</h1>
+            <h1>of Its Parts</h1>
             <div>
               <p>
-                Denying and pushing back against NFTs and crypto is basically
-                saying, “We’re not going to have a collectively owned future.
-                We’re going to have a corporate-owned future, and we’re going to
-                have a government-owned future.
+                Limited number of Bird tickets is now on sale<br />Full
+                unconference admission + NFT crypto art ticket + After-party
               </p>
-              <p>— Naval Ravikant</p>
+              <button>BUY NOW</button>
             </div>
           </div>
         </div>
@@ -49,8 +47,6 @@
 <script>
 export default {
   name: "Title",
-
-  
 };
 </script>
 

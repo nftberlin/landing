@@ -11,13 +11,19 @@
       <What />
       <Why />
     </div>
-
-    <Speakers /><!-- NOT in phase 1 -->
+    <div class="marquee">
+      <MarqueeText :repeat="10">
+        <div class="banner-text">
+          <p> - THE SPEAKERS - THE SPEAKERS</p>
+          </div>
+      </MarqueeText>
+    </div>
+    <Speakers />
 
     <div id="sponsors">
       <div class="marquee">
         <MarqueeText>
-          <div class="banner-text">
+          <div class="banner-text" :repeat="10">
             OUR SPONSORS OUR SPONSORS OUR SPONSORS OUR SPONSORS OUR SPONSORS OUR
             SPONSORS OUR SPONSORS
           </div>

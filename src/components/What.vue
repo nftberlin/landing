@@ -29,13 +29,13 @@
         </div>
 
         <div class="col-lg-6 hideIpad">
-          <!-- <img src="../assets/img-artwork.png" alt="" /> -->
+        
           <div id="img-art"></div>
 
           <div id="img-graf"></div>
         </div>
         <div class="col-lg-6 hideDesktop">
-          <img src="../assets/img-artwork.png" alt="" />
+          <img src="../assets/img-artwork.png" draggable="false" />
         </div>
       </div>
     </div>

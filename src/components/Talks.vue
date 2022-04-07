@@ -8,9 +8,11 @@
         <div class="col-sm-12 col-lg-10">
           <div class="black-filter"></div>
           <div class="talks-date">
-            <h1>Wed, Friday 25th-27th</h1>
+            <h1>
+              May 25-27, 2022<br />
+              <span>Alte Muenze, Berlin</span>
+            </h1>
             <div class="position">
-              <h1>May</h1>
               <div>
                 <img
                   src="../assets/icon-position.svg"
