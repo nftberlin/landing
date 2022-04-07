@@ -50,12 +50,7 @@
           <a href="/#events" @click="toggleMenu()">Event</a>
           <a href="/#what" @click="toggleMenu()">What/Why?</a>
           <a href="/#sponsors" @click="toggleMenu()">Sponsors</a>
-          <a
-            href="/ticket"
-            @click="toggleMenu()"
-            target="_blank"
-            >TICKETS</a
-          >
+          <a href="/ticket" @click="toggleMenu()">TICKETS</a>
           <!-- <a href="#team" @click="toggleMenu()">Team</a> -->
         </div>
 
@@ -109,11 +104,10 @@
               />
             </svg>
           </a>
-
         </div>
-                  <a href="/manage-ticket">
-            <div class="btn-mint" style="margin-top: 3rem">My Account</div></a
-          >
+        <a href="/manage-ticket">
+          <div class="btn-mint" style="margin-top: 3rem">My Account</div></a
+        >
       </div>
     </div>
   </div>

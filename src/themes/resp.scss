@@ -401,10 +401,17 @@
 
   .buy-button {
     .account {
-      font-size: 0.8rem;
+      font-size: 1.5rem;
     }
   }
   .ticket {
+    h1.buying-title {
+      font-size: 2rem;
+      margin: 0;
+    }
+    .info-wallet {
+      font-size: 1.5rem;
+    }
     .title-container {
       h1 {
         font-size: 3rem;
@@ -456,6 +463,28 @@
     }
     .btn-ticket {
       padding: 5px 16px;
+    }
+    .ticket-checkout-specs {
+      .checkout-ticket-title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .manage-tickets {
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .ticket-select {
+      .dropdown {
+        width: 100%;
+        max-width: 100%;
+      }
+      .dropdown__items li {
+        color: white;
+        padding: 20px 16px;
+        cursor: pointer;
+      }
     }
   }
 }

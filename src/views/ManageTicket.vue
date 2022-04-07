@@ -1,5 +1,5 @@
 <template>
-  <div class="ticket">
+  <div class="ticket manage-tickets">
     <Navbar />
     <MenuMobile class="hideDesktop" />
     <div class="gap hideMobile"></div>
@@ -7,9 +7,9 @@
       <div class="row">
         <div class="col-12 col-md-12 col-lg-7 mt-5">
           <div class="title-container">
-            <h2 class="white">Manage tickets</h2>
-            <h1>Claim your Ticket now</h1>
-            <h1>You can claim it up to 24H before the event</h1>
+            <h2 class="green_inactive">Manage tickets</h2>
+            <h3 class="green">Claim your Ticket now</h3>
+            <h3>You can claim it up to 24H before the event</h3>
           </div>
           <div v-if="!account" class="mt-5">
             <div class="btn-mint" @click="connect()">Connect Wallet</div>
@@ -61,17 +61,18 @@
                     v-model="email"
                     placeholder="Type your e-mail here.."
                   />
-                  <div
-                    class="btn-mint mx-3"
-                    style="padding: 11px 16px"
-                    @click="claim()"
-                  >
-                    CLAIM
-                  </div>
+                  <div class="btn-mint mx-3" @click="claim()">CLAIM</div>
                 </div>
+                <p class="mt-1 red" v-if="mailError.length > 0">
+                  {{ mailError }}
+                </p>
               </div>
             </div>
-            <div v-if="claimed.qr !== undefined" class="mb-5">
+            <div
+              v-if="claimed.qr !== undefined"
+              class="mb-5"
+              :class="{ 'text-center': isMobile }"
+            >
               <img class="bordered" :src="claimed.qr" />
               <div class="mb-3 mt-3">
                 <p>
@@ -108,6 +109,7 @@ export default {
   data() {
     return {
       isMobile: false,
+      mailError: "",
       infuraId: "57d9ea9ca92a4449933c2b7d7145187d",
       balance: 0,
       nfts: [],
@@ -127,6 +129,8 @@ export default {
     const app = this;
     if (window.innerWidth < 992) {
       app.isMobile = true;
+    } else {
+      app.isMobile = false;
     }
 
     window.addEventListener("resize", function () {
@@ -181,34 +185,41 @@ export default {
     },
     async claim() {
       const app = this;
-      try {
-        app.isWorking = true;
-        app.isClaiming = true;
-        app.workingMessage = "Sign message on your wallet";
-        const signature = await app.web3.eth.personal.sign(
-          "Claiming token " + app.tokenId + " for NftBerlin entrance.",
-          app.account
-        );
-        const claimed = await axios.post(
-          process.env.VUE_APP_API_URL + "/nfts/claim",
-          {
-            signature,
-            tokenId: app.tokenId,
-            email: app.email,
-          }
-        );
-        app.workingMessage = "Claiming your NFT";
-        console.log(signature);
-        setTimeout(function () {
+      if (app.email.length > 0) {
+        try {
+          app.isWorking = true;
+          app.isClaiming = true;
+          app.workingMessage = "Sign message on your wallet";
+          const signature = await app.web3.eth.personal.sign(
+            "Claiming token " + app.tokenId + " for NftBerlin entrance.",
+            app.account
+          );
+          const claimed = await axios.post(
+            process.env.VUE_APP_API_URL + "/nfts/claim",
+            {
+              signature,
+              tokenId: app.tokenId,
+              email: app.email,
+            }
+          );
+          app.workingMessage = "Claiming your NFT";
+          console.log(signature);
+          setTimeout(function () {
+            app.isWorking = false;
+            app.workingMessage = "";
+            app.claimed = claimed.data;
+          }, 2000);
+        } catch (e) {
+          alert(e.message);
           app.isWorking = false;
           app.workingMessage = "";
-          app.claimed = claimed.data;
-        }, 2000);
-      } catch (e) {
-        alert(e.message);
-        app.isWorking = false;
-        app.workingMessage = "";
-        window.location.reload();
+          window.location.reload();
+        }
+      } else {
+        app.mailError = "Insert an e-mail address please";
+        setTimeout(function () {
+          app.mailError = "";
+        }, 4000);
       }
     },
   },
