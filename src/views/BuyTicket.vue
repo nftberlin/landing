@@ -1,9 +1,9 @@
 <template>
   <div class="ticket">
-    <Navbar />
-    <MenuMobile class="hideDesktop" />
+    <Navbar v-if="!isMobile" />
+    <MenuMobile v-if="isMobile" />
     <div class="gap hideMobile"></div>
-    <div class="container mb-5" :class="{ 'pt-5': !isMobile }">
+    <div class="container mb-5 ipad-margin-top" :class="{ 'pt-5': !isMobile }">
       <div>
         <div class="title-container" :class="{ 'mt-5': !isMobile }">
           <h1 class="m-0">2-DAY</h1>
@@ -23,17 +23,17 @@
         <div class="cta-section mt-5">
           <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-2 col-lg-2">
-              <div class="cat hideMobile">
+              <div class="cat hideMobile displayIpad">
                 <img src="../assets/cat.png" alt="" />
               </div>
             </div>
-            <div class="col-12 col-md-4 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="cta-text">
                 money can’t buy happiness but it can buy nftberlin tickets
               </div>
             </div>
             <div class="col-12 col-md-2 col-lg-2">
-              <div class="cat hideMobile">
+              <div class="cat hideMobile displayIpad">
                 <img src="../assets/cat.png" alt="" />
               </div>
             </div>
@@ -143,6 +143,8 @@
                 }"
               >
                 <div class="ticket-title">Public / 2-day admission/</div>
+                <div class="mt-2" v-if="!isMobile"></div>
+                <br v-if="!isMobile" />
                 <div class="d-flex align-items-center justify-content-between">
                   <div
                     class="ticket-price"

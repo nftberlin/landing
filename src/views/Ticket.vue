@@ -1,9 +1,9 @@
 <template>
   <div class="ticket">
-    <Navbar />
-    <MenuMobile class="hideDesktop" />
+    <Navbar v-if="!isMobile" />
+    <MenuMobile v-if="isMobile" />
     <div class="gap hideMobile"></div>
-    <div class="container pb-5" :class="{ 'mt-5': !isMobile }">
+    <div class="container ipad-margin-top pb-5" :class="{ 'mt-5': !isMobile }">
       <h1
         v-if="!processCompleted"
         class="buying-title"
@@ -160,7 +160,7 @@
               </h5>
             </div>
 
-            <div class="buy-button">
+            <div class="buy-button ipad-margin-top">
               <div v-if="account">
                 <div class="mt-4" :class="{ 'mb-4': !isMobile }">
                   <h5 class="mb-2">Attendee details:</h5>

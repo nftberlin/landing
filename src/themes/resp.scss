@@ -111,6 +111,29 @@
 @media screen and (max-width: 1024px) {
 }
 
+@media only screen and (min-width: 819px) and (max-width: 1180px) {
+  .hideDesktop {
+    display: inline;
+  }
+  .hideMobile {
+    display: none;
+  }
+  .ipad-margin-top {
+    margin-top: 20px;
+  }
+  .displayIpad {
+    display: inline !important;
+  }
+  .ticket {
+    .ticket-card {
+      height: auto;
+      .ticket-details {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hideIpad {
     display: none !important;
