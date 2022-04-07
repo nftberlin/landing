@@ -139,7 +139,7 @@
           <div v-if="!account" @click="connect()" class="btn-ticket">
             connect wallet to buy
           </div>
-          <div v-if="account" class="btn-info">
+          <div v-if="account" class="btn-connected">
             connected: {{ account.substr(0, 8) + "..." + account.substr(-8) }}
           </div>
           <a href="https://metamask.io" target="_blank">
