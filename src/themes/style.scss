@@ -1371,6 +1371,29 @@ footer {
   }
 }
 
+.btn-mint-disabled {
+  width: 100%;
+  padding: 10px 16px;
+  display: inline-block;
+  background-color: #FF6666;
+
+  transition: all 0.3s;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-family: var(--neuebit);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+}
+
 .buy-button {
   h2 {
     font-family: var(--display);

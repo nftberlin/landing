@@ -46,7 +46,7 @@
                   public ticket
                 </div>
                 <div v-if="boo_product === 'VIP'" class="checkout-ticket-title">
-                  public ticket
+                  patron ticket
                 </div>
                 <div class="specs-location d-flex align-items-center mt-2">
                   <h4 class="m-0">25 -- 26 May, 2022</h4>
@@ -79,13 +79,9 @@
                       ^ 2-day admission to the unconference on May 25-26, 2022
                       at Alte Münze, Berlin
                     </div>
-
                     <div class="ticket-text">
                       ^ Eligible for an NFT crypto art ticket
                     </div>
-
-                    <div class="ticket-text">^ Claimable official swag</div>
-
                     <div class="ticket-text">
                       ^ Admission to the NFTBERLIN After-Party
                     </div>
@@ -219,11 +215,17 @@
                     <div id="payment-element"></div>
                     <br />
                     <div
-                      v-if="!isWorking"
+                      v-if="!isWorking && paymentCompleted"
                       class="btn-mint"
                       @click="payWithStripe()"
                     >
                       BUY NFTBERLIN TICKET
+                    </div>
+                    <div
+                      v-if="!isWorking && !paymentCompleted"
+                      class="btn-mint-disabled"
+                    >
+                      DETAILS NOT COMPLETED
                     </div>
                   </div>
                   <div
@@ -318,6 +320,7 @@ export default {
     return {
       isMobile: false,
       openDetails: false,
+      paymentCompleted: false,
       open: false,
       loaded: false,
       network: "ethereum",
@@ -560,11 +563,20 @@ export default {
     },
     async initStripeElements() {
       const app = this;
+      const appearance = {
+        theme: "night",
+      };
       app.stripeElements = app.stripe.elements({
         clientSecret: app.payment.stripePayment.client_secret,
+        appearance,
       });
       const paymentElement = app.stripeElements.create("payment");
       paymentElement.mount("#payment-element");
+      paymentElement.on("change", function (event) {
+        if (event.complete) {
+          app.paymentCompleted = true;
+        }
+      });
     },
     async payWithMetamask() {
       // const app = this;

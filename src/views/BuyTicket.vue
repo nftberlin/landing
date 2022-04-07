@@ -44,7 +44,7 @@
     <div class="container mb-5">
       <div class="workingMessage pt-2 mt-5 mb-5" v-if="!loaded">
         <i class="fas fa-spinner fa-pulse"></i>
-        Reading ticket informations from blockchain, please wait..
+        Loading ticket informations, please wait..
       </div>
       <div v-if="loaded" class="row">
         <div class="col-12 col-md-12 col-lg-4">
@@ -223,9 +223,11 @@
                   green_inactive: info['VIP'].active === false,
                 }"
               >
-                <div class="ticket-title">
-                  Patron / 2-day admission<br />
-                  + Private event
+                <div class="d-flex flex-row flex-md-column flex-lg-column">
+                  <div class="ticket-title">Patron / 2-day admission</div>
+                  <div class="ticket-title" :class="{ 'mx-2': isMobile }">
+                    + Private event
+                  </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
                   <div
@@ -266,7 +268,6 @@
                   <div class="ticket-text">
                     ^ Eligible for rare NFT crypto art collectibles
                   </div>
-                  <div class="ticket-text">^ Claimable official swag</div>
                   <div class="ticket-text">
                     ^ Admission to the NFTBERLIN After-Party
                   </div>
