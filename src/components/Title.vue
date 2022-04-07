@@ -13,7 +13,9 @@
                 Limited number of Bird tickets is now on sale<br />Full
                 unconference admission + NFT crypto art ticket + After-party
               </p>
-              <button>BUY NOW</button>
+              <button>
+                <router-link to="/ticket/:id"> BUY NOW</router-link>
+              </button>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
   <div class="speakers">
     <div class="container-fluid">
       <div class="speakers-title pad-x">
-        <h1 class="title-dbw">The <span>Speakers</span></h1>
+       <!--  <h1 class="title-dbw">The <span>Speakers</span></h1> -->
         <a href="#" class="external-btn">
           <button>
             <p>See all events</p>

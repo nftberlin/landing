@@ -12,11 +12,13 @@
       <Why />
     </div>
     <div class="marquee">
+
       <MarqueeText :repeat="10">
         <div class="banner-text">
           <p> - THE SPEAKERS - THE SPEAKERS</p>
           </div>
       </MarqueeText>
+      
     </div>
     <Speakers />
 
