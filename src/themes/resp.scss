@@ -294,6 +294,31 @@
     }
   }
 
+  .speakers .speakers-new .speaker .speaker-img-wrapper {
+    max-width: 317px;
+  }
+  .speakers .speakers-new .speaker h1 {
+    font-size: 2.5rem;
+  }
+  .speakers .speakers-new .speaker p {
+    font-size: 2rem;
+  }
+
+  .speakers .speakers-new .speaker .tw-handle {
+    margin-bottom: 3.25rem;
+  }
+
+  .speakers .speakers-new .row:nth-child(2) {
+    margin-top: 0;
+    display: none;
+  }
+
+  .speakers .new-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .sponsors {
     padding: 0;
     max-width: 100vw;

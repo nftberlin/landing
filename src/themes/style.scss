@@ -41,6 +41,9 @@ body {
   background-color: var(--black);
   color: var(--white) !important;
   position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 @mixin border-top-btm {
@@ -583,7 +586,8 @@ body {
   padding-top: 5rem;
   padding-bottom: 7.5rem;
   .container-fluid {
-    padding-right: 0;
+    padding: 0;
+    
   }
   .speakers-title {
     display: flex;
@@ -594,9 +598,26 @@ body {
     }
   }
 
-  .swiper {
+  .external-btn {
+    text-align: center;
+  }
+
+  .speakers-new {
     padding-left: 2.813rem;
     margin-top: 4.125rem;
+
+    .row {
+      max-width: 100vw;
+    }
+
+    .row:nth-child(2) {
+      margin-top: 3.5rem;
+     
+    }
+
+    .col-lg-2 {
+      padding: 0 !important;
+    }
 
     .speaker {
       text-align: start;
@@ -604,25 +625,32 @@ body {
         font-family: var(--display);
         color: var(--green);
         font-weight: 700;
-        font-size: 3rem;
+        font-size: 1.5rem;
         margin-top: 1.875rem;
         max-inline-size: 85%;
       }
 
       p {
         color: var(--white);
-        font-family: var(--worksans);
+        font-family: var(--neuebit);
         max-inline-size: 80%;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 100%;
+      }
+      .tw-handle {
+        color: #898989;
       }
 
       .speaker-img-wrapper {
         position: relative;
-        width: 20rem;
+        max-width: 175px;
 
         .speaker-bg {
           position: absolute;
-          top: 11px;
-          left: 11px;
+          top: 6px;
+          left: 6px;
           z-index: -1;
           background-color: var(--green);
           width: 100%;
@@ -635,10 +663,48 @@ body {
           aspect-ratio: 1/1;
           img {
             width: 100%;
+
             height: 100%;
             object-fit: cover;
           }
         }
+      }
+    }
+  }
+
+  .nft-ex{
+    padding: 0 2.813rem;
+    .ex-title{
+      background-color: #00ff00;
+      font-family: var(--display);
+      color: #000000;
+      font-size: 1.5rem;
+      border: 2px solid black;
+      outline: 2px solid #00ff00;
+      width: fit-content;
+      padding: 8px 21px;
+      margin-top: 6rem;
+    }
+
+    .col{
+      h2{
+        color: #00ff00;
+        font-family: var(--display-ext);
+        font-size: 1.5rem;
+        margin-top: 2.8rem;
+      }
+
+      p{
+        font-size: 1.5rem;
+        font-family: var(--neuebit);
+        font-weight: 700;
+        color: white;
+        line-height: 100%;
+        margin-top: 1rem;
+      }
+
+      .tw-handle{
+        color: #898989;
       }
     }
   }

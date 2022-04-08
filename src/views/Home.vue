@@ -15,7 +15,7 @@
 
       <MarqueeText :repeat="10">
         <div class="banner-text">
-          <p> - THE SPEAKERS - THE SPEAKERS</p>
+          <p> THE SPEAKERS - SPEAKERS -&nbsp; </p>
           </div>
       </MarqueeText>
       
@@ -26,8 +26,7 @@
       <div class="marquee">
         <MarqueeText>
           <div class="banner-text" :repeat="10">
-            OUR SPONSORS OUR SPONSORS OUR SPONSORS OUR SPONSORS OUR SPONSORS OUR
-            SPONSORS OUR SPONSORS
+           OUR SPONSORS  - OUR SPONSORS -&nbsp;
           </div>
         </MarqueeText>
       </div>

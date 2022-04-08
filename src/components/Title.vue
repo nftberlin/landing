@@ -14,7 +14,7 @@
                 unconference admission + NFT crypto art ticket + After-party
               </p>
               <button>
-                <router-link to="/ticket/:id"> BUY NOW</router-link>
+                <router-link to="/ticket/"> BUY NOW</router-link>
               </button>
             </div>
           </div>

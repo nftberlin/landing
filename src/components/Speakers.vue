@@ -2,19 +2,11 @@
   <div class="speakers">
     <div class="container-fluid">
       <div class="speakers-title pad-x">
-       <!--  <h1 class="title-dbw">The <span>Speakers</span></h1> -->
-        <a href="#" class="external-btn">
-          <button>
-            <p>See all events</p>
-            <span>
-              <img src="../assets/icon-external-link.svg" alt="" />
-            </span>
-          </button>
-        </a>
+        <!--  <h1 class="title-dbw">The <span>Speakers</span></h1> -->
       </div>
 
       <SpeakersSwiper />
-      <div class="swiper-btn-wrapper">
+      <!--  <div class="swiper-btn-wrapper">
         <button class="prev-el">
           <img
             src="../assets/icon-prev.svg"
@@ -29,7 +21,8 @@
             draggable="false"
           />
         </button>
-      </div>
+      </div> -->
+      
     </div>
   </div>
 </template>
@@ -43,6 +36,8 @@ export default {
   components: {
     SpeakersSwiper,
   },
+
+
 };
 </script>
 
