@@ -912,7 +912,8 @@ footer {
 
 .menu-mobile {
   background-color: black;
-  height: 8rem;
+  // height: 8rem;
+  height: 6rem;
   border-bottom: 1px solid var(--green);
   z-index: 1000;
   /* position: relative; */
@@ -1385,7 +1386,10 @@ footer {
 .btn-mint {
   border: 2px solid #00ff00;
   padding: 8px 16px;
+  vertical-align: middle;
   display: inline-block;
+  line-height: 1;
+  text-align: center;
   background-color: #000000;
   color: #00ff00;
   font-family: var(--neuebit);

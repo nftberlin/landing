@@ -259,7 +259,7 @@
 
       .col-lg-6:nth-child(1) {
         border: none;
-        /* padding-left: 1rem; */
+        padding-left: 1rem;
         padding-right: 1rem;
         .title-content {
           margin: 3rem 0;
@@ -271,6 +271,10 @@
           p {
             font-size: 1rem;
             padding-right: 2rem;
+          }
+          button {
+            width: 100%;
+            padding: 1rem 0rem;
           }
         }
       }
@@ -493,16 +497,35 @@
   .mobile-open-social {
     display: none !important;
   }
-
+  .btn-back {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    .square {
+      padding: 12px 16px;
+    }
+  }
   .buy-button {
-    .account {
+    .account,
+    .cta,
+    p {
+      font-size: 1rem;
+    }
+
+    h5 {
       font-size: 1.5rem;
     }
   }
   .ticket {
+    .mobile-mb-10 {
+      margin-bottom: 50px;
+    }
+    .ascii-text {
+      font-size: 1rem;
+    }
     h1.buying-title {
-      font-size: 2rem;
-      margin: 0;
+      font-size: 1.5rem;
+      margin: 10px 0;
     }
     .info-wallet {
       font-size: 1.5rem;
@@ -517,19 +540,16 @@
       h3 {
         font-size: 1.5rem;
       }
-
-      .specs-location {
-        h4 {
-          font-size: 1rem;
-        }
-        .location {
-          p {
-            font-size: 1rem;
-          }
-
-          i {
-            font-size: 1rem;
-          }
+    }
+    .specs-location {
+      margin-bottom: 10px;
+      h4 {
+        font-size: 1rem;
+      }
+      .location {
+        p,
+        i {
+          font-size: 1.5rem;
         }
       }
     }
@@ -562,7 +582,12 @@
     .ticket-checkout-specs {
       .checkout-ticket-title {
         font-size: 1.5rem;
+        margin-bottom: 10px;
       }
+    }
+
+    .ticket-text {
+      font-size: 1rem;
     }
   }
   .manage-tickets {

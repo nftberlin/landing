@@ -3,7 +3,7 @@
     <Navbar v-if="!isMobile" />
     <MenuMobile v-if="isMobile" />
     <div class="gap hideMobile"></div>
-    <div class="container ipad-margin-top pb-5 mobile-mb-10" :class="{ 'mt-5': !isMobile }">
+    <div class="container ipad-margin-top pb-5" :class="{ 'mt-5': !isMobile }">
       <h1
         v-if="!processCompleted"
         class="buying-title"
@@ -60,92 +60,86 @@
                     </div></a
                   >
                 </div>
-              </div>
-              <div
-                v-if="
-                  (!isMobile && (account || !account)) || (isMobile && !account)
-                "
-                class="mt-2 mb-2"
-              >
-                <div v-if="boo_product === 'EARLYBIRD'">
-                  <div class="ticket-text">
-                    ^ 2-day admission to the unconference on May 25-26, 2022 at
-                    Alte Münze, Berlin
-                  </div>
-                  <div class="ticket-text">
-                    ^ Eligible for an NFT crypto art ticket
-                  </div>
-                  <div class="ticket-text">
-                    ^ Admission to the NFTBERLIN After-Party
-                  </div>
-                </div>
-                <div v-if="boo_product === 'FIRSTWAVE'">
-                  <div class="ticket-text">
-                    ^ 2-day admission to the unconference on May 25-26, 2022 at
-                    Alte Münze, Berlin
-                  </div>
 
-                  <div class="ticket-text">
-                    ^ Eligible for an NFT crypto art ticket
-                  </div>
-
-                  <div class="ticket-text">^ Claimable official swag</div>
-
-                  <div class="ticket-text">
-                    ^ Admission to the NFTBERLIN After-Party
-                  </div>
-                </div>
-                <div v-if="boo_product === 'VIP'">
-                  <div class="ticket-text">
-                    ^ 2-day admission to the unconference on May 25-26, 2022 at
-                    Alte Münze, Berlin
-                  </div>
-                  <div class="ticket-text">
-                    ^ Eligible for an NFT crypto art ticket
-                  </div>
-                  <div class="ticket-text">
-                    ^ Eligible for rare NFT crypto art collectibles
-                  </div>
-                  <div class="ticket-text">^ Claimable official swag</div>
-                  <div class="ticket-text">
-                    ^ Admission to the NFTBERLIN After-Party
-                  </div>
-                  <div class="ticket-text">
-                    ^ Admission to a private event with speakers and artists
+                <div class="d-flex align-items-center justify-content-start">
+                  <div
+                    v-if="isMobile"
+                    class="ticket-details"
+                    @click="openDetails = !openDetails"
+                  >
+                    details <span v-if="openDetails">+</span>
+                    <span v-if="!openDetails">-</span>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              v-if="
-                (!isMobile && (account || !account)) || (isMobile && !account)
-              "
-              class="ascii-text mb-3"
-            >
-              //////////<br />
-              ////////<br />
-              //////<br />
-              ////<br />
-              //<br />
-              /
+              <Transition name="slide">
+                <div v-if="openDetails" class="mt-2 mb-2">
+                  <div v-if="boo_product === 'EARLYBIRD'">
+                    <div class="ticket-text">
+                      ^ 2-day admission to the unconference on May 25-26, 2022
+                      at Alte Münze, Berlin
+                    </div>
+                    <div class="ticket-text">
+                      ^ Eligible for an NFT crypto art ticket
+                    </div>
+                    <div class="ticket-text">
+                      ^ Admission to the NFTBERLIN After-Party
+                    </div>
+                  </div>
+                  <div v-if="boo_product === 'FIRSTWAVE'">
+                    <div class="ticket-text">
+                      ^ 2-day admission to the unconference on May 25-26, 2022
+                      at Alte Münze, Berlin
+                    </div>
+
+                    <div class="ticket-text">
+                      ^ Eligible for an NFT crypto art ticket
+                    </div>
+
+                    <div class="ticket-text">^ Claimable official swag</div>
+
+                    <div class="ticket-text">
+                      ^ Admission to the NFTBERLIN After-Party
+                    </div>
+                  </div>
+                  <div v-if="boo_product === 'VIP'">
+                    <div class="ticket-text">
+                      ^ 2-day admission to the unconference on May 25-26, 2022
+                      at Alte Münze, Berlin
+                    </div>
+                    <div class="ticket-text">
+                      ^ Eligible for an NFT crypto art ticket
+                    </div>
+                    <div class="ticket-text">
+                      ^ Eligible for rare NFT crypto art collectibles
+                    </div>
+                    <div class="ticket-text">^ Claimable official swag</div>
+                    <div class="ticket-text">
+                      ^ Admission to the NFTBERLIN After-Party
+                    </div>
+                    <div class="ticket-text">
+                      ^ Admission to a private event with speakers and artists
+                    </div>
+                  </div>
+                </div>
+              </Transition>
             </div>
           </div>
-
-          <p
-            class="info-ticket"
-            v-if="
-              (info[boo_product] !== undefined &&
-                !isMobile &&
-                (account || !account)) ||
-              (isMobile && !account)
-            "
-          >
+          <div class="ascii-text mb-3 hideMobile">
+            //////////<br />
+            ////////<br />
+            //////<br />
+            ////<br />
+            //<br />
+            /
+          </div>
+          <p class="info-ticket" v-if="info[boo_product] !== undefined">
             Ticket price is € {{ info[boo_product].price }}
           </p>
           <div v-if="!account" @click="connect()" class="btn-ticket">
             connect wallet to buy
           </div>
-          <div v-if="!isMobile && account" class="btn-connected">
+          <div v-if="account" class="btn-connected">
             connected: {{ account.substr(0, 8) + "..." + account.substr(-8) }}
           </div>
           <a href="https://metamask.io" target="_blank">
@@ -168,14 +162,13 @@
 
             <div class="buy-button ipad-margin-top">
               <div v-if="account">
-                <div class="mt-4 mb-4">
+                <div class="mt-4" :class="{ 'mb-4': !isMobile }">
                   <h5 class="mb-2">Attendee details:</h5>
                   <!-- <p class="m-0">
                     You will receive the "{{ boo_product }}" nft ticket to:
                    </p> -->
                   <p class="m-0">
-                    The ticket will be sent directly to following wallet
-                    address:
+                    The ticket will be sent directly to following wallet address:
                   </p>
                   <div class="account">
                     {{ account.substr(0, 8) + "..." + account.substr(-8) }}
@@ -293,7 +286,7 @@
                   </div>
                 </div>
               </div>
-              <div v-if="!account && loaded" :class="{ 'mt-5': !isMobile }">
+              <div class="mt-5" v-if="!account && loaded">
                 <input style="display: none" v-model="amount" />
                 <p class="cta">
                   To purchase your ticket you need <br />
@@ -305,12 +298,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="" :class="{ gap: isMobile }"></div> -->
-    <div v-if="isMobile && loaded && !isWorking" class="btn-back">
-      <a href="/ticket"
-        ><div class="btn-mint square"><i class="fa-solid fa-arrow-left"></i></div
-      ></a>
-    </div>
+    <div class="" :class="{ gap: isMobile }"></div>
   </div>
 </template>
 
@@ -332,8 +320,8 @@ export default {
   data() {
     return {
       isMobile: false,
+      openDetails: false,
       paymentCompleted: false,
-      hideDetailsTicket: false,
       open: false,
       loaded: false,
       network: "ethereum",
@@ -369,6 +357,7 @@ export default {
   async mounted() {
     const app = this;
     app.getTicketsInfo();
+
     if (window.location.href.indexOf("plan") !== -1) {
       let parameters = window.location.href.split("&");
       for (let k in parameters) {
@@ -700,19 +689,6 @@ export default {
       }
     },
   },
-  // watch: {
-  //   hideDetails() {
-  //     const app = this;
-  //     if (app.isMobile === true && app.account.length > 0) {
-  //       app.hideDetailsTicket = true;
-  //       console.log("siamo in mobile", app.isMobile);
-  //       console.log("esiste account", app.account);
-  //       console.log("dettagli sono nascoti", app.hideDetailsTicket);
-  //     } else {
-  //       app.hideDetailsTicket = false;
-  //     }
-  //   },
-  // },
 };
 </script>
 
