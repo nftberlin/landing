@@ -511,9 +511,26 @@
     p {
       font-size: 1rem;
     }
-
+    a {
+      h5 {
+        font-size: 1.2rem;
+      }
+    }
     h5 {
       font-size: 1.5rem;
+    }
+    .success-section {
+      padding: 0;
+      .cta-text {
+        font-family: var(--display-ext);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 125%;
+        text-align: left;
+        color: #898989;
+        margin-left: 2rem;
+      }
     }
   }
   .ticket {

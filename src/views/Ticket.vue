@@ -3,7 +3,10 @@
     <Navbar v-if="!isMobile" />
     <MenuMobile v-if="isMobile" />
     <div class="gap hideMobile"></div>
-    <div class="container ipad-margin-top pb-5 mobile-mb-10" :class="{ 'mt-5': !isMobile }">
+    <div
+      class="container ipad-margin-top pb-5 mobile-mb-10"
+      :class="{ 'mt-5': !isMobile }"
+    >
       <h1
         v-if="!processCompleted"
         class="buying-title"
@@ -243,10 +246,7 @@
                     {{ workingMessage }}
                   </div>
                 </div>
-                <div
-                  :class="{ 'mt-5': !isMobile, 'mt-3': isMobile }"
-                  v-if="processCompleted"
-                >
+                <div :class="{ 'mt-5': !isMobile }" v-if="processCompleted">
                   <div>
                     <div
                       class="success-section d-flex align-items-center justify-content-around"
@@ -259,7 +259,10 @@
                         see you soon in berlin
                       </div>
                     </div>
-                    <div class="mt-4 mb-4" v-if="txid">
+                    <div
+                      :class="{ 'mt-4 mb-4': !isMobile, 'mt-2 mb-2': isMobile }"
+                      v-if="txid"
+                    >
                       <h5 class="m-0">Check transaction status at:</h5>
                       <a
                         :href="
@@ -308,7 +311,8 @@
     <!-- <div class="" :class="{ gap: isMobile }"></div> -->
     <div v-if="isMobile && loaded && !isWorking" class="btn-back">
       <a href="/ticket"
-        ><div class="btn-mint square"><i class="fa-solid fa-arrow-left"></i></div
+        ><div class="btn-mint square">
+          <i class="fa-solid fa-arrow-left"></i></div
       ></a>
     </div>
   </div>
