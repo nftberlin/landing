@@ -117,6 +117,19 @@ body {
   cursor: default !important;
   pointer-events: none !important;
 }
+
+.ex-title {
+  background-color: #00ff00;
+  font-family: var(--display);
+  color: #000000;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  outline: 2px solid #00ff00;
+  width: fit-content;
+  padding: 8px 21px;
+  margin-top: 6rem;
+}
+
 /* ===== >>>>> NAVBAR <<<<< ===== */
 
 .navbar {
@@ -587,7 +600,6 @@ body {
   padding-bottom: 7.5rem;
   .container-fluid {
     padding: 0;
-    
   }
   .speakers-title {
     display: flex;
@@ -612,7 +624,6 @@ body {
 
     .row:nth-child(2) {
       margin-top: 3.5rem;
-     
     }
 
     .col-lg-2 {
@@ -672,29 +683,20 @@ body {
     }
   }
 
-  .nft-ex{
+  .nft-ex {
     padding: 0 2.813rem;
-    .ex-title{
-      background-color: #00ff00;
-      font-family: var(--display);
-      color: #000000;
-      font-size: 1.5rem;
-      border: 2px solid black;
-      outline: 2px solid #00ff00;
-      width: fit-content;
-      padding: 8px 21px;
-      margin-top: 6rem;
-    }
 
-    .col{
-      h2{
+    .col,
+    .col-sm-12,
+    .col-lg-2 {
+      h2 {
         color: #00ff00;
         font-family: var(--display-ext);
         font-size: 1.5rem;
         margin-top: 2.8rem;
       }
 
-      p{
+      p {
         font-size: 1.5rem;
         font-family: var(--neuebit);
         font-weight: 700;
@@ -703,7 +705,7 @@ body {
         margin-top: 1rem;
       }
 
-      .tw-handle{
+      .tw-handle {
         color: #898989;
       }
     }
@@ -742,6 +744,7 @@ body {
   }
 
   .row {
+    margin-top: 3rem;
     .col-lg-3,
     .col-6,
     .col-sm-p,
@@ -799,6 +802,7 @@ body {
 
   .anon-wrapper {
     display: flex;
+    margin-top: 3rem;
 
     h1 {
       font-family: var(--display-ext);

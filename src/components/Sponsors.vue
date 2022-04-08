@@ -2,7 +2,7 @@
   <div class="sponsors pad-x">
     <div class="container-fluid">
       <!-- <h1 class="title-dbw">Our <span>sponsors</span></h1> -->
-      <h3>Looks Rare</h3>
+      <div class="ex-title">LOOKS RARE</div>
       <div class="row rare">
         <div class="col-6">
           <a href="https://near.org/" target="_blank">
@@ -124,7 +124,7 @@
           ></a>
         </div>
       </div>
-      <h3>Epic</h3>
+      <div class="ex-title">EPIC</div>
       <div class="row epic">
         <div class="col-sm-p">
           <a href="https://capitalant.com/" target="_blank">
@@ -646,7 +646,7 @@
         </div>
       </div>
 
-      <h3>Anon</h3>
+      <div class="ex-title">ANON</div>
       <!--  <div class="row anon">
         <div class="col"><div>1</div></div>
         <div class="col"><div>2</div></div>

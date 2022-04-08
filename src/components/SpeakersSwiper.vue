@@ -3,7 +3,7 @@
     <div class="speakers-new">
       <!-- FIRST ROW -->
       <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -23,7 +23,7 @@
             <p class="tw-handle">@foresightinst</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -40,7 +40,7 @@
             <p class="tw-handle">@andy8052</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -60,7 +60,7 @@
             <p class="tw-handle">@StaniKulechov</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -80,7 +80,7 @@
             <p class="tw-handle">@Lenara</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -100,7 +100,7 @@
             <p class="tw-handle">@raffaelarein</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -125,7 +125,7 @@
       <!-- SECOND ROW -->
 
       <div class="row" id="toggle-speakers">
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -145,7 +145,7 @@
             <p class="tw-handle">@lililashka</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -162,7 +162,7 @@
             <p class="tw-handle">@VDiordiiev</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -182,7 +182,7 @@
             <p class="tw-handle">@StaniKulechov</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -199,7 +199,7 @@
             <p class="tw-handle">@Artisant</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -219,7 +219,7 @@
             <p class="tw-handle">@stephen_yo</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-2">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
           <div class="speaker">
             <div class="speaker-img-wrapper">
               <div class="speaker-bg"></div>
@@ -251,10 +251,10 @@
       </button>
     </a>
 
-    <div class="nft-ex" style="display: none">
+    <div class="nft-ex">
       <div class="ex-title">NFT EXHIBITION</div>
       <div class="row">
-        <div class="col">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
           <h2>
             COZOMO <br />
             DE' MEDICI
@@ -265,47 +265,47 @@
           </p>
           <p class="tw-handler">@CozomoMedici</p>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
           <h2>
-            COZOMO <br />
-            DE' MEDICI
+            Flamingo <br />
+            DAO
           </h2>
           <p>
-            Grand patron<br />
-            of the digital arts
+            A flamboyance of NFT collectors,<br />
+            curators and artists
           </p>
-          <p class="tw-handler"></p>
+          <p class="tw-handler">@FLAMINGODAO</p>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
           <h2>
-            COZOMO <br />
-            DE' MEDICI
+            Neon <br />
+            DAO
           </h2>
           <p>
-            Grand patron<br />
-            of the digital arts
+            A collective buildling <br />
+            out the metaverse
           </p>
-          <p class="tw-handler"></p>
+          <p class="tw-handler">@neon_dao</p>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
           <h2>
-            COZOMO <br />
-            DE' MEDICI
+            Kanosei <br />
+            MetaGallery
           </h2>
           <p>
-            Grand patron<br />
-            of the digital arts
+            The grand interactive<br />
+            NFT gallery
           </p>
-          <p class="tw-handler"></p>
+          <p class="tw-handler">@Kanosei.xyz</p>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
           <h2>
-            COZOMO <br />
-            DE' MEDICI
+            30+ CryptoPunks <br />
+            Exhibition
           </h2>
           <p>
-            Grand patron<br />
-            of the digital arts
+            Legendary Punks exhibition<br />
+            from various private collections
           </p>
           <p class="tw-handler"></p>
         </div>

@@ -13,7 +13,7 @@
     </div>
     <div class="marquee">
 
-      <MarqueeText :repeat="10">
+      <MarqueeText :repeat="25">
         <div class="banner-text">
           <p> THE SPEAKERS - SPEAKERS -&nbsp; </p>
           </div>
@@ -24,9 +24,10 @@
 
     <div id="sponsors">
       <div class="marquee">
-        <MarqueeText>
-          <div class="banner-text" :repeat="10">
-           OUR SPONSORS  - OUR SPONSORS -&nbsp;
+        <MarqueeText :repeat="25">
+          <div class="banner-text" >
+            <p>OUR SPONSORS  - OUR SPONSORS -&nbsp;</p>
+           
           </div>
         </MarqueeText>
       </div>
