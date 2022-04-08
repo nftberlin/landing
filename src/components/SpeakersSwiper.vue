@@ -1,6 +1,7 @@
 <template>
   <div class="new-section">
     <div class="speakers-new">
+      <div class="ex-title" style="margin-bottom: 2.8rem">SPEAKERS</div>
       <!-- FIRST ROW -->
       <div class="row">
         <div class="col-sm-6 col-lg-4 col-xl-2">
@@ -20,7 +21,12 @@
               Smilek
             </h1>
             <p>Creative Director<br />//Foresight Institute</p>
-            <p class="tw-handle">@foresightinst</p>
+            <a
+              href="https://twitter.com/foresightinst"
+              class="tw-handle"
+              target="_blank"
+              >@foresightinst</a
+            >
           </div>
         </div>
         <div class="col-sm-6 col-lg-4 col-xl-2">
@@ -37,7 +43,12 @@
             </div>
             <h1>Andy<br />Chorlian</h1>
             <p>Founder<br />//Fractional.art</p>
-            <p class="tw-handle">@andy8052</p>
+            <a
+              href="https://twitter.com/andy8052"
+              class="tw-handle"
+              target="_blank"
+              >@andy8052</a
+            >
           </div>
         </div>
         <div class="col-sm-6 col-lg-4 col-xl-2">
@@ -57,7 +68,12 @@
               Kulechov
             </h1>
             <p>Founder<br />//AAVE & Lens Protocol</p>
-            <p class="tw-handle">@StaniKulechov</p>
+            <a
+              href="https://twitter.com/StaniKulechov"
+              class="tw-handle"
+              target="_blank"
+              >@StaniKulechov</a
+            >
           </div>
         </div>
         <div class="col-sm-6 col-lg-4 col-xl-2">
@@ -77,7 +93,12 @@
               Gardener <br />
               & Invisible Economist<br />//StatelessDAO
             </p>
-            <p class="tw-handle">@Lenara</p>
+            <a
+              href="https://twitter.com/Lenara"
+              class="tw-handle"
+              target="_blank"
+              >@Lenara</a
+            >
           </div>
         </div>
         <div class="col-sm-6 col-lg-4 col-xl-2">
@@ -97,7 +118,12 @@
               Rein
             </h1>
             <p>Founder<br />//CareerFoundry</p>
-            <p class="tw-handle">@raffaelarein</p>
+            <a
+              href="https://twitter.com/raffaelarein"
+              class="tw-handle"
+              target="_blank"
+              >@raffaelarein</a
+            >
           </div>
         </div>
         <div class="col-sm-6 col-lg-4 col-xl-2">
@@ -117,7 +143,12 @@
               Bouteloup
             </h1>
             <p>Founder<br />//RektHQ, BlackPool</p>
-            <p class="tw-handle">@bneiluj</p>
+            <a
+              href="https://twitter.com/bneiluj"
+              class="tw-handle"
+              target="_blank"
+              >@bneiluj</a
+            >
           </div>
         </div>
       </div>
@@ -142,7 +173,12 @@
               Feyerabend
             </h1>
             <p>Web3 Designer, <br />Experimentalist</p>
-            <p class="tw-handle">@lililashka</p>
+            <a
+              href="https://twitter.com/lililashka"
+              class="tw-handle"
+              target="_blank"
+              >@lililashka</a
+            >
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
@@ -159,7 +195,12 @@
             </div>
             <h1>Viktor<br />Diordiiev</h1>
             <p>Token Economist</p>
-            <p class="tw-handle">@VDiordiiev</p>
+            <a
+              href="https://twitter.com/vdiordiiev"
+              class="tw-handle"
+              target="_blank"
+              >@VDiordiiev</a
+            >
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
@@ -179,7 +220,12 @@
               Katin
             </h1>
             <p>OG crypto artist, Founder<br />//StatelessDAO</p>
-            <p class="tw-handle">@StaniKulechov</p>
+            <a
+              href="https://twitter.com/stanikulechov"
+              class="tw-handle"
+              target="_blank"
+              >@StaniKulechov</a
+            >
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
@@ -196,7 +242,12 @@
             </div>
             <h1>Leila <br />Ismailova</h1>
             <p>Special projects curator<br />//Artisant</p>
-            <p class="tw-handle">@Artisant</p>
+            <a
+              href="https://twitter.com/artisantnft"
+              class="tw-handle"
+              target="_blank"
+              >@Artisant</a
+            >
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
@@ -216,7 +267,12 @@
               Young
             </h1>
             <p>Founder<br />//NFTfi</p>
-            <p class="tw-handle">@stephen_yo</p>
+            <a
+              href="https://twitter.com/stephen_yo"
+              class="tw-handle"
+              target="_blank"
+              >@stephen_yo</a
+            >
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
@@ -236,20 +292,25 @@
               Rolikova
             </h1>
             <p>//nftstandards.wtf</p>
-            <p class="tw-handle">@anettrolikova</p>
+            <a
+              href="https://twitter.com/anettrolikova"
+              class="tw-handle"
+              target="_blank"
+              >@anettrolikova</a
+            >
           </div>
         </div>
       </div>
     </div>
 
-    <a class="external-btn hideDesktop" @click="toggleSpeakers()">
+    <div class="external-btn hideDesktop" @click="toggleSpeakers()">
       <button>
         <p>See all speakers</p>
         <span>
-          <img src="../assets/icon-external-link.svg" alt="" />
+          <img src="../assets/icon-external-link.svg" draggable="false" />
         </span>
       </button>
-    </a>
+    </div>
 
     <div class="nft-ex">
       <div class="ex-title">NFT EXHIBITION</div>
@@ -263,7 +324,12 @@
             Grand patron<br />
             of the digital arts
           </p>
-          <p class="tw-handler">@CozomoMedici</p>
+          <a
+            href="https://twitter.com/CozomoMedici"
+            target="_blank"
+            class="tw-handle"
+            >@CozomoMedici</a
+          >
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
           <h2>
@@ -274,7 +340,12 @@
             A flamboyance of NFT collectors,<br />
             curators and artists
           </p>
-          <p class="tw-handler">@FLAMINGODAO</p>
+          <a
+            href="https://twitter.com/FLAMINGODAO"
+            class="tw-handle"
+            target="_blank"
+            >@FLAMINGODAO</a
+          >
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
           <h2>
@@ -285,7 +356,12 @@
             A collective buildling <br />
             out the metaverse
           </p>
-          <p class="tw-handler">@neon_dao</p>
+          <a
+            href="https://twitter.com/neon_dao"
+            class="tw-handle"
+            target="_blank"
+            >@neon_dao</a
+          >
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
           <h2>
@@ -296,7 +372,7 @@
             The grand interactive<br />
             NFT gallery
           </p>
-          <p class="tw-handler">@Kanosei.xyz</p>
+          <!-- <a href="" class="tw-handle" target="_blank">@Kanosei.xyz</a> -->
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
           <h2>
@@ -307,7 +383,6 @@
             Legendary Punks exhibition<br />
             from various private collections
           </p>
-          <p class="tw-handler"></p>
         </div>
       </div>
     </div>
