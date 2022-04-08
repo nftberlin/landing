@@ -3,7 +3,7 @@
     <Navbar />
     <MenuMobile class="hideDesktop" />
     <div class="gap hideMobile"></div>
-    <div class="container" :class="{ 'mt-5': !isMobile }">
+    <div class="container mb-5" :class="{ 'mt-5': !isMobile }">
       <div class="row">
         <div class="col-12 col-md-12 col-lg-7 mt-5">
           <div class="title-container">
