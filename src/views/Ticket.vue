@@ -290,8 +290,12 @@
                         </h5>
                       </a>
                     </div>
-                    <a href="/manage-ticket"
+                    <!-- <a href=""><div class="btn-ticket">MANAGE MY TICKETS</div></a> -->
+                    <!-- <a href="/manage-ticket"
                       ><div class="btn-ticket">MANAGE MY TICKETS</div></a
+                    > -->
+                    <a href=""
+                      ><div class="btn-ticket">VIEW TICKET ON OPENSEA</div></a
                     >
                   </div>
                 </div>
