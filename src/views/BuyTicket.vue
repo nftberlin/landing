@@ -208,7 +208,7 @@
               "
               class="btn-ticket btn-disabled"
             >
-              COOMING SOON
+              COMING SOON
             </div>
           </div>
         </div>

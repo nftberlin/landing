@@ -294,11 +294,13 @@
                     <!-- <a href="/manage-ticket"
                       ><div class="btn-ticket">MANAGE MY TICKETS</div></a
                     > -->
+                    <p class="mt-1 mb-1">If you couldn’t find your ticket on opensea, try the hidden item tab.</p>
                     <a
                       href="https://opensea.io/collection/nftberlintickets"
                       target="_blank"
                       ><div class="btn-ticket">VIEW TICKET ON OPENSEA</div></a
                     >
+                    <p></p>
                   </div>
                 </div>
               </div>
