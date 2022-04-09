@@ -151,7 +151,7 @@
           <div v-if="!isMobile && account" class="btn-connected">
             connected: {{ account.substr(0, 8) + "..." + account.substr(-8) }}
           </div>
-          <a href="https://metamask.io" target="_blank">
+          <a v-if="!account" href="https://metamask.io" target="_blank">
             <div class="info-wallet mt-3">What is a wallet?</div></a
           >
         </div>
@@ -294,7 +294,9 @@
                     <!-- <a href="/manage-ticket"
                       ><div class="btn-ticket">MANAGE MY TICKETS</div></a
                     > -->
-                    <a href="https://opensea.io/collection/nftberlintickets" target="_blank"
+                    <a
+                      href="https://opensea.io/collection/nftberlintickets"
+                      target="_blank"
                       ><div class="btn-ticket">VIEW TICKET ON OPENSEA</div></a
                     >
                   </div>
@@ -708,19 +710,6 @@ export default {
       }
     },
   },
-  // watch: {
-  //   hideDetails() {
-  //     const app = this;
-  //     if (app.isMobile === true && app.account.length > 0) {
-  //       app.hideDetailsTicket = true;
-  //       console.log("siamo in mobile", app.isMobile);
-  //       console.log("esiste account", app.account);
-  //       console.log("dettagli sono nascoti", app.hideDetailsTicket);
-  //     } else {
-  //       app.hideDetailsTicket = false;
-  //     }
-  //   },
-  // },
 };
 </script>
 
