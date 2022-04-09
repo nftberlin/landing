@@ -282,7 +282,7 @@
                         </h5>
                       </a>
                       <a
-                        :href="'https://mumbai.polygonscan.com/tx/' + txid"
+                        :href="'https://polygonscan.com/tx/' + txid"
                         target="_blank"
                       >
                         <h5 v-if="txid.transactionHash === undefined">

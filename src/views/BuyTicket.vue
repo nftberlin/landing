@@ -9,7 +9,7 @@
           <h1 class="m-0">2-DAY</h1>
           <h2 class="m-0">ticket</h2>
           <h3 class="m-0">nftberlin</h3>
-          <h3 class="m-0">uncoferencen</h3>
+          <h3 class="m-0">unconference</h3>
           <div class="specs-location d-flex align-items-start mt-4">
             <h4>25 - 26 May, 2022</h4>
             <a href="https://goo.gl/maps/eZZQap8PjCvQzVAM6" target="_blank">
