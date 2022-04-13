@@ -246,6 +246,12 @@
                     {{ workingMessage }}
                   </div>
                 </div>
+                <div
+                  class="workingMessage pt-2 mt-5 mb-5"
+                  v-if="processErrored"
+                >
+                  {{ workingMessage }}
+                </div>
                 <div :class="{ 'mt-5': !isMobile }" v-if="processCompleted">
                   <div>
                     <div
@@ -294,7 +300,10 @@
                     <!-- <a href="/manage-ticket"
                       ><div class="btn-ticket">MANAGE MY TICKETS</div></a
                     > -->
-                    <p class="mt-1 mb-1">If you couldn’t find your ticket on opensea, try the hidden item tab.</p>
+                    <p class="mt-1 mb-1">
+                      If you couldn’t find your ticket on opensea, try the
+                      hidden item tab.
+                    </p>
                     <a
                       href="https://opensea.io/collection/nftberlintickets"
                       target="_blank"
@@ -365,6 +374,7 @@ export default {
       total: 0,
       isWorking: false,
       processCompleted: false,
+      processErrored: false,
       web3: "",
       workingMessage: "",
       payment: {},
@@ -699,6 +709,10 @@ export default {
               if (mint.data.transaction !== undefined) {
                 app.txid = mint.data.transaction;
               }
+            } else {
+              app.isWorking = false;
+              app.processErrored = true;
+              app.workingMessage = mint.data.message;
             }
           } catch (e) {
             if (app.debug) {
