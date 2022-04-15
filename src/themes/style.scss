@@ -305,6 +305,24 @@ body {
       );
     }
   }
+
+  input {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    border: 1px solid #00ff00;
+    font-size: 2rem;
+    font-family: var(--neuebit);
+  }
+  input[type="submit"] {
+    background-color: #00ff00;
+    color: black;
+    font-family: var(--neuebit);
+    font-weight: 700;
+    margin-top: 10px;
+  }
 }
 
 /* ===== >>>>> / TITLE <<<<< ===== */

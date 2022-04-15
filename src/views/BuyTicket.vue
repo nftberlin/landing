@@ -122,12 +122,20 @@
             <div
               v-if="
                 info['EARLYBIRD'] !== undefined &&
-                (info['EARLYBIRD'].minted === info['EARLYBIRD'].limit ||
-                  info['EARLYBIRD'].active === false)
+                info['EARLYBIRD'].active === false
               "
               class="btn-ticket btn-disabled"
             >
               COMING SOON
+            </div>
+            <div
+              v-if="
+                info['EARLYBIRD'] !== undefined &&
+                info['EARLYBIRD'].minted === info['EARLYBIRD'].limit
+              "
+              class="btn-ticket btn-disabled"
+            >
+              SOLD OUT
             </div>
           </div>
         </div>
@@ -203,12 +211,20 @@
             <div
               v-if="
                 info['FIRSTWAVE'] !== undefined &&
-                (info['FIRSTWAVE'].minted === info['FIRSTWAVE'].limit ||
-                  info['FIRSTWAVE'].active === false)
+                info['FIRSTWAVE'].active === false
               "
               class="btn-ticket btn-disabled"
             >
               COMING SOON
+            </div>
+            <div
+              v-if="
+                info['FIRSTWAVE'] !== undefined &&
+                info['FIRSTWAVE'].minted === info['FIRSTWAVE'].limit
+              "
+              class="btn-ticket btn-disabled"
+            >
+              SOLD OUT
             </div>
           </div>
         </div>
@@ -288,14 +304,19 @@
               </div></a
             >
             <div
-              v-if="
-                info['VIP'] !== undefined &&
-                (info['VIP'].minted === info['VIP'].limit ||
-                  info['VIP'].active === false)
-              "
+              v-if="info['VIP'] !== undefined && info['VIP'].active === false"
               class="btn-ticket btn-disabled"
             >
               COMING SOON
+            </div>
+            <div
+              v-if="
+                info['VIP'] !== undefined &&
+                info['VIP'].minted === info['VIP'].limit
+              "
+              class="btn-ticket btn-disabled"
+            >
+              SOLD OUT
             </div>
           </div>
         </div>
