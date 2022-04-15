@@ -221,10 +221,10 @@
             </h1>
             <p>OG crypto artist, Founder<br />//StatelessDAO</p>
             <a
-              href="https://twitter.com/stanikulechov"
+              href="https://twitter.com/ilan_katin"
               class="tw-handle"
               target="_blank"
-              >@StaniKulechov</a
+              >@ilan_katin</a
             >
           </div>
         </div>
