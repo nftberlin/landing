@@ -1281,7 +1281,10 @@ footer {
     color: white;
     font-family: var(--neuebit);
     font-size: 1.8rem !important;
+    text-align: center;
+    font-weight: 700;
   }
+
   .label {
     font-family: var(--neuebit);
     font-size: 1.8rem;
@@ -1468,6 +1471,74 @@ footer {
       color: #00ff00;
     }
   }
+  .newsletter-form {
+    .form-control {
+      font-family: var(--neuebit);
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.1;
+      display: grid;
+      grid-template-columns: 1em auto;
+      gap: 0.5em;
+      background-color: transparent;
+      border: none;
+      color: #00ff00;
+      padding: 20px 0;
+    }
+    .form-control + .form-control {
+      margin-top: 1em;
+    }
+
+    .form-control--disabled {
+      color: var(--form-control-disabled);
+      cursor: not-allowed;
+    }
+
+    input[type="checkbox"] {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: black;
+      margin: 0;
+      font: inherit;
+      color: currentColor;
+      width: 1em;
+      height: 1em;
+      border: 1px solid #00ff00;
+      border-radius: 0;
+      transform: translateY(-0.075em);
+      display: grid;
+      place-content: center;
+      padding: 0;
+    }
+
+    input[type="checkbox"]::before {
+      content: "";
+      width: 0.65em;
+      height: 0.65em;
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+      transform: scale(0);
+      transform-origin: bottom left;
+      transition: 120ms transform ease-in-out;
+      box-shadow: inset 1em 1em #00ff00;
+      /* Windows High Contrast Mode */
+      background-color: #00ff00;
+    }
+
+    input[type="checkbox"]:checked::before {
+      transform: scale(1);
+    }
+
+    input[type="checkbox"]:focus {
+      outline: max(2px, 0.15em) solid currentColor;
+      outline-offset: max(2px, 0.15em);
+    }
+
+    input[type="checkbox"]:disabled {
+      --form-control-color: var(--form-control-disabled);
+      color: var(--form-control-disabled);
+      cursor: not-allowed;
+    }
+  }
 }
 
 .btn-mint {
@@ -1632,9 +1703,7 @@ footer {
   .label {
     font-family: var(--neuebit);
   }
-  input {
-    min-width: 80%;
-  }
+
   a {
     text-decoration: none;
   }

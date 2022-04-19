@@ -184,6 +184,38 @@
                     {{ account.substr(0, 8) + "..." + account.substr(-8) }}
                   </div>
                 </div>
+
+                <div
+                  v-if="!isWorking && !paymentCompleted && !newsletterAccepted"
+                  class="mt-5 newsletter-form"
+                >
+                  <p>
+                    You will need to generate the QR code to enter an event.
+                    Enter your email address below to be notified.
+                  </p>
+                  <input
+                    type="text"
+                    placeholder="Your email"
+                    style="width: 100%"
+                    v-model="email_address"
+                  />
+                  <label class="form-control">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      @click="checkedNewsletter = !checkedNewsletter"
+                    />
+                    Add me to the email list and notify me
+                  </label>
+                  <div
+                    v-if="checkedNewsletter && email_address.length > 0"
+                    class="btn-mint mt-4"
+                    @click="askPaymentDetails()"
+                  >
+                    CONFIRM EMAIL & PAY
+                  </div>
+                </div>
+
                 <div v-if="debug">
                   paying with <b>{{ processor }}</b>
                   <span v-if="processor === 'blockchain'">
@@ -219,7 +251,9 @@
                   <!-- Stripe payment -->
                   <div
                     v-show="
-                      Object.keys(payment).length > 0 && processor === 'stripe'
+                      Object.keys(payment).length > 0 &&
+                      processor === 'stripe' &&
+                      newsletterAccepted 
                     "
                   >
                     <div id="payment-element"></div>
@@ -355,6 +389,9 @@ export default {
       isMobile: false,
       paymentCompleted: false,
       hideDetailsTicket: false,
+      newsletterAccepted: false,
+      checkedNewsletter: false,
+      email_address: "",
       open: false,
       loaded: false,
       network: "ethereum",
@@ -500,11 +537,13 @@ export default {
       const accounts = await app.web3.eth.getAccounts();
       if (accounts.length > 0) {
         app.account = accounts[0];
-        app.askPaymentDetails();
+        // app.askPaymentDetails();
       }
     },
+
     async askPaymentDetails() {
       const app = this;
+      app.newsletterAccepted = true;
       if (!app.isWorking) {
         this.$emit("selected", true);
         app.isWorking = true;
@@ -521,6 +560,11 @@ export default {
               amount: app.amount,
               identifier: app.boo_product,
               address: app.account,
+              newsletter: {
+                name: "-",
+                surname: "-",
+                email: app.email_address,
+              },
             }
           );
           if (app.debug) {
