@@ -631,8 +631,6 @@ export default {
               identifier: app.boo_product,
               address: app.account,
               newsletter: {
-                name: "-",
-                surname: "-",
                 email: app.email_address,
               },
             }
