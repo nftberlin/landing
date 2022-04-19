@@ -4,7 +4,7 @@
     <MenuMobile v-if="isMobile" />
     <div class="gap hideMobile"></div>
     <div
-      class="container ipad-margin-top pb-5 mobile-mb-10"
+      class="container ipad-margin-top mobile-mb-10"
       :class="{ 'mt-5': !isMobile }"
     >
       <h1
@@ -173,7 +173,7 @@
 
             <div class="buy-button ipad-margin-top">
               <div v-if="account">
-                <div class="mt-4 mb-4">
+                <div v-if="!isMinting" class="mt-4 mb-4">
                   <h5 class="mb-2">Attendee details:</h5>
                   <!-- <p class="m-0">
                     You will receive the "{{ boo_product }}" nft ticket to:
@@ -276,10 +276,7 @@
                   </div>
 
                   <!-- IS MINTING SECTION -->
-                  <div
-                    :class="{ 'mt-5': !isMobile }"
-                    v-if="isWorking && isMinting"
-                  >
+                  <div :class="{ 'mt-5': !isMobile }" v-if="isMinting && isWorking">
                     <div>
                       <div
                         class="success-section d-flex align-items-center justify-content-around"
@@ -296,12 +293,12 @@
                         v-if="txid"
                       ></div>
                       <div
-                        class="workingMessage white d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5 mb-5"
+                        class="workingMessage white  d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5"
                       >
-                        <i class="fas fa-spinner fa-pulse"></i>
+                        <i class="white fas fa-spinner fa-pulse"></i>
                         {{ workingMessage }}
                       </div>
-                      <div class="mt-5 mb-5">
+                      <div class="mt-2 mb-5">
                         <p class="m-0 green">Check transaction status at:</p>
                         <a
                           :href="
@@ -482,7 +479,7 @@ export default {
       amount: 1,
       total: 0,
       isWorking: false,
-      isMinting: true,
+      isMinting: false,
       processCompleted: false,
       processErrored: false,
       web3: "",
@@ -634,8 +631,8 @@ export default {
               identifier: app.boo_product,
               address: app.account,
               newsletter: {
-                name: "Stefano",
-                surname: "Raniolo",
+                name: "-",
+                surname: "-",
                 email: app.email_address,
               },
             }
@@ -831,6 +828,7 @@ export default {
               clearInterval(mintInterval);
               app.isWorking = false;
               app.workingMessage = "";
+              app.isMinting = false;
               app.processCompleted = true;
               if (mint.data.transaction !== undefined) {
                 app.txid = mint.data.transaction;
