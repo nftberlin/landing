@@ -592,6 +592,10 @@ export default {
           app.payment = payment.data.payment;
           app.account = app.payment.purchase_address;
           app.checkPayment();
+        } else {
+          app.isWorking = false;
+          app.processErrored = true;
+          app.workingMessage = payment.data.message;
         }
       }
     },
@@ -673,6 +677,10 @@ export default {
               app.isWorking = false;
               app.workingMessage = "";
               app.mintNft();
+            } else {
+              app.isWorking = false;
+              app.processErrored = true;
+              app.workingMessage = check.data.message;
             }
           } catch (e) {
             if (app.debug) {
