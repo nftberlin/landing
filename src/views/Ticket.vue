@@ -152,7 +152,9 @@
             connected: {{ account.substr(0, 8) + "..." + account.substr(-8) }}
           </div>
           <a v-if="!account" href="https://metamask.io" target="_blank">
-            <div class="info-wallet mt-3">What is a wallet?</div></a
+            <div class="info-wallet underline_link mt-3">
+              What is a wallet?
+            </div></a
           >
         </div>
         <div class="col-12 col-md-12 col-lg-5 offset-lg-3">
@@ -180,7 +182,7 @@
                     The ticket will be sent directly to following wallet
                     address:
                   </p>
-                  <div class="account">
+                  <div class="account underline_link">
                     {{ account.substr(0, 8) + "..." + account.substr(-8) }}
                   </div>
                 </div>
@@ -253,7 +255,7 @@
                     v-show="
                       Object.keys(payment).length > 0 &&
                       processor === 'stripe' &&
-                      newsletterAccepted 
+                      newsletterAccepted
                     "
                   >
                     <div id="payment-element"></div>
@@ -272,9 +274,74 @@
                       DETAILS NOT COMPLETED
                     </div>
                   </div>
+
+                  <!-- IS MINTING SECTION -->
+                  <div
+                    :class="{ 'mt-5': !isMobile }"
+                    v-if="isWorking && isMinting"
+                  >
+                    <div>
+                      <div
+                        class="success-section d-flex align-items-center justify-content-around"
+                      >
+                        <div class="cta-text pt-5 pb-5">
+                          waiting for the blockchain goddess ...
+                        </div>
+                      </div>
+                      <div
+                        :class="{
+                          'mt-4 mb-4': !isMobile,
+                          'mt-2 mb-2': isMobile,
+                        }"
+                        v-if="txid"
+                      ></div>
+                      <div
+                        class="workingMessage white d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5 mb-5"
+                      >
+                        <i class="fas fa-spinner fa-pulse"></i>
+                        {{ workingMessage }}
+                      </div>
+                      <div class="mt-5 mb-5">
+                        <p class="m-0 green">Check transaction status at:</p>
+                        <a
+                          :href="
+                            'https://polygonscan.com/tx/' + txid.transactionHash
+                          "
+                          target="_blank"
+                        >
+                          <p
+                            class="m-0 underline_link"
+                            v-if="txid.transactionHash !== undefined"
+                          >
+                            {{
+                              txid.transactionHash.substr(0, 8) +
+                              "..." +
+                              txid.transactionHash.substr(-8)
+                            }}
+                          </p>
+                        </a>
+                        <a
+                          :href="'https://polygonscan.com/tx/' + txid"
+                          target="_blank"
+                        >
+                          <p
+                            class="underline_link green"
+                            v-if="txid.transactionHash === undefined"
+                          >
+                            {{ txid.substr(0, 8) + "..." + txid.substr(-8) }}
+                          </p>
+                        </a>
+                      </div>
+                      <div class="btn-ticket-working">
+                        BUYING NFTBERLIN TICKET
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Display working and error message -->
                   <div
                     class="workingMessage d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5 mb-5"
-                    v-if="isWorking"
+                    v-if="isWorking && !isMinting"
                   >
                     <i class="fas fa-spinner fa-pulse"></i>
                     {{ workingMessage }}
@@ -286,6 +353,8 @@
                 >
                   {{ workingMessage }}
                 </div>
+
+                <!-- Process Completed succesfully -->
                 <div :class="{ 'mt-5': !isMobile }" v-if="processCompleted">
                   <div>
                     <div
@@ -311,7 +380,7 @@
                         target="_blank"
                       >
                         <h5
-                          class="m-0"
+                          class="m-0 underline_link"
                           v-if="txid.transactionHash !== undefined"
                         >
                           {{
@@ -325,7 +394,10 @@
                         :href="'https://polygonscan.com/tx/' + txid"
                         target="_blank"
                       >
-                        <h5 v-if="txid.transactionHash === undefined">
+                        <h5
+                          class="underline_link"
+                          v-if="txid.transactionHash === undefined"
+                        >
                           {{ txid.substr(0, 8) + "..." + txid.substr(-8) }}
                         </h5>
                       </a>
@@ -410,6 +482,7 @@ export default {
       amount: 1,
       total: 0,
       isWorking: false,
+      isMinting: true,
       processCompleted: false,
       processErrored: false,
       web3: "",
@@ -561,8 +634,8 @@ export default {
               identifier: app.boo_product,
               address: app.account,
               newsletter: {
-                name: "-",
-                surname: "-",
+                name: "Stefano",
+                surname: "Raniolo",
                 email: app.email_address,
               },
             }
@@ -741,7 +814,8 @@ export default {
       const app = this;
       if (!app.isWorking) {
         app.isWorking = true;
-        app.workingMessage = "Checking nft..";
+        app.isMinting = true;
+        app.workingMessage = "Transaction pending ...";
         const mintInterval = setInterval(async function () {
           try {
             const mint = await app.axios.post(app.boo_endpoint + "/nfts/mint", {
@@ -763,6 +837,7 @@ export default {
               }
             } else {
               app.isWorking = false;
+              app.isMinting = false;
               app.processErrored = true;
               app.workingMessage = mint.data.message;
             }
@@ -772,6 +847,7 @@ export default {
               console.log(e.message);
             }
             app.isWorking = false;
+            app.isMinting = false;
             app.workingMessage = "";
           }
         }, 5000);
