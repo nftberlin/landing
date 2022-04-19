@@ -52,7 +52,7 @@
                   patron ticket
                 </div>
                 <div class="specs-location d-flex align-items-center mt-2">
-                  <h4 class="m-0">25 -- 26 May, 2022</h4>
+                  <h4 class="m-0">25 - 26 May, 2022</h4>
                   <a
                     href="https://goo.gl/maps/eZZQap8PjCvQzVAM6"
                     target="_blank"
@@ -188,7 +188,7 @@
                 </div>
 
                 <div
-                  v-if="!isWorking && !paymentCompleted && !newsletterAccepted"
+                  v-if="!isWorking && !processCompleted && !newsletterAccepted"
                   class="mt-5 newsletter-form"
                 >
                   <p>
@@ -276,7 +276,10 @@
                   </div>
 
                   <!-- IS MINTING SECTION -->
-                  <div :class="{ 'mt-5': !isMobile }" v-if="isMinting && isWorking">
+                  <div
+                    :class="{ 'mt-5': !isMobile }"
+                    v-if="isMinting && isWorking"
+                  >
                     <div>
                       <div
                         class="success-section d-flex align-items-center justify-content-around"
@@ -293,7 +296,7 @@
                         v-if="txid"
                       ></div>
                       <div
-                        class="workingMessage white  d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5"
+                        class="workingMessage white d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5"
                       >
                         <i class="white fas fa-spinner fa-pulse"></i>
                         {{ workingMessage }}
@@ -416,7 +419,10 @@
                   </div>
                 </div>
               </div>
-              <div v-if="!account && loaded" :class="{ 'mt-5': !isMobile }">
+              <div
+                v-if="!account && loaded"
+                :class="{ 'mt-5': !isMobile, 'pb-5': isMobile }"
+              >
                 <input style="display: none" v-model="amount" />
                 <p class="cta">
                   To purchase your ticket you need <br />
