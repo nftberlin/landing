@@ -165,10 +165,10 @@
                 info[boo_product].active === false
               "
             >
-              <h5>
+              <p>
                 The sale of this ticket is not active at the moment, please
                 retry later.
-              </h5>
+              </p>
             </div>
 
             <div class="buy-button ipad-margin-top">
