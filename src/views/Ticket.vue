@@ -373,43 +373,46 @@
                       :class="{ 'mt-4 mb-4': !isMobile, 'mt-2 mb-2': isMobile }"
                       v-if="txid"
                     >
-                      <h5 class="m-0">Check transaction status at:</h5>
-                      <a
-                        :href="
-                          'https://polygonscan.com/tx/' + txid.transactionHash
-                        "
-                        target="_blank"
-                      >
-                        <h5
-                          class="m-0 underline_link"
-                          v-if="txid.transactionHash !== undefined"
+                      <p><b>Hooray! You bought a NFTBERLIN ticket!</b></p>
+                      <div class="d-flex">
+                        <h5 class="m-0 green">Transaction:</h5>
+                        <a
+                          :href="
+                            'https://polygonscan.com/tx/' + txid.transactionHash
+                          "
+                          target="_blank"
                         >
-                          {{
-                            txid.transactionHash.substr(0, 8) +
-                            "..." +
-                            txid.transactionHash.substr(-8)
-                          }}
-                        </h5>
-                      </a>
-                      <a
-                        :href="'https://polygonscan.com/tx/' + txid"
-                        target="_blank"
-                      >
-                        <h5
-                          class="underline_link"
-                          v-if="txid.transactionHash === undefined"
+                          <h5
+                            class="m-0 underline_link green"
+                            v-if="txid.transactionHash !== undefined"
+                          >
+                            {{
+                              txid.transactionHash.substr(0, 8) +
+                              "..." +
+                              txid.transactionHash.substr(-8)
+                            }}
+                          </h5>
+                        </a>
+                        <a
+                          :href="'https://polygonscan.com/tx/' + txid"
+                          target="_blank"
                         >
-                          {{ txid.substr(0, 8) + "..." + txid.substr(-8) }}
-                        </h5>
-                      </a>
+                          <h5
+                            class="underline_link green"
+                            v-if="txid.transactionHash === undefined"
+                          >
+                            {{ txid.substr(0, 8) + "..." + txid.substr(-8) }}
+                          </h5>
+                        </a>
+                      </div>
                     </div>
                     <!-- <a href=""><div class="btn-ticket">MANAGE MY TICKETS</div></a> -->
                     <!-- <a href="/manage-ticket"
                       ><div class="btn-ticket">MANAGE MY TICKETS</div></a
                     > -->
-                    <p class="mt-1 mb-1">
-                      If you couldn’t find your ticket on opensea, try the
-                      hidden item tab.
+                    <p class="green mt-1 mb-1">
+                      You need to generate the QR code to use to enter an event.
+                      This feature will be ready soon.
                     </p>
                     <a
                       href="https://opensea.io/collection/nftberlintickets"
