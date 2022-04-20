@@ -320,6 +320,7 @@ body {
     line-height: 125%;
     font-family: var(--display-ext);
     text-align: center;
+
   }
   #mc_embed_signup .mc-field-group {
     width: 40%;
@@ -358,6 +359,9 @@ body {
   .clear {
     width: 40%;
     margin-left: 3rem;
+  }
+  #mc_embed_signup form {
+    padding: 0;
   }
   // #mc_embed_signup .mc-field-group {
   //   width: 50%;

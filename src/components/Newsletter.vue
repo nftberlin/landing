@@ -6,8 +6,8 @@
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="cta-subscribe">
-            <h3>ALPHA SUBSCRIBE FOR</h3>
-            <h3 class="green mt-3">NFT NEWS / ART / GAME / DAO / TECH</h3>
+            <h3>alpha Subscribe for</h3>
+            <h3 class="green mt-3">nft news / art / game / dao / tech </h3>
           </div>
           <link
             href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
