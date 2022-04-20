@@ -311,6 +311,9 @@ body {
 }
 #newsletter_component {
   border-bottom: 1px solid #00ff00;
+  .cta-subscribe {
+    margin-bottom: 50px;
+  }
   h3 {
     font-weight: 400;
     font-size: 1.75rem;
