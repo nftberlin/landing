@@ -308,9 +308,21 @@ body {
   form {
     padding: 0 !important;
   }
+}
+#newsletter_component {
+  border-bottom: 1px solid #00ff00;
+  h3 {
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 125%;
+    font-family: var(--display-ext);
+    text-align: center;
+  }
+  #mc_embed_signup .mc-field-group {
+    width: 40%;
+  }
   input,
   #mc_embed_signup .mc-field-group input {
-    width: 100%;
     text-align: center;
     padding: 1rem;
     color: white;
@@ -331,20 +343,23 @@ body {
     color: black;
     font-family: var(--neuebit);
     font-weight: 700;
-    margin: 10px 0;
+    margin: 0;
     font-size: 2rem;
-    padding: 20px 0;
+    padding: 25px 0;
     width: 100%;
     line-height: 1;
     vertical-align: middle;
     height: auto;
     text-transform: uppercase;
   }
-  #mc_embed_signup .mc-field-group {
-    width: 100%;
+  .clear {
+    width: 40%;
+    margin-left: 3rem;
   }
+  // #mc_embed_signup .mc-field-group {
+  //   width: 50%;
+  // }
 }
-
 /* ===== >>>>> / TITLE <<<<< ===== */
 
 /* ===== >>>>>  TALKS <<<<< ===== */
@@ -1604,8 +1619,8 @@ footer {
   width: 100%;
   padding: 10px 16px;
   display: inline-block;
-  border: 2px solid #304B30;
-  background-color: #304B30;
+  border: 2px solid #304b30;
+  background-color: #304b30;
   transition: all 0.3s;
   vertical-align: middle;
   box-sizing: border-box;

@@ -3,6 +3,7 @@
     <Navbar />
     <MenuMobile class="hideDesktop" />
     <Title />
+    <Newsletter />
     <div id="events">
       <Talks />
     </div>
@@ -12,22 +13,19 @@
       <Why />
     </div>
     <div class="marquee">
-
       <MarqueeText :repeat="25">
         <div class="banner-text">
-          <p> THE SPEAKERS - SPEAKERS -&nbsp; </p>
-          </div>
+          <p>THE SPEAKERS - SPEAKERS -&nbsp;</p>
+        </div>
       </MarqueeText>
-      
     </div>
     <Speakers />
 
     <div id="sponsors">
       <div class="marquee">
         <MarqueeText :repeat="25">
-          <div class="banner-text" >
-            <p>OUR SPONSORS  - OUR SPONSORS -&nbsp;</p>
-           
+          <div class="banner-text">
+            <p>OUR SPONSORS - OUR SPONSORS -&nbsp;</p>
           </div>
         </MarqueeText>
       </div>
@@ -48,6 +46,7 @@
 import Navbar from "@/components/Navbar.vue";
 import MenuMobile from "@/components/MenuMobile.vue";
 import Title from "@/components/Title.vue";
+import Newsletter from "@/components/Newsletter.vue";
 import Talks from "@/components/Talks.vue";
 import Team from "@/components/Team.vue";
 import What from "@/components/What.vue";
@@ -65,6 +64,7 @@ export default {
     Navbar,
     MenuMobile,
     Title,
+    Newsletter,
     Talks,
     Team,
     What,

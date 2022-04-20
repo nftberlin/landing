@@ -350,10 +350,11 @@
                 <div
                   class="workingMessage pt-2 mt-5 mb-5"
                   v-if="processErrored"
+                  v-html="workingMessage"
+                ></div>
+                <a v-if="processErrored" href="/ticket"
+                  ><div class="btn-ticket">LET'S TRY AGAIN</div></a
                 >
-                  {{ workingMessage }}
-                </div>
-
                 <!-- Process Completed succesfully -->
                 <div :class="{ 'mt-5': !isMobile }" v-if="processCompleted">
                   <div>
