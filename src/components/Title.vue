@@ -8,7 +8,7 @@
             <h1>The Whole</h1>
             <h1>Is Greater than the Sum</h1>
             <h1>of Its Parts</h1>
-            <!-- <div>
+            <div>
               <p>
                 Limited number of Bird tickets is now on sale<br />Full
                 unconference admission + NFT crypto art ticket + After-party
@@ -16,8 +16,8 @@
               <button>
                 <router-link to="/ticket/"> BUY NOW</router-link>
               </button>
-            </div> -->
-            <div>
+            </div>
+            <!-- <div>
               <p>
                 Our first wave of tickets is sold out :(<br />
                 Drop your email address below to be notified when the next wave
@@ -25,7 +25,7 @@
               </p>
               <div class="row">
                 <div class="col-12 col-md-10 col-lg-9">
-                  <!-- Begin Mailchimp Signup Form -->
+                  Begin Mailchimp Signup Form
                   <link
                     href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
                     rel="stylesheet"
@@ -64,7 +64,6 @@
                             style="display: none"
                           ></div>
                         </div>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div
                           style="position: absolute; left: -5000px"
                           aria-hidden="true"
@@ -88,7 +87,7 @@
                       </div>
                     </form>
                   </div>
-                  <!--End mc_embed_signup-->
+                  End mc_embed_signup
                   <div class="form-check">
                     <input
                       class="form-check-input"
@@ -103,7 +102,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 

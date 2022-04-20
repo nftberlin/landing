@@ -107,8 +107,7 @@
                 </div>
               </Transition>
             </div>
-            <!--TODO: riattivare tutti i pulsanti quando siamo produzione -->
-            <!-- <a href="/ticket/earlybird"
+            <a href="/ticket/earlybird"
               ><div
                 v-if="
                   info['EARLYBIRD'] !== undefined &&
@@ -137,7 +136,7 @@
               class="btn-ticket btn-disabled"
             >
               SOLD OUT
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-4" :class="{ 'mt-5': isMobile }">
@@ -197,8 +196,7 @@
                 </div>
               </Transition>
             </div>
-            <!--TODO: riattivare tutti i pulsanti quando siamo produzione -->
-            <!-- <a href="/ticket/public"
+            <a href="/ticket/public"
               ><div
                 v-if="
                   info['FIRSTWAVE'] !== undefined &&
@@ -227,7 +225,7 @@
               class="btn-ticket btn-disabled"
             >
               SOLD OUT
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-4" :class="{ 'mt-5': isMobile }">
@@ -293,8 +291,7 @@
                 </div>
               </Transition>
             </div>
-            <!--TODO: riattivare tutti i pulsanti quando siamo produzione -->
-            <!-- <a href="/ticket/patron"
+            <a href="/ticket/patron"
               ><div
                 v-if="
                   info['VIP'] !== undefined &&
@@ -320,7 +317,7 @@
               class="btn-ticket btn-disabled"
             >
               SOLD OUT
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
