@@ -10,7 +10,7 @@
             <h1>of Its Parts</h1>
             <div>
               <p>
-                Limited number of Bird tickets is now on sale<br />Full
+                Public tickets are now on sale<br />Full
                 unconference admission + NFT crypto art ticket + After-party
               </p>
               <button>
