@@ -410,7 +410,7 @@
                     <!-- <a href="/manage-ticket"
                       ><div class="btn-ticket">MANAGE MY TICKETS</div></a
                     > -->
-                    <p class="green mt-1 mb-1">
+                    <p class="green mt-1 mb-3">
                       You need to generate the QR code to use to enter an event.
                       This feature will be ready soon.
                     </p>
