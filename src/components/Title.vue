@@ -17,6 +17,7 @@
                 <router-link to="/ticket/"> BUY NOW</router-link>
               </button>
             </div>
+            <!-- INIT MAILCHIMP FORM -->
             <!-- <div>
               <p>
                 Our first wave of tickets is sold out :(<br />
@@ -103,6 +104,7 @@
                 </div>
               </div>
             </div> -->
+            <!-- END FORM MAILCHIMP -->
           </div>
         </div>
 
