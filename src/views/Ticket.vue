@@ -22,7 +22,15 @@
         SUCCESS!
       </h1>
       <div
-        class="workingMessage d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5 mb-5"
+        class="
+          workingMessage
+          d-flex
+          flex-column flex-md-row flex-lg-row
+          align-items-center
+          pt-2
+          mt-5
+          mb-5
+        "
         v-if="!loaded"
       >
         <i class="fas fa-spinner fa-pulse"></i>
@@ -212,9 +220,16 @@
                   <div
                     v-if="checkedNewsletter && email_address.length > 0"
                     class="btn-mint mt-4"
-                    @click="askPaymentDetails()"
+                    @click="askPaymentDetails('stripe')"
                   >
-                    CONFIRM EMAIL & PAY
+                    PAY WITH CARD
+                  </div>
+                  <div
+                    v-if="checkedNewsletter && email_address.length > 0"
+                    class="btn-mint mt-4"
+                    @click="askPaymentDetails('ethereum')"
+                  >
+                    PAY WITH ETHEREUM
                   </div>
                 </div>
 
@@ -241,11 +256,19 @@
                     v-if="
                       !isWorking &&
                       Object.keys(payment).length > 0 &&
-                      processor === 'blockchain'
+                      processor === 'ethereum'
+                    "
+                    style="
+                      font-family: 'NeueBit';
+                      font-size: 25px;
+                      line-height: 25px;
                     "
                   >
-                    Now send {{ payment.amount }} to<br />
-                    {{ payment.payment_intent }}<br /><br />
+                    Now please send {{ payment.amount }} ETH to<br />
+                    {{ payment.payment_intent.substr(0, 8).toUpperCase() }}...{{
+                      payment.payment_intent.substr(-8).toUpperCase()
+                    }}
+                    from your wallet.<br /><br />
                     <div class="btn-mint" @click="payWithMetamask()">
                       Pay with Metamask
                     </div>
@@ -282,7 +305,12 @@
                   >
                     <div>
                       <div
-                        class="success-section d-flex align-items-center justify-content-around"
+                        class="
+                          success-section
+                          d-flex
+                          align-items-center
+                          justify-content-around
+                        "
                       >
                         <div class="cta-text pt-5 pb-5">
                           waiting for the blockchain goddess ...
@@ -296,12 +324,20 @@
                         v-if="txid"
                       ></div>
                       <div
-                        class="workingMessage white d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5"
+                        class="
+                          workingMessage
+                          white
+                          d-flex
+                          flex-column flex-md-row flex-lg-row
+                          align-items-center
+                          pt-2
+                          mt-5
+                        "
                       >
                         <i class="white fas fa-spinner fa-pulse"></i>
                         {{ workingMessage }}
                       </div>
-                      <div class="mt-2 mb-5">
+                      <div class="mt-2 mb-5" v-if="txid.transactionHash">
                         <p class="m-0 green">Check transaction status at:</p>
                         <a
                           :href="
@@ -340,7 +376,15 @@
 
                   <!-- Display working and error message -->
                   <div
-                    class="workingMessage d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5 mb-5"
+                    class="
+                      workingMessage
+                      d-flex
+                      flex-column flex-md-row flex-lg-row
+                      align-items-center
+                      pt-2
+                      mt-5
+                      mb-5
+                    "
                     v-if="isWorking && !isMinting"
                   >
                     <i class="fas fa-spinner fa-pulse"></i>
@@ -359,7 +403,12 @@
                 <div :class="{ 'mt-5': !isMobile }" v-if="processCompleted">
                   <div>
                     <div
-                      class="success-section d-flex align-items-center justify-content-around"
+                      class="
+                        success-section
+                        d-flex
+                        align-items-center
+                        justify-content-around
+                      "
                     >
                       <div class="horse">
                         <img src="../assets/horse.png" alt="" />
@@ -477,7 +526,7 @@ export default {
       boo_product: "",
       boo_endpoint: process.env.VUE_APP_API_URL,
       infuraId: "57d9ea9ca92a4449933c2b7d7145187d",
-      processor: "stripe",
+      processor: "",
       debug: false,
       isSelected: false,
       info: {},
@@ -615,24 +664,25 @@ export default {
       const provider = await web3Modal.connect();
       app.web3 = await new Web3(provider);
       const accounts = await app.web3.eth.getAccounts();
-      if (accounts.length > 0) {
-        app.account = accounts[0];
-        // app.askPaymentDetails();
+      const network = await app.web3.eth.net.getId();
+      if (network === 1) {
+        if (accounts.length > 0) {
+          app.account = accounts[0];
+          // app.askPaymentDetails();
+        }
+      } else {
+        alert("Switch to Ethereum Mainnet!");
       }
     },
-
-    async askPaymentDetails() {
+    async askPaymentDetails(processor) {
       const app = this;
+      app.processor = processor;
       app.newsletterAccepted = true;
       if (!app.isWorking) {
         this.$emit("selected", true);
         app.isWorking = true;
         app.workingMessage = "Asking for payment details, please wait..";
         try {
-          let processor = app.processor;
-          if (processor === "blockchain") {
-            processor = app.network;
-          }
           const payment_details = await app.axios.post(
             app.boo_endpoint + "/payments",
             {
@@ -659,6 +709,9 @@ export default {
               app.isWorking = false;
               app.workingMessage = "";
               app.initStripeElements();
+            } else {
+              app.isWorking = false;
+              app.workingMessage = "";
             }
           } else if (payment_details.data.payment !== undefined) {
             app.workingMessage = "Payment exists yet, restoring flow..";
@@ -680,7 +733,7 @@ export default {
                 app.workingMessage = "";
                 app.payment = payment_details.data.payment;
                 app.checkPayment();
-              }, 4000);
+              }, 10000);
             }
           } else {
             app.isWorking = false;
@@ -739,8 +792,35 @@ export default {
       });
     },
     async payWithMetamask() {
-      // const app = this;
-      // TODO: Process metamask payment
+      const app = this;
+      if (!app.isWorking) {
+        app.isWorking = true;
+        app.workingMessage = "Please confirm operation with your Metamask..";
+        try {
+          await app.web3.eth
+            .sendTransaction({
+              to: app.payment.payment_intent,
+              from: app.account,
+              value: app.web3.utils.toWei(
+                app.payment.amount.toString(),
+                "ether"
+              ),
+            })
+            .on("transactionHash", (tx) => {
+              app.workingMessage =
+                "Waiting for pending transaction at " +
+                tx.substr(0, 4) +
+                ".." +
+                tx.substr(-4) +
+                "...";
+            });
+          app.isWorking = false;
+          app.checkPayment();
+        } catch (e) {
+          alert(e.message);
+          app.isWorking = false;
+        }
+      }
     },
     async payWithStripe() {
       const app = this;
