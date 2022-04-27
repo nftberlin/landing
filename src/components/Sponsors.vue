@@ -644,51 +644,126 @@
             </div>
           </a>
         </div>
+        <div class="col-sm-p">
+          <a href="https://www.cometh.io/" target="_blank">
+            <div>
+              <img
+                src="../assets/sponsor/epic_1.png"
+                style="max-height: 100px; height: auto"
+                alt=""
+              />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-p">
+          <a href="https://www.cometh.io/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/epic_1.svg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-p">
+          <a href="https://blackpool.finance/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/blackpool.svg" alt="" />
+            </div>
+          </a>
+        </div>
       </div>
 
       <div class="ex-title">ANON</div>
-      <!--  <div class="row anon">
-        <div class="col"><div>1</div></div>
-        <div class="col"><div>2</div></div>
-        <div class="col"><div>3</div></div>
-        <div class="col"><div>4</div></div>
-        <div class="col"><div>5</div></div>
-        <div class="col"><div>6</div></div>
-        <div class="col"><div>7</div></div>
-        <div class="col"><div>8</div></div>
-      </div> -->
-
-      <div class="anon-wrapper">
-        <h1>Soon to be announced</h1>
-        <div class="row anon">
-          <div class="col">
-            <div>1</div>
-          </div>
-          <div class="col">
-            <div>1</div>
-          </div>
-          <div class="col">
-            <div>1</div>
-          </div>
-          <div class="col">
-            <div>1</div>
-          </div>
+      <div class="row anon">
+        <div class="col-sm-p">
+          <a href="https://www.darkblock.io/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/darkblock.svg" alt="" />
+            </div>
+          </a>
         </div>
-        <div class="row anon">
-          <div class="col">
-            <div>1</div>
-          </div>
-          <div class="col">
-            <div>1</div>
-          </div>
-          <div class="col">
-            <div>1</div>
-          </div>
-          <div class="col">
-            <div>1</div>
-          </div>
+        <div class="col-sm-p">
+          <a href="https://www.nftfi.com/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/nftfi.svg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-p">
+          <a href="https://www.renft.io/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/renft.svg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-p">
+          <a href="https://www.sharding.capital/" target="_blank">
+            <div>
+              <img
+                src="../assets/sponsor/sharding.svg"
+                alt=""
+                style="max-height: 100px; height: auto"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-p">
+          <a href="https://www.onfuel.io/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/fuel.svg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-p">
+          <a href="https://www.zesty.market/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/zesty.svg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-p">
+          <a href="https://violet.co/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/violet.png" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-p">
+          <a href="https://jpg.space/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/jpg.svg" alt="" />
+            </div>
+          </a>
         </div>
       </div>
+
+      <!-- <div class="anon-wrapper">
+        <h1>Soon to be announced</h1>
+        <div class="row anon">
+          <div class="col"><div>1</div></div>
+          <div class="col">
+            <div>1</div>
+          </div>
+          <div class="col">
+            <div>1</div>
+          </div>
+          <div class="col">
+            <div>1</div>
+          </div>
+        </div>
+        <div class="row anon">
+          <div class="col">
+            <div>1</div>
+          </div>
+          <div class="col">
+            <div>1</div>
+          </div>
+          <div class="col">
+            <div>1</div>
+          </div>
+          <div class="col">
+            <div>1</div>
+          </div>
+        </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -699,5 +774,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

@@ -60,6 +60,10 @@ body {
   font-family: var(--neuebit);
 }
 
+.blend-mode {
+  mix-blend-mode: color;
+}
+
 .hideDesktop {
   display: none;
 }
@@ -320,7 +324,6 @@ body {
     line-height: 125%;
     font-family: var(--display-ext);
     text-align: center;
-
   }
   #mc_embed_signup .mc-field-group {
     width: 40%;
@@ -833,6 +836,7 @@ body {
       }
     }
   }
+
   .rare {
     .col-6 {
       @include border-right();
@@ -869,6 +873,26 @@ body {
     }
   }
 
+  .anon {
+    .col-sm-p {
+      @include border-right();
+      margin-top: 2rem;
+      width: 20%;
+
+      div {
+        /* height: 5rem;
+        max-height: 5rem; */
+        /* aspect-ratio: 2/1; */
+        min-height: 8rem;
+      }
+    }
+
+    .col-sm-p:nth-child(8),
+    .col-sm-p:nth-child(5) {
+      border: none;
+    }
+  }
+
   .anon-wrapper {
     display: flex;
     margin-top: 3rem;
@@ -886,19 +910,19 @@ body {
     }
   }
 
-  .anon {
-    .col {
-      @include border-right();
-      &.col:nth-last-child(1) {
-        border: none;
-      }
+  // .anon {
+  //   .col {
+  //     @include border-right();
+  //     &.col:nth-last-child(1) {
+  //       border: none;
+  //     }
 
-      div {
-        aspect-ratio: 1/1;
-        min-height: 5rem;
-      }
-    }
-  }
+  //     div {
+  //       aspect-ratio: 1/1;
+  //       min-height: 5rem;
+  //     }
+  //   }
+  // }
 }
 
 /* ===== >>>>> / SPONSORS <<<<< ===== */
