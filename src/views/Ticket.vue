@@ -222,7 +222,7 @@
                     class="btn-mint mt-4"
                     @click="askPaymentDetails('stripe')"
                   >
-                    PAY WITH CARD
+                    PAY WITH FIAT
                   </div>
                   <div
                     v-if="checkedNewsletter && email_address.length > 0"
