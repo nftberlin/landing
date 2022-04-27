@@ -22,15 +22,7 @@
         SUCCESS!
       </h1>
       <div
-        class="
-          workingMessage
-          d-flex
-          flex-column flex-md-row flex-lg-row
-          align-items-center
-          pt-2
-          mt-5
-          mb-5
-        "
+        class="workingMessage d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5 mb-5"
         v-if="!loaded"
       >
         <i class="fas fa-spinner fa-pulse"></i>
@@ -264,13 +256,19 @@
                       line-height: 25px;
                     "
                   >
-                    Now please send {{ payment.amount }} ETH to<br />
-                    {{ payment.payment_intent.substr(0, 8).toUpperCase() }}...{{
-                      payment.payment_intent.substr(-8).toUpperCase()
-                    }}
-                    from your wallet.<br /><br />
+                    Confirm the purchase of one NFTBERLIN ticket at
+                    {{ payment.amount }} ETH.
+                    <!-- <p>
+                      to<br />
+                      {{
+                        payment.payment_intent.substr(0, 8).toUpperCase()
+                      }}...{{
+                        payment.payment_intent.substr(-8).toUpperCase()
+                      }}
+                      from your wallet.<br /><br />
+                    </p> -->
                     <div class="btn-mint" @click="payWithMetamask()">
-                      Pay with Metamask
+                      Pay with web3 wallet
                     </div>
                   </div>
                   <!-- Stripe payment -->
@@ -305,12 +303,7 @@
                   >
                     <div>
                       <div
-                        class="
-                          success-section
-                          d-flex
-                          align-items-center
-                          justify-content-around
-                        "
+                        class="success-section d-flex align-items-center justify-content-around"
                       >
                         <div class="cta-text pt-5 pb-5">
                           waiting for the blockchain goddess ...
@@ -324,15 +317,7 @@
                         v-if="txid"
                       ></div>
                       <div
-                        class="
-                          workingMessage
-                          white
-                          d-flex
-                          flex-column flex-md-row flex-lg-row
-                          align-items-center
-                          pt-2
-                          mt-5
-                        "
+                        class="workingMessage white d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5"
                       >
                         <i class="white fas fa-spinner fa-pulse"></i>
                         {{ workingMessage }}
@@ -376,15 +361,7 @@
 
                   <!-- Display working and error message -->
                   <div
-                    class="
-                      workingMessage
-                      d-flex
-                      flex-column flex-md-row flex-lg-row
-                      align-items-center
-                      pt-2
-                      mt-5
-                      mb-5
-                    "
+                    class="workingMessage d-flex flex-column flex-md-row flex-lg-row align-items-center pt-2 mt-5 mb-5"
                     v-if="isWorking && !isMinting"
                   >
                     <i class="fas fa-spinner fa-pulse"></i>
@@ -403,12 +380,7 @@
                 <div :class="{ 'mt-5': !isMobile }" v-if="processCompleted">
                   <div>
                     <div
-                      class="
-                        success-section
-                        d-flex
-                        align-items-center
-                        justify-content-around
-                      "
+                      class="success-section d-flex align-items-center justify-content-around"
                     >
                       <div class="horse">
                         <img src="../assets/horse.png" alt="" />
@@ -423,8 +395,8 @@
                       v-if="txid"
                     >
                       <p><b>Hooray! You bought a NFTBERLIN ticket!</b></p>
-                      <div class="d-flex">
-                        <h5 class="m-0 green">Transaction:</h5>
+                      <div class="d-flex align-items-baseline">
+                        <h5 class="m-0 green pe-3">Transaction:</h5>
                         <a
                           :href="
                             'https://polygonscan.com/tx/' + txid.transactionHash
