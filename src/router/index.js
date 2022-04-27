@@ -5,6 +5,7 @@ import Ticket from "../views/Ticket.vue";
 import ManageTicket from "../views/ManageTicket.vue";
 import BuyTicket from "../views/BuyTicket.vue";
 import Newsletter from "../views/Newsletter.vue";
+import Hackathon from "../views/Hackathon.vue";
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,11 @@ const routes = [
     path: "/ticket",
     name: "Ticket",
     component: BuyTicket,
+  },
+  {
+    path: "/hackathon",
+    name: "Hackathon",
+    component: Hackathon,
   },
   {
     path: "/newsletter",

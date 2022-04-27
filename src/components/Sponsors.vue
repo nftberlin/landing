@@ -656,9 +656,13 @@
           </a>
         </div>
         <div class="col-sm-p">
-          <a href="https://www.cometh.io/" target="_blank">
+          <a href="https://urbit.org/" target="_blank">
             <div>
-              <img src="../assets/sponsor/epic_1.svg" alt="" />
+              <img
+                src="../assets/sponsor/epic_1.svg"
+                alt=""
+                style="max-height: 70px; height: auto"
+              />
             </div>
           </a>
         </div>
