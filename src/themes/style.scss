@@ -60,6 +60,41 @@ body {
   font-family: var(--neuebit);
 }
 
+@mixin btn-transparent {
+  border: 2px solid #00ff00;
+  padding: 8px 16px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  background-color: #000000;
+  color: #00ff00;
+  font-family: var(--neuebit);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  cursor: pointer;
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+  &:hover {
+    background-color: #00ff00;
+    color: black;
+  }
+}
+.no-border {
+  border: none !important;
+}
+.no-margin-top {
+  margin-top: 0 !important;
+}
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
 .blend-mode {
   mix-blend-mode: color;
 }
@@ -1185,6 +1220,9 @@ footer {
 /* ===== >>>>> HACKATHON <<<<< ===== */
 
 #hackathon {
+  a:hover {
+    text-decoration: none;
+  }
   .title-container {
     h1 {
       font-family: var(--display-ext);
@@ -1243,6 +1281,93 @@ footer {
     font-size: 2rem;
     line-height: 120%;
     color: #ffffff;
+    span.title-p {
+      font-family: var(--display);
+      color: #00ff00;
+      font-weight: 700;
+    }
+  }
+  .btn-apply {
+    @include btn-transparent();
+    svg {
+      height: 0.9rem;
+    }
+    &:hover {
+      svg {
+        path {
+          fill: #000000;
+        }
+      }
+    }
+  }
+  .sponsors {
+    padding-bottom: 0;
+  }
+  .title-section {
+    font-family: var(--neuebit);
+    font-size: 4.5rem;
+  }
+  p.prizes-p {
+    font-family: var(--neuebit);
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    span {
+      font-size: 1rem;
+    }
+  }
+  .judges {
+    border-top: none;
+
+    .speakers-new {
+      .speaker {
+        text-align: start;
+        h3 {
+          font-family: var(--display-ext);
+          color: var(--green);
+          font-weight: 700;
+          font-size: 1rem;
+          margin-top: 1rem;
+          max-inline-size: 85%;
+        }
+
+        p {
+          color: var(--white);
+          font-family: var(--neuebit);
+          margin: 0;
+          box-sizing: border-box;
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 1;
+        }
+
+        .speaker-img-wrapper {
+          position: relative;
+          max-width: 175px;
+
+          .speaker-bg {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            z-index: -1;
+            background-color: var(--green);
+            width: 100%;
+            height: 100%;
+          }
+
+          .speaker-img {
+            border: 1px solid var(--green);
+            background-color: var(--black);
+            aspect-ratio: 1/1;
+            img {
+              width: 100%;
+
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
   }
 }
 /* ===== >>>>> HACKATHON <<<<< ===== */
@@ -1656,29 +1781,7 @@ footer {
 }
 
 .btn-mint {
-  border: 2px solid #00ff00;
-  padding: 8px 16px;
-  vertical-align: middle;
-  display: inline-block;
-  line-height: 1;
-  text-align: center;
-  background-color: #000000;
-  color: #00ff00;
-  font-family: var(--neuebit);
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  cursor: pointer;
-  * {
-    margin: 0;
-    box-sizing: border-box;
-    transition: all 0.3s;
-  }
-  &:hover {
-    background-color: #00ff00;
-    color: black;
-  }
+  @include btn-transparent();
 }
 
 .btn-ticket {
