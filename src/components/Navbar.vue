@@ -15,6 +15,7 @@
             <!-- NOT IN PHASE 1 -->
             <a href="/#sponsors">Sponsors</a>
             <a href="/ticket">Tickets</a>
+            <a href="/hackathon">Hackathon</a>
             <!-- / NOT IN PHASE 1 -->
             <!-- <a href="#team">Team</a> -->
           </div>
@@ -68,7 +69,7 @@
                 />
               </svg>
             </a>
-           <!-- TODO: rimettere questo pulsante quando la pagina "Menage my tickets è definitiva" -->
+            <!-- TODO: rimettere questo pulsante quando la pagina "Menage my tickets è definitiva" -->
             <!-- <a href="/manage-ticket">
               <div class="btn-mint" style="margin-left: 3rem">
                 My Account
@@ -76,10 +77,6 @@
             > -->
           </div>
         </div>
-        
-        
-          
-        
       </div>
     </div>
   </div>

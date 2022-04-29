@@ -19,13 +19,6 @@
             </div></a
           >
         </div>
-        <div
-          data-tf-widget="IfK7eO1K"
-          data-tf-iframe-props="title=NFTBERLIN & Encode Club Hackathon Application Form"
-          data-tf-medium="snippet"
-          data-tf-hidden="source=xxxxx"
-          style="width: 100%; height: 450px"
-        ></div>
       </div>
       <div class="d-flex align-items-center">
         <div class="number green">1 + 1</div>
@@ -49,8 +42,10 @@
           and non-programmers, who are familiar with all feasible technical
           solutions and not necessarily tied to a specific blockchain.
           <br /><br />
-          The event is organised in partnership with Encode Club, a web3
-          education community.
+          The event is organised in partnership with
+          <a href="https://www.encode.club/" class="green" target="_blank"
+            >Encode Club</a
+          >, a web3 education community.
         </p>
       </div>
       <a href="https://0kqadugptxn.typeform.com/to/YkwgQFCu" target="_blank">
@@ -402,9 +397,17 @@
           hackers, you'll be reimbursed the difference between the amounts upon
           submission of your project.
         </p>
+
         <div class="text-center mt-5 mb-5">
-          <img src="../assets/sponsor/encode_club.png" height="150px" alt="" />
+          <a href="https://www.encode.club/" target="_blank">
+            <img
+              src="../assets/sponsor/encode_club.png"
+              height="150px"
+              alt=""
+            />
+          </a>
         </div>
+
         <p>
           Encode Club is a web3 education community learning and building
           together through fantastic programmes with the leading protocols in
