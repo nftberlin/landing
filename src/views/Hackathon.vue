@@ -5,13 +5,13 @@
     <div class="gap hideMobile"></div>
     <div class="container">
       <div class="title-container pt-5 pb-5" :class="{ 'mt-5': !isMobile }">
-        <h1 class="m-0 green_inactive">nftberlin</h1>
-        <h2 class="m-0 white_inactive">hackathon</h2>
+        <h1 class="m-0 green_inactive">nftberlin &</h1>
+        <h2 class="m-0 white_inactive">Encode Club Hackathon</h2>
         <div
           class="specs-location d-flex align-items-start"
           :class="{ 'mt-4': !isMobile, 'mt-2': isMobile }"
         >
-          <h4>26th - 28th May</h4>
+          <h4>27th - 28th May</h4>
           <a href="https://goo.gl/maps/eZZQap8PjCvQzVAM6" target="_blank">
             <div class="d-flex align-items-center location">
               <i class="fa-solid fa-location-dot"></i>
@@ -19,6 +19,13 @@
             </div></a
           >
         </div>
+        <div
+          data-tf-widget="IfK7eO1K"
+          data-tf-iframe-props="title=NFTBERLIN & Encode Club Hackathon Application Form"
+          data-tf-medium="snippet"
+          data-tf-hidden="source=xxxxx"
+          style="width: 100%; height: 450px"
+        ></div>
       </div>
       <div class="d-flex align-items-center">
         <div class="number green">1 + 1</div>
@@ -27,17 +34,23 @@
       </div>
       <div class="mt-4 mb-4">
         <p>
-          NFTBERLIN Hackathon fosters synergy and innovation by providing irl
-          platform for builders and artists to learn and create together.
+          The NFTBERLIN & Encode Club Hackathon fosters synergy and innovation
+          by providing an irl platform for builders and artists to learn and
+          create together.
           <br /><br />
 
-          Builders have set the foundations of Web3 landscape and unraveled the
-          power of communities and creatives. We believe NFTs will play a major
-          role in deconstructing the current status quo of centralized ownership
-          and want to explore the potential of the technology through intensive
-          cooperation and learning. We encourage all blockchain-agnostic devs,
-          designers and digital artists to meet together in Berlin and design
-          the next generation of digital assets.
+          Builders have set the foundations of the Web3 landscape and unraveled
+          the power of communities and creatives. We believe NFTs will play a
+          major role in deconstructing the current status quo of centralized
+          ownership and want to explore the potential of the technology through
+          intensive cooperation and learning.<br /><br />
+          We want to accelerate progress and provide creative solutions to real
+          (NFT) world problems. Therefore, we welcome hackers, both programmers
+          and non-programmers, who are familiar with all feasible technical
+          solutions and not necessarily tied to a specific blockchain.
+          <br /><br />
+          The event is organised in partnership with Encode Club, a web3
+          education community.
         </p>
       </div>
       <a href="https://0kqadugptxn.typeform.com/to/YkwgQFCu" target="_blank">
@@ -57,7 +70,7 @@
       </a>
 
       <!-- PRIZES BY -->
-      <div class="sponsors mt-5 mb-5 no-padding-top">
+      <!-- <div class="sponsors mt-5 mb-5 no-padding-top">
         <div class="title-section mb-3" :class="{ 'mt-3': isMobile }">
           Prizes by
         </div>
@@ -178,10 +191,10 @@
             <p class="prizes-p"><span>■</span> The Urbit Award is this</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- JUDGES -->
-      <div class="judges pb-5">
+      <!-- <div class="judges pb-5">
         <div class="speakers-new">
           <div class="title-section" :class="{ 'mb-3': !isMobile }">Judges</div>
           <div class="row">
@@ -379,22 +392,28 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="mt-5">
         <p>
-          The event directly follows the
+          Our hackathon directly follows the
           <span class="title-p">NFTBerlin Unconference</span>, come join us
-          there as well! Early-Bird ticket price (-60%) applies to all hackers,
-          you'll be reimbursed the difference between the amounts upon
-          submission of your project.<br /><br />
-          We'll also hold hands-on workshops ahead of the hack-day!<br /><br />
-
-          There's going to be free all-day catering and workspaces provided for
-          everyone so that you could focus solely on building. We'll also have
-          mentors from Arweave, Livepeer & Urbit onsite or online ready to help.
+          there as well! The Early-Bird ticket price (-60%) applies to all
+          hackers, you'll be reimbursed the difference between the amounts upon
+          submission of your project.
         </p>
-        <div class="mt-5">
+        <div class="text-center mt-5 mb-5">
+          <img src="../assets/sponsor/encode_club.png" height="150px" alt="" />
+        </div>
+        <p>
+          Encode Club is a web3 education community learning and building
+          together through fantastic programmes with the leading protocols in
+          the space. Encode Club organises online and in-person programmes like
+          education series, bootcamps, hackathons and accelerators, while also
+          helping their community get jobs and funding for projects and
+          startups.
+        </p>
+        <div class="mt-5 mb-5">
           <a href="https://twitter.com/NFTBERLINteam" target="_blank">
             <div class="btn-apply">
               Get in Touch
@@ -412,7 +431,24 @@
           </a>
         </div>
       </div>
+      <div
+        data-tf-widget="IfK7eO1K"
+        data-tf-iframe-props="title=NFTBERLIN & Encode Club Hackathon Application Form"
+        data-tf-medium="snippet"
+        data-tf-hidden="source=xxxxx"
+        style="width: 100%; height: 450px"
+      ></div>
+      <div class="mt-5 mb-5 hackathon-contacts">
+        <h2>Questions?</h2>
+        <p>
+          Message
+          <a href="mailto:ir@nftberlin.org" class="green">ir@nftberlin.org</a>
+          or
+          <a class="green" href="mailto:hack@encode.club">hack@encode.club</a>
+        </p>
+      </div>
     </div>
+
     <div class="gap"></div>
     <Footer />
   </div>
