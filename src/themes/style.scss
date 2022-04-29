@@ -1374,6 +1374,22 @@ footer {
       font-family: var(--neuebit);
     }
   }
+  .schedule {
+    border-top: 1px solid #00ff00;
+    border-bottom: 1px solid #00ff00;
+    h3 {
+      font-family: var(--display-ext);
+      font-size: 2rem;
+    }
+    h4 {
+      font-family: var(--display-ext);
+      font-size: 1.2rem;
+    }
+    p {
+      font-family: var(--neuebit);
+      font-size: 1.5rem;
+    }
+  }
 }
 /* ===== >>>>> HACKATHON <<<<< ===== */
 

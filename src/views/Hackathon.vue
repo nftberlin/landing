@@ -5,8 +5,8 @@
     <div class="gap hideMobile"></div>
     <div class="container">
       <div class="title-container pt-5 pb-5" :class="{ 'mt-5': !isMobile }">
-        <h1 class="m-0 green_inactive">nftberlin &</h1>
-        <h2 class="m-0 white_inactive">Encode Club Hackathon</h2>
+        <h1 class="m-0 green_inactive">nftberlin & encode club</h1>
+        <h2 class="m-0 white_inactive">hackathon</h2>
         <div
           class="specs-location d-flex align-items-start"
           :class="{ 'mt-4': !isMobile, 'mt-2': isMobile }"
@@ -48,7 +48,7 @@
           >, a web3 education community.
         </p>
       </div>
-      <a href="https://0kqadugptxn.typeform.com/to/YkwgQFCu" target="_blank">
+      <!-- <a href="https://0kqadugptxn.typeform.com/to/YkwgQFCu" target="_blank">
         <div class="btn-apply">
           Apply to hack
           <svg
@@ -62,7 +62,34 @@
             />
           </svg>
         </div>
-      </a>
+      </a> -->
+
+      <div class="schedule mt-5 mb-5 pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-3">
+            <h3 class="green">Friday</h3>
+            <h4 class="green_inactive">27th May</h4>
+            <ul class="px-3">
+              <li>8-9.30am: Registration</li>
+              <li>9.30-12pm: Workshops</li>
+              <li>12-12: Hacking!</li>
+              <li>Venue not open overnight</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h3 class="green">Saturday</h3>
+            <h4 class="green_inactive">28th May</h4>
+            <ul class="px-3">
+              <li>8am: Doors open</li>
+              <li>10am: Submissions</li>
+              <li>10-12pm: Judging</li>
+              <li>1-2pm: Pitch finale and prizegiving</li>
+              <li>3pm: Finish</li>
+            </ul>
+            <p class="green">*Food available!</p>
+          </div>
+        </div>
+      </div>
 
       <!-- PRIZES BY -->
       <!-- <div class="sponsors mt-5 mb-5 no-padding-top">
@@ -416,23 +443,6 @@
           helping their community get jobs and funding for projects and
           startups.
         </p>
-        <div class="mt-5 mb-5">
-          <a href="https://twitter.com/NFTBERLINteam" target="_blank">
-            <div class="btn-apply">
-              Get in Touch
-              <svg
-                viewBox="0 0 12 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.2314 10.9514L11.3164 0.683838C8.74514 0.708838 3.62009 0.743837 1.04889 0.768835L1.02764 2.05383C3.3414 2.03133 6.41132 2.01258 9.11276 1.98758L0.683957 10.4164L1.58271 11.3151L10.0115 2.88633L9.93901 10.9651L11.2315 10.9501L11.2314 10.9514Z"
-                  fill="#00FF00"
-                />
-              </svg>
-            </div>
-          </a>
-        </div>
       </div>
       <div
         data-tf-widget="IfK7eO1K"
@@ -441,6 +451,23 @@
         data-tf-hidden="source=xxxxx"
         style="width: 100%; height: 450px"
       ></div>
+      <div class="my-5">
+        <a href="https://twitter.com/NFTBERLINteam" target="_blank">
+          <div class="btn-apply">
+            Get in Touch
+            <svg
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.2314 10.9514L11.3164 0.683838C8.74514 0.708838 3.62009 0.743837 1.04889 0.768835L1.02764 2.05383C3.3414 2.03133 6.41132 2.01258 9.11276 1.98758L0.683957 10.4164L1.58271 11.3151L10.0115 2.88633L9.93901 10.9651L11.2315 10.9501L11.2314 10.9514Z"
+                fill="#00FF00"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
       <div class="mt-5 mb-5 hackathon-contacts">
         <h2>Questions?</h2>
         <p>
