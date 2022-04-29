@@ -72,7 +72,7 @@
             <ul class="px-3">
               <li>8-9.30am: Registration</li>
               <li>9.30-12pm: Workshops</li>
-              <li>12-12: Hacking!</li>
+              <li>12am-12pm: Hacking!</li>
               <li>Venue not open overnight</li>
             </ul>
           </div>
