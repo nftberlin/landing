@@ -4,116 +4,69 @@
     <MenuMobile class="hideDesktop" />
     <div class="gap hideMobile"></div>
     <div class="container mb-5" :class="{ 'mt-5': !isMobile }">
-      <div class="title-container pt-3 pb-3">
-        <h1 class="green_inactive">MY ACCOUNT</h1>
-      </div>
-
       <div class="row">
-        <div class="col-12 col-md-12 col-lg-7">
+        <div class="col-12 col-md-12 col-lg-7 mt-5">
           <div class="title-container">
-            <h2 class="green">nftberlin</h2>
-            <div
-              class="specs-location d-flex align-items-start"
-              :class="{ 'mt-2': !isMobile, 'mt-2': isMobile }"
-            >
-              <h4>27th - 28th May</h4>
-              <a href="https://goo.gl/maps/eZZQap8PjCvQzVAM6" target="_blank">
-                <div class="d-flex align-items-center location">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <p>Alte Münze, Berlin</p>
-                </div></a
-              >
-            </div>
-            <!-- THIS IS A TEST TO VIEW -->
-            <!-- <div class="ticket-select mt-5">
-              <h5 class="green">1. Choose an NFT ticket to entry</h5>
-              <p>
-                Select an NFT ticket in your web3 wallet that you would like<br />
-                to use to enter an NFTBERLIN event.
-              </p>
-              <div class="ticket-box-container mt-5">
-                <div v-for="ticket in 6" :key="ticket" class="ticket-box">
-                  <img src="../assets/img-speakers-2.png" alt="" />
-                </div>
-              </div>
-            </div> -->
-            <div v-if="!account" class="mt-5">
-              <div class="btn-mint" @click="connect()">Connect Wallet</div>
-            </div>
-            <div v-if="account">
-              <div v-if="nfts.length > 0 && !isClaiming">
-                <div class="ticket-select mt-5">
-                  <div>
-                    <div class="ticket-box-container mt-5">
-                      <div v-for="ticket in 6" :key="ticket" class="ticket-box">
-                        <img src="../assets/img-speakers-2.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="ticket-box-container mt-5">
-                    <div v-for="ticket in 6" :key="ticket" class="ticket-box">
-                      <img src="../assets/img-speakers-2.png" alt="" />
-                    </div>
-                  </div>
-                  <p>Select ticket to claim:</p>
-                  <div class="dropdown">
-                    <div class="dropdown__face" @click="open = !open">
-                      <div class="dropdown__text">
-                        <div v-if="tokenName.length === 0">Select Ticket</div>
-                        <div v-if="tokenName.length > 0">{{ tokenName }}</div>
-                        <i
-                          v-if="!open"
-                          class="ms-3 fa-solid fa-caret-right"
-                        ></i>
-                        <i v-if="open" class="ms-3 fa-solid fa-caret-down"></i>
-                      </div>
-                    </div>
-                    <Transition name="slide">
-                      <ul v-show="open" class="dropdown__items">
-                        <li
-                          v-for="nft in nfts"
-                          v-bind:key="nft.tokenId"
-                          @click="
-                            open = false;
-                            tokenId = nft.tokenId;
-                            tokenName = nft.metadata.name;
-                          "
-                        >
-                          {{ nft.metadata.name }}
-                        </li>
-                      </ul>
-                    </Transition>
-                  </div>
-                </div>
-                <div class="row"></div>
-              </div>
-            </div>
+            <h2 class="green_inactive">Manage tickets</h2>
+            <h3 class="green">Claim your Ticket now</h3>
+            <h3>You can claim it up to 24H before the event</h3>
+          </div>
+          <div v-if="!account" class="mt-5">
+            <div class="btn-mint" @click="connect()">Connect Wallet</div>
           </div>
         </div>
-        <div class="col-12 col-md-12 col-lg-4 offset-lg-1">
-          <div v-if="nfts.length === 0 && noNfts">
-            <p class="red">You don't have NFTs</p>
-            <a href="/ticket">
-              <div class="btn-mint">Buy your Tickets</div>
-            </a>
+        <div class="col-12 col-md-12 col-lg-4 offset-lg-1 mt-5">
+          <div class="workingMessage" v-if="isWorking">
+            <i class="fas fa-spinner fa-pulse"></i>
+            {{ workingMessage }}...
           </div>
-
-          <div v-if="account && nfts.length > 0 && !isClaiming">
-            <div class="mt-5">
-              <div class="label mx-2 my-2">E-mail</div>
-              <div
-                class="d-flex align-items-center flex-column flex-md-row flex-lg-row"
-              >
-                <input
-                  type="text"
-                  v-model="email"
-                  placeholder="Type your e-mail here.."
-                />
-                <div class="btn-mint mx-3" @click="claim()">CLAIM</div>
+          <div v-if="account">
+            <div v-if="nfts.length > 0 && !isClaiming">
+              <div class="ticket-select">
+                <p>Select ticket to claim:</p>
+                <div class="dropdown">
+                  <div class="dropdown__face" @click="open = !open">
+                    <div class="dropdown__text">
+                      <div v-if="tokenName.length === 0">Select Ticket</div>
+                      <div v-if="tokenName.length > 0">{{ tokenName }}</div>
+                      <i v-if="!open" class="ms-3 fa-solid fa-caret-right"></i>
+                      <i v-if="open" class="ms-3 fa-solid fa-caret-down"></i>
+                    </div>
+                  </div>
+                  <Transition name="slide">
+                    <ul v-show="open" class="dropdown__items">
+                      <li
+                        v-for="nft in nfts"
+                        v-bind:key="nft.tokenId"
+                        @click="
+                          open = false;
+                          tokenId = nft.tokenId;
+                          tokenName = nft.metadata.name;
+                        "
+                      >
+                        {{ nft.metadata.name }}
+                      </li>
+                    </ul>
+                  </Transition>
+                </div>
               </div>
-              <p class="mt-1 red" v-if="mailError.length > 0">
-                {{ mailError }}
-              </p>
+              <div class="row"></div>
+              <div class="mt-5">
+                <div class="label mx-2 my-2">E-mail</div>
+                <div
+                  class="d-flex align-items-center flex-column flex-md-row flex-lg-row"
+                >
+                  <input
+                    type="text"
+                    v-model="email"
+                    placeholder="Type your e-mail here.."
+                  />
+                  <div class="btn-mint mx-3" @click="claim()">CLAIM</div>
+                </div>
+                <p class="mt-1 red" v-if="mailError.length > 0">
+                  {{ mailError }}
+                </p>
+              </div>
             </div>
             <div
               v-if="claimed.qr !== undefined"
@@ -131,15 +84,11 @@
                 <h5>IF YOU SELL THIS NFT THE CLAIMING WILL BE REJECTED</h5>
               </div>
             </div>
-          </div>
-          <div class="workingMessage" v-if="isWorking">
-            <i class="fas fa-spinner fa-pulse"></i>
-            {{ workingMessage }}...
+            <h3 v-if="nfts.length === 0 && noNfts">You don't have NFTs</h3>
           </div>
         </div>
       </div>
     </div>
-    <div class="gap hideMobile"></div>
   </div>
 </template>
 

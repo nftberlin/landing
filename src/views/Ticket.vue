@@ -429,7 +429,7 @@
                     </div>
                     <!-- <a href=""><div class="btn-ticket">MANAGE MY TICKETS</div></a> -->
                     <!-- <a href="/manage-ticket"
-                      ><div class="btn-ticket">MANAGE MY TICKETS</div></a
+                      ><div class="btn-ticket">GENERATE QR CODE</div></a
                     > -->
                     <p class="green mt-1 mb-3">
                       You need to generate the QR code to use to enter an event.
