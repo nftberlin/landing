@@ -32,9 +32,9 @@
               <h3 class="">NFT Art Exhibition "The New Gestalt"</h3>
             </div>
           </div>
-          <a href="https://yeruna5cyo1.typeform.com/to/hbCPVkbh" target="_blank"
+          <!-- <a href="https://yeruna5cyo1.typeform.com/to/hbCPVkbh" target="_blank"
             ><button><h3>You want to be a speaker, contact us!</h3></button></a
-          >
+          > -->
         </div>
         <div class="col-sm-12 col-lg-1 hideIpad">
           <h3>Talks / Exhibitions / Games</h3>
