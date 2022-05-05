@@ -8,6 +8,8 @@
         <h1 class="green_inactive">MY ACCOUNT</h1>
         <div v-if="!processCompleted">
           <h2 class="green">nftberlin</h2>
+          <!-- SUCCES CLAIMING -->
+          <!-- TODO: insert "processCompleted" control when claiming goes right and hide this div -->
           <div
             class="specs-location d-flex align-items-start"
             :class="{ 'mt-2': !isMobile, 'mt-2': isMobile }"
@@ -27,33 +29,73 @@
         <div class="col-12 col-md-12 col-lg-7">
           <!-- SUCCES CLAIMING -->
           <!-- TODO: insert "processCompletd" control when claiming goes right and show nft claimed -->
-          <!-- <h1>{{selected}}</h1> -->
-          <!-- <div v-if="!isClaiming" class="claim-tickets mt-5">
-            <div class="title-container pb-4">
-              <h2 class="green m-0">success!</h2>
-            </div>
+          <Transition
+            name="custom-fade"
+            enter-active-class="animate__animated animate__fadeIn"
+            leave-active-class="animate__animated animate__fadeOut"
+          >
             <div
-              v-if="selected.length > 0 && selected == ''"
-              class="d-flex align-item-center justify-content-between b-bottom b-top py-4"
+              v-if="!isClaiming && selected.metadata !== undefined"
+              class="claim-tickets mt-5"
             >
-              <h1>ciao</h1>
-              <div class="ticket-box-container">
-                <div class="ticket-box">
-                  <div>
-                    <img
-                      :src="
-                        selected.metadata.image.replace(
-                          'ar://',
-                          'https://arweave.net/'
-                        )
-                      "
-                      alt="ticket NFT Berlin"
-                    />
+              <div class="title-container pb-4">
+                <h2 class="green m-0">success!</h2>
+              </div>
+              <div
+                class="d-flex align-items-center ticket-select b-bottom b-top py-5"
+              >
+                <div class="ticket-box-container">
+                  <div class="ticket-box m-0">
+                    <div>
+                      <img
+                        :src="
+                          selected.metadata.image.replace(
+                            'ar://',
+                            'https://arweave.net/'
+                          )
+                        "
+                        alt="ticket NFT Berlin"
+                      />
+                    </div>
                   </div>
+                </div>
+                <div class="ml-5 pl-5">
+                  <h4 class="green">
+                    see you <br />
+                    in berlin.<br /><br />
+
+                    /////<br />
+                    ////<br />
+                    ///<br />
+                    //
+                  </h4>
+                </div>
+              </div>
+              <!-- TODO: insert this when layout complete:   v-if="claimed.qr !== undefined" -->
+              <div
+                class="d-flex flex-column flex-md-row align-items-center qr-generated mt-5"
+              >
+                <div :class="{ 'text-center': isMobile }" style="">
+                  <div class="qr-code">
+                    <img :src="claimed.qr" />
+                    <div class="qr-code-under"></div>
+                  </div>
+                </div>
+                <div :class="{ 'ml-5': !isMobile }">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                  <h3 class="mt-3 white">Wait for your QR-Code:</h3>
+                  <h3 class="grey">
+                    A QR code will be sent directly to your email address. Make
+                    sure you have it with you (either in digital form or printed
+                    out) to guarantee admission to an event.
+                  </h3>
+                  <h3 class="red">
+                    * if you sell this NFT the claiming will be rejected
+                  </h3>
                 </div>
               </div>
             </div>
-          </div> -->
+          </Transition>
           <!-- END SUCCESS CLAIMING -->
           <div v-if="!isClaiming && !processCompleted">
             <div v-if="!account" class="mt-5">
@@ -136,6 +178,23 @@
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-4 offset-lg-1">
+          <div
+            v-if="processCompleted && claimed.qr !== undefined"
+            class="d-flex justify-content-end"
+          >
+            <div
+              class="sqr-btn"
+              @click="
+                tokenId = '';
+                selected = '';
+                initClaimProcess = false;
+                ticketSelection = false;
+                processCompleted = false;
+              "
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+          </div>
           <!-- CLAIM PROCESS FUNCTIONS -->
           <Transition
             name="custom-fade"
@@ -187,29 +246,13 @@
                   {{ mailError }}
                 </p>
               </div>
-
-              <div
-                v-if="claimed.qr !== undefined"
-                class="mb-5"
-                :class="{ 'text-center': isMobile }"
-              >
-                <img class="bordered" :src="claimed.qr" />
-                <div class="mb-3 mt-3">
-                  <p>
-                    Congratulations you have claimed your nft. You'll receive
-                    this qr-code at your e-mail. <br /><br />Pay attention, you
-                    have to save this qr-code in a safe place. If you lost it
-                    you'll can't enter at the event. <br /><br />
-                  </p>
-                  <h5>IF YOU SELL THIS NFT THE CLAIMING WILL BE REJECTED</h5>
-                </div>
-              </div>
             </div>
           </Transition>
           <!-- END CLAIM PROCESS FUNCTIONS -->
         </div>
       </div>
     </div>
+    <!-- WORKING MESSAGE AND ERRORS -->
     <div
       class="container-workingMessage"
       v-if="account && nfts.length === 0 && noNfts"
@@ -227,7 +270,8 @@
         {{ workingMessage }}...
       </div>
     </div>
-    <div class="gap hideMobile"></div>
+    <!-- END WORKING MESSAGE AND ERRORS -->
+    <!-- <div class="gap hideMobile"></div> -->
   </div>
 </template>
 
@@ -381,6 +425,7 @@ export default {
           "The token ID of selected ticket is:",
           app.selected.tokenId
         );
+        console.log(app.selected.metadata.image);
       }
     },
   },
