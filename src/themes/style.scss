@@ -1441,9 +1441,172 @@ footer {
     }
   }
 }
-/* ===== >>>>> HACKATHON <<<<< ===== */
+/* ===== >>>>> / HACKATHON <<<<< ===== */
 
-/* ========================================= >>>>> MINTING TICKETS <<<<< =========================================================== */
+
+
+/* ===== >>>>> TALKS PAGE <<<<< ===== */
+
+.talks-page{
+  .schedule-content{
+    padding-top: 10rem;
+
+  }
+  .talk-scheduling{
+    padding: 6.5rem 6.125rem 4rem 6.125rem;
+    border-bottom: 1px solid var(--green);
+    display: flex;
+    justify-content: space-between;
+
+    h1{
+      font-size: 2.5rem;
+      font-family: var(--display-ext);
+      color: var(--green);
+    }
+
+    .tags{
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    .tag{
+      margin-left: 1rem;
+      min-width: 10rem;
+      border: 1px solid var(--green);
+      text-align: center;
+      font-family: var(--neuebit);
+      color: var(--green);
+      font-size: 2rem;
+      font-weight: 700;
+
+    }
+  }
+
+  .rooms{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 4rem 6.5rem;
+    h1{
+      font-size: 2.5rem;
+      font-family: var(--display-ext);
+      color: var(--green);
+    }
+
+    button{
+      border: none;
+      background: none;
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+
+    .plus-line{
+      width: 1px;
+      height: 30px;
+      background: var(--green);
+      transition: ease-in-out .4s;
+    }
+    .plus-line:nth-child(2){
+      position: absolute;
+      transform-origin: center;
+      transform: rotate(90deg);
+    }
+    .plus-line:nth-child(1).open{
+      transform-origin: center;
+      transform: rotate(90deg);
+    } 
+    
+  }
+
+  .swiper{
+    padding-left: 4.75rem;
+    padding-right: 8.25rem;
+    
+  }
+
+  .room-a-content{
+    position: relative;
+  }
+
+  .next-talk-el{
+    position: absolute;
+    right: 3.5rem;
+    top: 35%;
+  }
+
+  .talk-slide{
+    border: 1px solid var(--green);
+    border-radius: 18px;
+    background-color: #C4C4C41F;
+    padding: 2rem;
+    margin-right: 3.5rem;
+
+  }
+
+  .room-speaker{
+      display: flex;
+      justify-content: space-between;
+      p{
+        margin: 0;
+      }
+      .date{
+        color: var(--green);
+        font-family: var(--display-ext);
+        font-size: 1.25rem;
+      }
+      .name{
+        font-family: var(--neuebit);
+        font-size: 1.625rem;
+        font-weight: 700;
+        line-height: 22px;
+
+        a{
+          font-weight: 400;
+          color:#7f7f7f;
+        }
+      }
+  }
+  .infos{
+    .info{
+      display: flex;
+      p{
+        margin: 0;
+        margin-left: 1rem;
+        font-size: 1.25rem;
+        font-family: var(--neuebit);
+      }
+    }
+  }
+  .subject h3{
+    font-size: 1.25rem;
+    font-family: var(--neuebit);
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 2.5rem;
+
+  }
+  .desc{
+    font-family: var(--neuebit);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 17px;
+    max-inline-size: 90%;
+  }
+}
+
+
+
+/* ===== >>>>> / TALKS PAGE <<<<< ===== */
+
+
+
+
+
+/* ========= >>>>> MINTING TICKETS <<<<< ======== */
 
 .white {
   color: white !important;

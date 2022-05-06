@@ -16,6 +16,7 @@
             <a href="/#sponsors">Sponsors</a>
             <a href="/ticket">Tickets</a>
             <a href="/hackathon">Hackathon</a>
+            <a href="/talks">Talks</a>
             <!-- / NOT IN PHASE 1 -->
             <!-- <a href="#team">Team</a> -->
           </div>

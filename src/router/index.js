@@ -6,6 +6,7 @@ import ManageTicket from "../views/ManageTicket.vue";
 import BuyTicket from "../views/BuyTicket.vue";
 import Newsletter from "../views/Newsletter.vue";
 import Hackathon from "../views/Hackathon.vue";
+import TalksPage from "../views/TalksPage.vue";
 
 Vue.use(VueRouter);
 
@@ -39,6 +40,11 @@ const routes = [
     path: "/newsletter",
     name: "Newsletter",
     component: Newsletter,
+  },
+  {
+    path: "/talks",
+    name: "TalksPage",
+    component: TalksPage,
   },
 ];
 

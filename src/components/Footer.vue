@@ -50,18 +50,23 @@
         </div>
         <div class="col-lg-6">
           <div class="footer-links">
-           <!--  <a href="#team">Team</a> -->
+            <!--  <a href="#team">Team</a> -->
             <a href="#events">Event</a>
             <a href="#what">What/Why?</a>
             <!-- NOT IN PHASE 1 -->
             <a href="#sponsors">Sponsors</a>
-            <a href="https://www.notion.so/wearefloc/301a733ed69c4c45bfcfa9fe632f8b36?v=be21a3c063ef45d18ab9c074c5769e78" target="_blank">• Media Kit</a>
+            <a href="/talks">Talks</a>
+            <a
+              href="https://www.notion.so/wearefloc/301a733ed69c4c45bfcfa9fe632f8b36?v=be21a3c063ef45d18ab9c074c5769e78"
+              target="_blank"
+              >• Media Kit</a
+            >
             <!-- / NOT IN PHASE 1 -->
             <!-- <a href="#team">Team</a> -->
           </div>
         </div>
         <div class="col-lg-3">
-             <div class="footer-social">
+          <div class="footer-social">
             <a href="https://twitter.com/NFTBERLINteam" target="_blank">
               <svg
                 width="20"
@@ -91,7 +96,10 @@
                 />
               </svg>
             </a>
-            <a href="https://mirror.xyz/0x37AEe71F739FB44D9240CB14D41bE16Df767F79e" target="_blank">
+            <a
+              href="https://mirror.xyz/0x37AEe71F739FB44D9240CB14D41bE16Df767F79e"
+              target="_blank"
+            >
               <svg
                 width="16"
                 height="20"
