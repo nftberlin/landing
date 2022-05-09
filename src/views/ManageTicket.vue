@@ -271,8 +271,8 @@
         <div class="col-12 col-md-12 col-lg-4 offset-lg-1">
           <div
             v-if="
-              (processCompleted && claimed.qr !== undefined) ||
-              pending !== undefined
+              processCompleted &&
+              (claimed.qr !== undefined || pending !== undefined)
             "
             class="d-flex justify-content-end"
           >

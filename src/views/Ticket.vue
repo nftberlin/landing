@@ -427,19 +427,18 @@
                         </a>
                       </div>
                     </div>
-                    <!-- <a href=""><div class="btn-ticket">MANAGE MY TICKETS</div></a> -->
-                    <!-- <a href="/manage-ticket"
+                    <a href="/manage-ticket"
                       ><div class="btn-ticket">GENERATE QR CODE</div></a
-                    > -->
-                    <p class="green mt-1 mb-3">
+                    >
+                    <!-- <p class="green mt-1 mb-3">
                       You need to generate the QR code to use to enter an event.
                       This feature will be ready soon.
-                    </p>
-                    <a
+                    </p> -->
+                    <!-- <a
                       href="https://opensea.io/collection/nftberlintickets"
                       target="_blank"
                       ><div class="btn-ticket">VIEW TICKET ON OPENSEA</div></a
-                    >
+                    > -->
                     <p></p>
                   </div>
                 </div>
@@ -676,11 +675,26 @@ export default {
             // Automatically init Stripe Payment
             if (
               app.processor === "stripe" &&
-              app.payment.stripePayment !== undefined
+              app.payment.stripePayment !== undefined &&
+              app.payment.stripePayment.id !== "FREE TICKET"
             ) {
+              console.log("Not a free ticket");
               app.isWorking = false;
               app.workingMessage = "";
               app.initStripeElements();
+            } else if (
+              app.processor === "stripe" &&
+              app.payment.stripePayment !== undefined &&
+              app.payment.stripePayment.id === "FREE TICKET"
+            ) {
+              console.log("Free ticket!")
+              app.workingMessage = "Claiming free ticket, please wait.."
+              setTimeout(function () {
+                app.isWorking = false;
+                app.workingMessage = "";
+                app.payment = payment_details.data.payment;
+                app.checkPayment();
+              }, 5000);
             } else {
               app.isWorking = false;
               app.workingMessage = "";
