@@ -270,15 +270,19 @@
         </div>
         <div class="col-12 col-md-12 col-lg-4 offset-lg-1">
           <div
-            v-if="processCompleted && claimed.qr !== undefined"
+            v-if="
+              (processCompleted && claimed.qr !== undefined) ||
+              pending !== undefined
+            "
             class="d-flex justify-content-end"
           >
             <div
               class="sqr-btn"
               @click="
                 tokenId = '';
-                selected = '';
+                selected = {};
                 initClaimProcess = false;
+                initSendProcess = false;
                 ticketSelection = false;
                 processCompleted = false;
               "
@@ -485,6 +489,7 @@ export default {
       network: "polygon",
       method: "safeTransferFrom",
       contract: "0xadae0946994ed88ea2ef3a95adbf771b61b5e738",
+      explorerUrl: "https://polygonscan.com/tx/",
       pending: "",
       receiver: "",
       isMobile: false,
@@ -667,7 +672,7 @@ export default {
               await nftContract.methods
                 .safeTransferFrom(app.account, app.receiver, app.tokenId)
                 .send({
-                  gasPrice: app.web3.utils.toWei("100","gwei"),
+                  gasPrice: app.web3.utils.toWei("100", "gwei"),
                   gasLimit: gasLimit,
                   from: app.account,
                 })
