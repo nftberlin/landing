@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="team-wrapper">
         <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
             <div class="member">
               <div class="member-ph">
                 <img
@@ -20,7 +20,7 @@
               <p>Founder of the lost memes</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
             <div class="member">
               <div class="member-ph">
                 <img
@@ -37,7 +37,7 @@
               <p>description</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
             <div class="member">
               <div class="member-ph">
                 <img
@@ -54,7 +54,7 @@
               <p>Web3 Tech company</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
             <div class="member">
               <div class="member-ph">
                 <img
@@ -71,8 +71,7 @@
               <p>hackathon lead</p>
             </div>
           </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
             <div class="member">
               <div class="member-ph">
                 <img

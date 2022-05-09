@@ -661,10 +661,11 @@ export default {
               });
             const gasLimit = parseInt(estimated * 1.2).toString();
             console.log("This is gasLimit", gasLimit);
+            const gasPrice = await app.web3.eth.getGasPrice()
             await nftContract.methods
               .safeTransferFrom(app.account, app.receiver, app.tokenId)
               .send({
-                gasPrice: app.web3.eth.getGasPrice(),
+                gasPrice: gasPrice,
                 gasLimit: gasLimit,
                 from: app.account,
               })
