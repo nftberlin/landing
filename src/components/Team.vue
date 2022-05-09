@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="team-wrapper">
         <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
             <div class="member">
               <div class="member-ph">
                 <img
@@ -20,7 +20,7 @@
               <p>Founder of the lost memes</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
             <div class="member">
               <div class="member-ph">
                 <img
@@ -37,7 +37,7 @@
               <p>description</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
             <div class="member">
               <div class="member-ph">
                 <img
@@ -54,24 +54,8 @@
               <p>Web3 Tech company</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
-            <div class="member">
-              <div class="member-ph">
-                <img
-                  src="../assets/team/irena.jpeg"
-                  alt="member image"
-                  draggable="false"
-                />
-              </div>
-              <h1>Irena Satkeová</h1>
-              <div class="member-social">
-                <img src="../assets/icon-twitter.svg" draggable="false" />
-                <a href="https://twitter.com/IrenaSatke">@IrenaSatke</a>
-              </div>
-              <p>hackathon lead</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
+
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
             <div class="member">
               <div class="member-ph">
                 <img
@@ -87,9 +71,26 @@
               </div>
               <p>
                 Founder at
-                <a href="https://blnft.io" target="_blank">blnft.io</a>, art,<br>
+                <a href="https://blnft.io" target="_blank">blnft.io</a>, art,<br />
                 Collectibles and society track lead
               </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="member">
+              <div class="member-ph">
+                <img
+                  src="../assets/team/irena.jpeg"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>Irena Satkeová</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/IrenaSatke">@IrenaSatke</a>
+              </div>
+              <p>hackathon lead</p>
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
