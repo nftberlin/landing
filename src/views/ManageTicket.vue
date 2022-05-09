@@ -558,34 +558,27 @@ export default {
       // Checking if networkId matches
       const netId = await app.web3.eth.net.getId();
       if (parseInt(netId) !== app.networks[app.network]) {
-        app.workingMessage = "Switch to " + app.network + " network and retry";
-        setTimeout(() => {
+        alert("Switch to " + app.network + " network!");
+      } else {
+        const accounts = await app.web3.eth.getAccounts();
+        if (accounts.length > 0) {
+          app.account = accounts[0];
+          // Checking nfts owned
+          app.isWorking = true;
+          app.workingMessage = "Checking your NFTs";
+          const owned = await axios.get(
+            process.env.VUE_APP_API_URL + "/nfts/owned/" + app.account
+          );
+          app.nfts = owned.data.owned;
           app.isWorking = false;
-          app.workingMessage = "";
-          app.selected = {};
-          app.tokenId = "";
-          app.initSendProcess = false;
-          app.ticketSelection = false;
-        }, 3000);
-      }
-      const accounts = await app.web3.eth.getAccounts();
-      if (accounts.length > 0) {
-        app.account = accounts[0];
-      }
-      // Checking nfts owned
-      app.isWorking = true;
-      app.workingMessage = "Checking your NFTs";
-      const owned = await axios.get(
-        process.env.VUE_APP_API_URL + "/nfts/owned/" + app.account
-      );
-      app.nfts = owned.data.owned;
-      app.isWorking = false;
-      if (app.nfts.length === 0) {
-        app.noNfts = true;
-      }
-      if (this.isDebug === true) {
-        console.log("My owned Tickets are:", owned.data);
-        console.log("My address", app.account);
+          if (app.nfts.length === 0) {
+            app.noNfts = true;
+          }
+          if (this.isDebug === true) {
+            console.log("My owned Tickets are:", owned.data);
+            console.log("My address", app.account);
+          }
+        }
       }
     },
     async claim() {
@@ -671,7 +664,7 @@ export default {
             await nftContract.methods
               .safeTransferFrom(app.account, app.receiver, app.tokenId)
               .send({
-                gasPrice: app.web3.utils.toWei("100", "gwei"),
+                gasPrice: app.web3.eth.getGasPrice(),
                 gasLimit: gasLimit,
                 from: app.account,
               })
