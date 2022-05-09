@@ -24,6 +24,79 @@
             <div class="member">
               <div class="member-ph">
                 <img
+                  src="../assets/team/Jasmine.jpeg"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>Jasmine</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/jasminervaa">@jasminervaa</a>
+              </div>
+              <p>description</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="member">
+              <div class="member-ph">
+                <img
+                  src="../assets/team/yomi.png"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>YOMI</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/YOMI_WEB3">@YOMI_WEB3</a>
+              </div>
+              <p>Web3 Tech company</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="member">
+              <div class="member-ph">
+                <img
+                  src="../assets/team/irena.jpeg"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>Irena Satkeová</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/IrenaSatke">@IrenaSatke</a>
+              </div>
+              <p>hackathon lead</p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="member">
+              <div class="member-ph">
+                <img
+                  src="../assets/team/torben.jpeg"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>Torben Jacobi</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/blnft_official">@blnft_official</a>
+              </div>
+              <p>
+                Founder at
+                <a href="https://blnft.io" target="_blank">blnft.io</a>, art,<br>
+                Collectibles and society track lead
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="member">
+              <div class="member-ph">
+                <img
                   src="../assets/team/esteve.png"
                   alt="member image"
                   draggable="false"
@@ -54,40 +127,7 @@
               <p>NFTinja & DAOlin</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
-            <div class="member">
-              <div class="member-ph">
-                <img
-                  src="../assets/team/irena.jpeg"
-                  alt="member image"
-                  draggable="false"
-                />
-              </div>
-              <h1>Irena Satkeová</h1>
-              <div class="member-social">
-                <img src="../assets/icon-twitter.svg" draggable="false" />
-                <a href="https://twitter.com/IrenaSatke">@IrenaSatke</a>
-              </div>
-              <p>description</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
-            <div class="member">
-              <div class="member-ph">
-                <img
-                  src="../assets/team/torben.jpeg"
-                  alt="member image"
-                  draggable="false"
-                />
-              </div>
-              <h1>Torben Jacobi</h1>
-              <div class="member-social">
-                <img src="../assets/icon-twitter.svg" draggable="false" />
-                <a href="https://twitter.com/blnft_official">@blnft_official</a>
-              </div>
-              <p>description</p>
-            </div>
-          </div>
+
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
             <div class="member">
               <div class="member-ph">
@@ -102,26 +142,14 @@
                 <img src="../assets/icon-twitter.svg" draggable="false" />
                 <a href="https://twitter.com/missing">@missing</a>
               </div>
-              <p>Creative Director - BLNFT <br> Part of the Track Lead <br> Art& Society at NFT Berlin</p>
+              <p>
+                Creative direction at - <a href="blnft.io">blnft.io</a><br />
+                art, collectibles and society<br />
+                track lead
+              </p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
-            <div class="member">
-              <div class="member-ph">
-                <img
-                  src="../assets/team/yomi.png"
-                  alt="member image"
-                  draggable="false"
-                />
-              </div>
-              <h1>YOMI</h1>
-              <div class="member-social">
-                <img src="../assets/icon-twitter.svg" draggable="false" />
-                <a href="https://twitter.com/YOMI_WEB3">@YOMI_WEB3</a>
-              </div>
-              <p>Web3 Tech company</p>
-            </div>
-          </div>
+
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
             <div class="member">
               <div class="member-ph">
@@ -193,23 +221,6 @@
               <p>#Brand3 Builder / Branding Bruce Lead at FLOC*</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
-            <div class="member">
-              <div class="member-ph">
-                <img
-                  src="../assets/team/Jasmine.jpeg"
-                  alt="member image"
-                  draggable="false"
-                />
-              </div>
-              <h1>Jasmine</h1>
-              <div class="member-social">
-                <img src="../assets/icon-twitter.svg" draggable="false" />
-                <a href="https://twitter.com/jasminervaa">@jasminervaa</a>
-              </div>
-              <p>description</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -222,5 +233,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

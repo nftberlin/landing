@@ -151,10 +151,10 @@
             <p class="m-0">Reserved price for you is € {{ payment.amount }}</p>
             <p>Discount applied: {{ discount }}</p>
           </div>
-          <div v-if="!account" @click="connect()" class="btn-ticket">
+          <div v-if="!account" @click="connect()" class="btn-ticket mt-3">
             connect wallet to buy
           </div>
-          <div v-if="!isMobile && account" class="btn-connected">
+          <div v-if="!isMobile && account" class="btn-connected mt-3">
             connected: {{ account.substr(0, 8) + "..." + account.substr(-8) }}
           </div>
           <a v-if="!account" href="https://metamask.io" target="_blank">
@@ -679,7 +679,9 @@ export default {
           console.log("Payment response is:", payment_details.data);
           if (!payment_details.data.error) {
             app.payment = payment_details.data.payment;
-            app.discount = payment_details.data.discount;
+            if (payment_details.data.discount !== undefined) {
+              app.discount = payment_details.data.discount;
+            }
             // Automatically init Stripe Payment
             if (
               app.processor === "stripe" &&
@@ -710,7 +712,9 @@ export default {
           } else if (payment_details.data.payment !== undefined) {
             app.workingMessage = "Payment exists yet, restoring flow..";
             app.payment = payment_details.data.payment;
-            app.discount = payment_details.data.payment.discount;
+            if (payment_details.data.payment.discount !== undefined) {
+              app.discount = payment_details.data.payment.discount;
+            }
             const check = await app.axios.post(
               app.boo_endpoint + "/payments/check",
               {
