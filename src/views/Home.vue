@@ -32,7 +32,16 @@
       <Sponsors />
     </div>
 
-    <div id="team" style="display: none">
+    
+    <div class="marquee">
+      <MarqueeText :repeat="25">
+        <div class="banner-text">
+          <p class="m-0">OUR TEAM - OUR TEAM - OUR TEAM&nbsp;</p>
+        </div>
+      </MarqueeText>
+    </div>
+
+    <div id="team">
       <Team />
       <TeamSwiper />
     </div>

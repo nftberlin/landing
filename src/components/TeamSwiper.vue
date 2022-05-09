@@ -1,5 +1,5 @@
 <template>
-  <div class="team-swiper pad-x hideDesktop">
+  <div class="team-swiper pad-x hideDesktop" style="display:none">
     <div class="container-fluid">
       <h1 class="title-dbw">Our <span>Team</span></h1>
 
