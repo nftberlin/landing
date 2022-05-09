@@ -58,9 +58,9 @@
           <div
             class="cta-section d-flex align-items-center justify-content-around"
           >
-          <div class="cta">
-            <img src="../assets/cat.png" alt="">
-          </div>
+            <div class="cta">
+              <img src="../assets/cat.png" alt="" />
+            </div>
             <div class="cta-text">
               success<br /><br />
               see you soon in berlin
@@ -242,11 +242,23 @@ export default {
             // Automatically init Stripe Payment
             if (
               app.processor === "stripe" &&
-              app.payment.stripePayment !== undefined
+              app.payment.stripePayment !== undefined &&
+              app.payment.stripePayment.id !== "FREE TICKET"
             ) {
               app.isWorking = false;
               app.workingMessage = "";
               app.initStripeElements();
+            } else if (
+              app.payment.stripePayment !== undefined &&
+              app.payment.stripePayment.id === "FREE TICKET"
+            ) {
+              app.workingMessage = "Claming Free Ticket!";
+              setTimeout(function () {
+                app.isWorking = false;
+                app.workingMessage = "";
+                app.payment = payment_details.data.payment;
+                app.checkPayment();
+              }, 5000);
             }
           } else if (payment_details.data.payment !== undefined) {
             app.workingMessage = "Payment exists yet, restoring flow..";
@@ -313,10 +325,12 @@ export default {
       const paymentElement = app.stripeElements.create("payment");
       paymentElement.mount("#payment-element");
     },
+
     async payWithMetamask() {
       // const app = this;
       // TODO: Process metamask payment
     },
+
     async payWithStripe() {
       const app = this;
       if (!app.isWorking) {
@@ -350,6 +364,7 @@ export default {
         }
       }
     },
+
     async checkPayment() {
       const app = this;
       if (!app.isWorking) {
@@ -386,6 +401,7 @@ export default {
         }, 5000);
       }
     },
+
     async mintNft() {
       const app = this;
       if (!app.isWorking) {
