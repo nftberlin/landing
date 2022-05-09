@@ -20,23 +20,7 @@
               <p>Founder of the lost memes</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
-            <div class="member">
-              <div class="member-ph">
-                <img
-                  src="../assets/team/Jasmine.jpeg"
-                  alt="member image"
-                  draggable="false"
-                />
-              </div>
-              <h1>Jasmine</h1>
-              <div class="member-social">
-                <img src="../assets/icon-twitter.svg" draggable="false" />
-                <a href="https://twitter.com/jasminervaa">@jasminervaa</a>
-              </div>
-              <p>description</p>
-            </div>
-          </div>
+
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
             <div class="member">
               <div class="member-ph">
@@ -71,7 +55,9 @@
               </div>
               <p>
                 Founder at
-                <a href="https://blnft.io" target="_blank">blnft.io</a>, art,<br />
+                <a class="green" href="https://blnft.io" target="_blank"
+                  >blnft.io</a
+                >, art,<br />
                 Collectibles and society track lead
               </p>
             </div>
@@ -90,7 +76,24 @@
                 <img src="../assets/icon-twitter.svg" draggable="false" />
                 <a href="https://twitter.com/IrenaSatke">@IrenaSatke</a>
               </div>
-              <p>hackathon lead</p>
+              <p>Hackathon lead</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="member">
+              <div class="member-ph">
+                <img
+                  src="../assets/team/Jasmine.jpeg"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>Jasmine</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/jasminervaa">@jasminervaa</a>
+              </div>
+              <p>Co-founder, a&t capital</p>
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
@@ -110,6 +113,7 @@
               <p>Web3 adventurer</p>
             </div>
           </div>
+
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
             <div class="member">
               <div class="member-ph">
@@ -143,7 +147,9 @@
                 <a href="https://twitter.com/missing">@missing</a>
               </div>
               <p>
-                Creative direction at - <a href="blnft.io">blnft.io</a><br />
+                Creative direction at -
+                <a class="green" href="blnft.io" target="_blank">blnft.io</a
+                ><br />
                 art, collectibles and society<br />
                 track lead
               </p>
@@ -164,7 +170,12 @@
                 <img src="../assets/icon-twitter.svg" draggable="false" />
                 <a href="https://twitter.com/rxwald">@rxwald</a>
               </div>
-              <p>web3 + Talent Acquisition at mkt.market</p>
+              <p>
+                Web3 + Talent Acquisition at
+                <a href="https://mkt.market/" target="_blank" class="green">
+                  mkt.market</a
+                >
+              </p>
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
@@ -181,7 +192,10 @@
                 <img src="../assets/icon-twitter.svg" draggable="false" />
                 <a href="https://twitter.com/nichanank">@nichanank</a>
               </div>
-              <p>Head of Platform at 1kx | NFTBerlin Finance Track Lead</p>
+              <p>
+                Head of Platform at 1kx <br />
+                NFTBerlin Finance Track Lead
+              </p>
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
@@ -199,8 +213,8 @@
                 <a href="https://twitter.com/CoenCanan">@CoenCanan</a>
               </div>
               <p>
-                Production/ Project Management - GarbiczFestival, BLNFT,
-                Holzmarkt
+                Production/ Project Management <br />
+                GarbiczFestival, BLNFT, Holzmarkt
               </p>
             </div>
           </div>
@@ -218,7 +232,7 @@
                 <img src="../assets/icon-twitter.svg" draggable="false" />
                 <a href="https://twitter.com/esdotge">@esdotge</a>
               </div>
-              <p>#Brand3 Builder / Branding Bruce Lead at FLOC*</p>
+              <p>#Brand3 Builder / Branding <br />Bruce Lead at FLOC*</p>
             </div>
           </div>
         </div>

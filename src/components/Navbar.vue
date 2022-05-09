@@ -71,11 +71,11 @@
               </svg>
             </a>
             <!-- TODO: rimettere questo pulsante quando la pagina "Menage my tickets è definitiva" -->
-            <!-- <a href="/manage-ticket">
+            <a href="/manage-ticket">
               <div class="btn-mint" style="margin-left: 3rem">
                 My Account
               </div></a
-            > -->
+            >
           </div>
         </div>
       </div>
