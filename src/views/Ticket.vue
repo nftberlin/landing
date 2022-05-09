@@ -135,7 +135,8 @@
           </div>
 
           <p
-            class="info-ticket"
+            class="info-ticket m-0"
+            :class="{ 'erased_line red': discount }"
             v-if="
               (info[boo_product] !== undefined &&
                 !isMobile &&
@@ -145,6 +146,11 @@
           >
             Ticket price is € {{ info[boo_product].price }}
           </p>
+
+          <div class="" v-if="discount.length > 0 && discount !== undefined">
+            <p class="m-0">Reserved price for you is € {{ payment.amount }}</p>
+            <p>Discount applied: {{ discount }}</p>
+          </div>
           <div v-if="!account" @click="connect()" class="btn-ticket">
             connect wallet to buy
           </div>
@@ -507,6 +513,7 @@ export default {
       txid: "",
       balance: 0,
       amount: 1,
+      discount: "",
       total: 0,
       isWorking: false,
       isMinting: false,
@@ -672,6 +679,7 @@ export default {
           console.log("Payment response is:", payment_details.data);
           if (!payment_details.data.error) {
             app.payment = payment_details.data.payment;
+            app.discount = payment_details.data.discount;
             // Automatically init Stripe Payment
             if (
               app.processor === "stripe" &&
@@ -687,8 +695,8 @@ export default {
               app.payment.stripePayment !== undefined &&
               app.payment.stripePayment.id === "FREE TICKET"
             ) {
-              console.log("Free ticket!")
-              app.workingMessage = "Claiming free ticket, please wait.."
+              console.log("Free ticket!");
+              app.workingMessage = "Claiming free ticket, please wait..";
               setTimeout(function () {
                 app.isWorking = false;
                 app.workingMessage = "";
@@ -702,6 +710,7 @@ export default {
           } else if (payment_details.data.payment !== undefined) {
             app.workingMessage = "Payment exists yet, restoring flow..";
             app.payment = payment_details.data.payment;
+            app.discount = payment_details.data.payment.discount;
             const check = await app.axios.post(
               app.boo_endpoint + "/payments/check",
               {
