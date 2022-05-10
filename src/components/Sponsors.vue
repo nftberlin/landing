@@ -120,13 +120,13 @@
         <div class="col-6">
           <a href="https://twitter.com/CL207" target="_blank">
             <div>
-              <img src="../assets/sponsors-rare-cl2.png" alt="" /></div
+              <img src="../assets/sponsors-rare-cl2.png" draggable="false" /></div
           ></a>
         </div>
       </div>
       <div class="ex-title">EPIC</div>
       <div class="row epic">
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://capitalant.com/" target="_blank">
             <div>
               <svg
@@ -194,7 +194,7 @@
               </svg></div
           ></a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://livepeer.org/" target="_blank">
             <div>
               <svg
@@ -232,7 +232,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://www.molecule.to/" target="_blank">
             <div>
               <svg
@@ -298,7 +298,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://www.vitadao.com/" target="_blank">
             <div>
               <svg
@@ -365,7 +365,7 @@
           </a>
         </div>
 
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://litentry.com/" target="_blank">
             <div>
               <svg
@@ -427,7 +427,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://www.greenfield.one/" target="_blank">
             <div>
               <svg
@@ -509,7 +509,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://wearefloc.com/" target="_blank">
             <div>
               <svg
@@ -559,7 +559,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://yomi.digital/" target="_blank">
             <div>
               <svg
@@ -644,32 +644,32 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://www.cometh.io/" target="_blank">
             <div>
               <img
                 src="../assets/sponsor/epic_1.png"
                 style="max-height: 100px; height: auto"
-                alt=""
+                draggable="false"
               />
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://urbit.org/" target="_blank">
             <div>
               <img
                 src="../assets/sponsor/epic_1.svg"
-                alt=""
+                draggable="false"
                 style="max-height: 70px; height: auto"
               />
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://blackpool.finance/" target="_blank">
             <div>
-              <img src="../assets/sponsor/blackpool.svg" alt="" />
+              <img src="../assets/sponsor/blackpool.svg" draggable="false" />
             </div>
           </a>
         </div>
@@ -677,63 +677,63 @@
 
       <div class="ex-title">ANON</div>
       <div class="row anon">
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://www.darkblock.io/" target="_blank">
             <div>
-              <img src="../assets/sponsor/darkblock.svg" alt="" />
+              <img src="../assets/sponsor/darkblock.svg" draggable="false" />
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://www.nftfi.com/" target="_blank">
             <div>
-              <img src="../assets/sponsor/nftfi.svg" alt="" />
+              <img src="../assets/sponsor/nftfi.svg" draggable="false" />
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://www.renft.io/" target="_blank">
             <div>
-              <img src="../assets/sponsor/renft.svg" alt="" />
+              <img src="../assets/sponsor/renft.svg" draggable="false" />
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://www.sharding.capital/" target="_blank">
             <div>
               <img
                 src="../assets/sponsor/sharding.svg"
-                alt=""
+                draggable="false"
                 style="max-height: 100px; height: auto"
               />
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://www.onfuel.io/" target="_blank">
             <div>
-              <img src="../assets/sponsor/fuel.svg" alt="" />
+              <img src="../assets/sponsor/fuel.svg" draggable="false" />
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://www.zesty.market/" target="_blank">
             <div>
-              <img src="../assets/sponsor/zesty.svg" alt="" />
+              <img src="../assets/sponsor/zesty.svg" draggable="false" />
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://violet.co/" target="_blank">
             <div>
-              <img src="../assets/sponsor/violet.png" alt="" />
+              <img src="../assets/sponsor/violet.png" draggable="false" />
             </div>
           </a>
         </div>
-        <div class="col-sm-p">
+        <div class="col-sm-12 col-md-3">
           <a href="https://jpg.space/" target="_blank">
             <div>
-              <img src="../assets/sponsor/jpg.svg" alt="" />
+              <img src="../assets/sponsor/jpg.svg" draggable="false" />
             </div>
           </a>
         </div>

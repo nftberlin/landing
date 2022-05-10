@@ -156,6 +156,13 @@
   .speakers .speakers-new .row:nth-child(2) {
     margin-top: 0rem;
   }
+  .sponsors .anon .col-md-3:nth-child(4) {
+    border: none;
+  }
+  
+  .anon .col-md-3:nth-child(5) {
+    border-right: 1px solid var(--green) !important;
+  }
 }
 
 @media only screen and (min-width: 819px) and (max-width: 1180px) {
@@ -213,6 +220,10 @@
         transform: none !important;
       }
     }
+  }
+
+  .partners .partners-content {
+    padding: 0 7rem;
   }
 
   footer {
@@ -386,8 +397,7 @@
       .rare {
         .col-6 {
           margin: 1rem 0;
-          border: none;
-          padding: 8px;
+          
           width: 50%;
 
           svg {
@@ -457,6 +467,13 @@
         }
       }
     }
+  }
+
+  .sponsors .anon .col-md-3:nth-child(4) {
+    border: none;
+  }
+  .anon .col-md-3:nth-child(5) {
+    border-right: 1px solid var(--green) !important;
   }
 
   .team-swiper {
@@ -907,13 +924,10 @@
       flex-direction: row !important;
     }
     .rare {
-      /* flex-direction: column; */
 
-      padding: 0 1rem;
       .col-6 {
         margin: 1rem 0;
-        border: none;
-        padding: 5px !important;
+        
         width: 50%;
       }
     }
@@ -930,6 +944,29 @@
         }
       }
     }
+  }
+
+  .sponsors .anon .col-md-3 {
+    width: 50%;
+  }
+  .sponsors .epic .col-md-3 {
+    width: 50%;
+  }
+  .anon .col-md-3:nth-child(5) {
+    border-right: 1px solid var(--green) !important;
+  }
+  .anon .col-md-3:nth-child(even) {
+    border-right: none !important;
+  }
+  .sponsors .epic .col-md-3:nth-child(even) {
+    border-right: none !important;
+  }
+  .sponsors .epic .col-md-3:nth-last-child(1) {
+    border-right: none !important;
+  }
+
+  .partners .partners-content {
+    padding: 0 1.8rem;
   }
   .team-swiper {
     .container-fluid {

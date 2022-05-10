@@ -32,6 +32,17 @@
       <Sponsors />
     </div>
 
+    <div id="partners">
+      <div class="marquee-green">
+        <MarqueeText :repeat="25">
+          <div class="banner-text">
+            <p class="m-0">OUR PARTNERS - OUR PARTNERS -&nbsp;</p>
+          </div>
+        </MarqueeText>
+      </div>
+      <Partners />
+    </div>
+
     
     <div class="marquee">
       <MarqueeText :repeat="25">
@@ -60,6 +71,7 @@ import Talks from "@/components/Talks.vue";
 import Team from "@/components/Team.vue";
 import What from "@/components/What.vue";
 import Sponsors from "@/components/Sponsors.vue";
+import Partners from "@/components/Partners.vue";
 import Speakers from "@/components/Speakers.vue";
 import Events from "@/components/Events.vue";
 import Footer from "@/components/Footer.vue";
@@ -78,6 +90,7 @@ export default {
     Team,
     What,
     Sponsors,
+    Partners,
     Speakers,
     Events,
     Footer,

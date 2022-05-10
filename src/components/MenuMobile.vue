@@ -52,7 +52,7 @@
           <a href="/#sponsors" @click="toggleMenu()">Sponsors</a>
           <a href="/ticket" @click="toggleMenu()">TICKETS</a>
           <a href="/hackathon" @click="toggleMenu()">HACKATHON</a>
-          <!-- <a href="/talks" @click="toggleMenu()">Talks</a> -->
+          <a href="/talks" @click="toggleMenu()">Talks</a>
           <!-- <a href="#team" @click="toggleMenu()">Team</a> -->
         </div>
 

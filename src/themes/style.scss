@@ -894,7 +894,7 @@ body {
     margin-top: 3rem;
     .col-lg-3,
     .col-6,
-    .col-sm-p,
+    .col-md-3,
     .col {
       padding: 0 14px;
 
@@ -929,7 +929,7 @@ body {
   }
 
   .epic {
-    .col-sm-p {
+    .col-md-3 {
       @include border-right();
       margin-top: 2rem;
       width: 25%;
@@ -942,14 +942,17 @@ body {
       }
     }
 
-    .col-sm-p:nth-child(8),
-    .col-sm-p:nth-child(4) {
+    .col-md-3:nth-child(8),
+    .col-md-3:nth-last-child(1),
+    .col-md-3:nth-child(4) {
       border: none;
     }
   }
 
+
+
   .anon {
-    .col-sm-p {
+    .col-md-3 {
       @include border-right();
       margin-top: 2rem;
       width: 20%;
@@ -962,8 +965,8 @@ body {
       }
     }
 
-    .col-sm-p:nth-child(8),
-    .col-sm-p:nth-child(5) {
+    .col-md-3:nth-child(8),
+    .col-md-3:nth-child(5) {
       border: none;
     }
   }
@@ -1000,7 +1003,60 @@ body {
   // }
 }
 
+
 /* ===== >>>>> / SPONSORS <<<<< ===== */
+
+.marquee-green{
+  background-color: var(--green);
+  color: black;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 6rem;
+}
+
+.partners{
+  border-bottom: 2px solid var(--green);
+  padding-bottom: 7.5rem;
+
+
+  .arrows{
+    justify-content: space-around;
+    margin: 4.375rem 0;
+  }
+
+  .partners-content{
+    padding: 0 11rem;
+    .col-6 {
+      @include border-right();
+      width: 50%;
+      margin-bottom: 2rem;
+      &:nth-child(2),
+      &:nth-last-child(1) {
+        border: none;
+      }
+      div {
+        /* aspect-ratio: 2/1; */
+        min-height: 8rem;
+        background-color: #ffffff1a;
+        display: grid;
+        place-items: center;
+        svg,
+        img {
+          height: auto;
+          max-width: 70%;
+        }
+      }
+
+      padding: 0 14px;
+
+      
+        
+
+        
+    
+    }
+  }
+}
 
 /* ===== >>>>>  EVENTS <<<<< ===== */
 
@@ -1454,12 +1510,15 @@ footer {
 /* ===== >>>>> TALKS PAGE <<<<< ===== */
 
 .talks-page{
+  footer{
+    margin-top: 8rem;
+  }
   .schedule-content{
     padding-top: 10rem;
 
   }
   .talk-scheduling{
-    padding: 6.5rem 6.125rem 4rem 6.125rem;
+    padding: 6.5rem 4rem 4rem 4rem;
     border-bottom: 1px solid var(--green);
     display: flex;
     justify-content: space-between;
@@ -1488,70 +1547,74 @@ footer {
 
     }
   }
+  .schedule-divider{
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px solid var(--green);
+  }
 
   .rooms{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 4rem 6.5rem;
     h1{
       font-size: 2.5rem;
       font-family: var(--display-ext);
       color: var(--green);
+      padding: 4rem 4rem;
     }
 
-    button{
-      border: none;
-      background: none;
-      width: 30px;
-      height: 30px;
-      display: grid;
-      place-items: center;
-      position: relative;
-    }
-
-    .plus-line{
-      width: 1px;
-      height: 30px;
+    .greenrow{
       background: var(--green);
-      transition: ease-in-out .4s;
+      font-family: var(--display-ext);
+      color: black;
+      padding: 1.5rem 4rem;
+
+      .col{
+        padding: 0;
+      }
+
+      h2{
+        font-size: 1.5rem;
+      }
     }
-    .plus-line:nth-child(2){
-      position: absolute;
-      transform-origin: center;
-      transform: rotate(90deg);
+    
+
+    .schedule-program{
+      font-size: 1.875rem;
+      font-family: var(--neuebit) !important;
+
+      .schedule-hours{
+        color: var(--green);
+ 
+      }
+
+      .programrow:nth-child(1){
+        padding-top: 4.5rem;
+      }
+
+      .programrow{
+        padding: 2.25rem 4rem;
+        
+
+        .col{
+          padding: 0;
+          p{
+            line-height: 21.42px;
+          }
+        }
+      }
     }
-    .plus-line:nth-child(1).open{
-      transform-origin: center;
-      transform: rotate(90deg);
-    } 
+
+
+
+
     
   }
 
-  .swiper{
-    padding-left: 4.75rem;
-    padding-right: 8.25rem;
-    
-  }
 
   .room-a-content{
     position: relative;
   }
 
-  .next-talk-el{
-    position: absolute;
-    right: 3.5rem;
-    top: 35%;
-  }
 
-  .talk-slide{
-    border: 1px solid var(--green);
-    border-radius: 18px;
-    background-color: #C4C4C41F;
-    padding: 2rem;
-    margin-right: 3.5rem;
-
-  }
 
   .room-speaker{
       display: flex;
