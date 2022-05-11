@@ -188,7 +188,7 @@
                 v-if="pending !== undefined"
                 class="d-flex flex-column flex-md-row align-items-center qr-generated mt-5"
               >
-                <div :class="{ 'ml-5': !isMobile }">
+                <div class="details-transfer" :class="{ 'ml-5': !isMobile, 'd-flex flex-column': isMobile }">
                   <i class="fa-solid fa-triangle-exclamation"></i>
                   <h3 class="mt-3 white">Transaction details:</h3>
                   <h3 class="grey">
@@ -302,7 +302,7 @@
           <div
             v-if="
               !isMobile &&
-              claimCompleted ||transferCompleted &&
+              (claimCompleted || transferCompleted) &&
               (claimed.qr !== undefined || pending !== undefined)
             "
             class="d-flex justify-content-end"
