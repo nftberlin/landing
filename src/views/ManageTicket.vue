@@ -427,11 +427,12 @@
         </a>
       </div>
     </div>
-    <div class="container-workingMessage" v-if="isWorking">
-      <div class="workingMessage">
-        <i class="fas fa-spinner fa-pulse"></i>
-        {{ workingMessage }}...
-      </div>
+    <div
+      class="container-workingMessage d-flex flex-column flex-md-row align-items-center justify-content-center text-center"
+      v-if="isWorking"
+    >
+      <i class="fas fa-spinner fa-pulse"></i>
+      <div class="workingMessage">{{ workingMessage }}...</div>
     </div>
     <!-- END WORKING MESSAGE AND ERRORS -->
     <!-- <div class="gap hideMobile"></div> -->

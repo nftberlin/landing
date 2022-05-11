@@ -709,11 +709,11 @@ body {
       font-size: 0.875rem;
       margin: 0;
     }
-    
+
     .member-ph {
       position: relative;
       width: fit-content;
-      
+
       img {
         border-width: 5px;
         border-color: var(--green);
@@ -727,13 +727,13 @@ body {
       display: flex;
       align-content: center;
       margin: 0.5rem 0;
-      a{
-      font-family: var(--worksans);
-      font-size: 0.875rem;
-      color: #C4C4C4;
-    }
+      a {
+        font-family: var(--worksans);
+        font-size: 0.875rem;
+        color: #c4c4c4;
+      }
       img {
-        margin-right: .6rem;
+        margin-right: 0.6rem;
       }
     }
   }
@@ -949,8 +949,6 @@ body {
     }
   }
 
-
-
   .anon {
     .col-md-3 {
       @include border-right();
@@ -1003,10 +1001,9 @@ body {
   // }
 }
 
-
 /* ===== >>>>> / SPONSORS <<<<< ===== */
 
-.marquee-green{
+.marquee-green {
   background-color: var(--green);
   color: black;
   font-family: var(--display);
@@ -1014,17 +1011,16 @@ body {
   font-size: 6rem;
 }
 
-.partners{
+.partners {
   border-bottom: 2px solid var(--green);
   padding-bottom: 7.5rem;
 
-
-  .arrows{
+  .arrows {
     justify-content: space-around;
     margin: 4.375rem 0;
   }
 
-  .partners-content{
+  .partners-content {
     padding: 0 11rem;
     .col-6 {
       @include border-right();
@@ -1048,12 +1044,6 @@ body {
       }
 
       padding: 0 14px;
-
-      
-        
-
-        
-    
     }
   }
 }
@@ -1505,37 +1495,34 @@ footer {
 }
 /* ===== >>>>> / HACKATHON <<<<< ===== */
 
-
-
 /* ===== >>>>> TALKS PAGE <<<<< ===== */
 
-.talks-page{
-  footer{
+.talks-page {
+  footer {
     margin-top: 8rem;
   }
-  .schedule-content{
+  .schedule-content {
     padding-top: 10rem;
-
   }
-  .talk-scheduling{
+  .talk-scheduling {
     padding: 6.5rem 4rem 4rem 4rem;
     border-bottom: 1px solid var(--green);
     display: flex;
     justify-content: space-between;
 
-    h1{
+    h1 {
       font-size: 2.5rem;
       font-family: var(--display-ext);
       color: var(--green);
     }
 
-    .tags{
+    .tags {
       display: flex;
       justify-content: space-around;
       align-items: flex-end;
     }
 
-    .tag{
+    .tag {
       margin-left: 1rem;
       min-width: 10rem;
       border: 1px solid var(--green);
@@ -1544,105 +1531,93 @@ footer {
       color: var(--green);
       font-size: 2rem;
       font-weight: 700;
-
     }
   }
-  .schedule-divider{
-      width: 100%;
-      height: 1px;
-      border-bottom: 1px solid var(--green);
+  .schedule-divider {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid var(--green);
   }
 
-  .rooms{
-    h1{
+  .rooms {
+    h1 {
       font-size: 2.5rem;
       font-family: var(--display-ext);
       color: var(--green);
       padding: 4rem 4rem;
     }
 
-    .greenrow{
+    .greenrow {
       background: var(--green);
       font-family: var(--display-ext);
       color: black;
       padding: 1.5rem 4rem;
 
-      .col{
+      .col {
         padding: 0;
       }
 
-      h2{
+      h2 {
         font-size: 1.5rem;
       }
     }
-    
 
-    .schedule-program{
+    .schedule-program {
       font-size: 1.875rem;
       font-family: var(--neuebit) !important;
 
-      .schedule-hours{
+      .schedule-hours {
         color: var(--green);
- 
       }
 
-      .programrow:nth-child(1){
+      .programrow:nth-child(1) {
         padding-top: 4.5rem;
       }
 
-      .programrow{
+      .programrow {
         padding: 2.25rem 4rem;
-        
 
-        .col{
+        .col {
           padding: 0;
-          p{
+          p {
             line-height: 21.42px;
           }
         }
       }
     }
-
-
-
-
-    
   }
 
-
-  .room-a-content{
+  .room-a-content {
     position: relative;
   }
 
+  .room-speaker {
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin: 0;
+    }
+    .date {
+      color: var(--green);
+      font-family: var(--display-ext);
+      font-size: 1.25rem;
+    }
+    .name {
+      font-family: var(--neuebit);
+      font-size: 1.625rem;
+      font-weight: 700;
+      line-height: 22px;
 
-
-  .room-speaker{
-      display: flex;
-      justify-content: space-between;
-      p{
-        margin: 0;
+      a {
+        font-weight: 400;
+        color: #7f7f7f;
       }
-      .date{
-        color: var(--green);
-        font-family: var(--display-ext);
-        font-size: 1.25rem;
-      }
-      .name{
-        font-family: var(--neuebit);
-        font-size: 1.625rem;
-        font-weight: 700;
-        line-height: 22px;
-
-        a{
-          font-weight: 400;
-          color:#7f7f7f;
-        }
-      }
+    }
   }
-  .infos{
-    .info{
+  .infos {
+    .info {
       display: flex;
-      p{
+      p {
         margin: 0;
         margin-left: 1rem;
         font-size: 1.25rem;
@@ -1650,15 +1625,14 @@ footer {
       }
     }
   }
-  .subject h3{
+  .subject h3 {
     font-size: 1.25rem;
     font-family: var(--neuebit);
     font-weight: 700;
     line-height: 22px;
     margin-top: 2.5rem;
-
   }
-  .desc{
+  .desc {
     font-family: var(--neuebit);
     font-size: 1.25rem;
     font-weight: 400;
@@ -1667,13 +1641,7 @@ footer {
   }
 }
 
-
-
 /* ===== >>>>> / TALKS PAGE <<<<< ===== */
-
-
-
-
 
 /* ========= >>>>> MINTING TICKETS <<<<< ======== */
 
@@ -2389,17 +2357,17 @@ footer {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 999;
-    .workingMessage {
+    i {
       color: #00ff00;
       font-size: 2rem;
+      margin-right: 1rem;
+    }
+    .workingMessage {
       font-family: var(--neuebit);
-      i {
-        margin-right: 1rem;
-      }
+      color: #00ff00;
+      font-size: 2rem;
+      margin-right: 1rem;
     }
   }
   .qr-generated {
