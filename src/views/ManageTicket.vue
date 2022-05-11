@@ -48,7 +48,7 @@
                 <h2 class="green m-0">success!</h2>
               </div>
               <div
-                class="d-flex align-items-center ticket-select b-bottom b-top py-5"
+                class="d-flex flex-column flex-md-row align-items-center ticket-select b-bottom b-top py-5"
               >
                 <div class="ticket-box-container">
                   <div class="ticket-box m-0">
@@ -65,7 +65,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="ml-5 pl-5">
+                <div :class="{ 'ml-5 pl-5': !isMobile }">
                   <h4 class="green">
                     see you <br />
                     in berlin.<br /><br />
@@ -519,19 +519,7 @@ export default {
   },
   mounted() {
     const app = this;
-    if (window.innerWidth < 992) {
-      app.isMobile = true;
-    } else {
-      app.isMobile = false;
-    }
-
-    window.addEventListener("resize", function () {
-      if (window.innerWidth > 992) {
-        app.isMobile = false;
-      } else {
-        app.isMobile = true;
-      }
-    });
+    this.checkViewport();
     app.connect();
   },
   methods: {
@@ -703,6 +691,31 @@ export default {
         );
         console.log(app.selected.metadata.image);
       }
+    },
+    checkViewport() {
+      const app = this;
+      if (window.innerWidth < 768) {
+        app.isMobile = true;
+        app.isTablet = false;
+      } else if (window.innerWidth < 992) {
+        app.isMobile = false;
+        app.isTablet = true;
+      } else if (window.innerWidth > 992) {
+        app.isMobile = false;
+        app.isTablet = false;
+      }
+      window.addEventListener("resize", function () {
+        if (window.innerWidth < 768) {
+          app.isMobile = true;
+          app.isTablet = false;
+        } else if (window.innerWidth < 992) {
+          app.isMobile = false;
+          app.isTablet = true;
+        } else if (window.innerWidth > 992) {
+          app.isMobile = false;
+          app.isTablet = false;
+        }
+      });
     },
   },
 };

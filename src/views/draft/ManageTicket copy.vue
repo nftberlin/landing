@@ -48,7 +48,7 @@
                 <h2 class="green m-0">success!</h2>
               </div>
               <div
-                class="d-flex flex-column flex-md-row flex-lg-row align-items-center ticket-select b-bottom b-top py-5"
+                class="d-flex align-items-center ticket-select b-bottom b-top py-5"
               >
                 <div class="ticket-box-container">
                   <div class="ticket-box m-0">
@@ -77,6 +77,7 @@
                   </h4>
                 </div>
               </div>
+              <!-- TODO: insert this when layout complete:   v-if="claimed.qr !== undefined" -->
               <div
                 v-if="claimed.qr !== undefined"
                 class="d-flex flex-column flex-md-row align-items-center qr-generated mt-5"
