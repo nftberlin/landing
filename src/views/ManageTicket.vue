@@ -146,6 +146,7 @@
                       initSendProcess = false;
                       ticketSelection = false;
                       claimCompleted = false;
+                      transferCompleted = false,
                       connect();
                     "
                   >
@@ -211,7 +212,7 @@
           <!-- END SUCCESS TRANSFERING -->
 
           <!-- ALL OWNED NFTS -->
-          <div v-if="account && !isClaiming && !claimCompleted && !isWorking">
+          <div v-if="account && !isClaiming && !claimCompleted && !isWorking && !transferCompleted">
             <Transition
               name="custom-fade"
               enter-active-class="animate__animated animate__fadeIn"
@@ -301,7 +302,7 @@
           <div
             v-if="
               !isMobile &&
-              claimCompleted &&
+              claimCompleted ||transferCompleted &&
               (claimed.qr !== undefined || pending !== undefined)
             "
             class="d-flex justify-content-end"
@@ -315,6 +316,7 @@
                 initSendProcess = false;
                 ticketSelection = false;
                 claimCompleted = false;
+                transferCompleted = false
                 connect();
               "
             >

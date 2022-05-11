@@ -2264,6 +2264,8 @@ footer {
   color: #00ff00;
   font-size: 1.6rem;
   font-family: var(--neuebit);
+  word-break: break-word;
+  line-height: 1;
   i {
     margin-right: 1rem;
   }
