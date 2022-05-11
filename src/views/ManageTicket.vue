@@ -8,7 +8,6 @@
         <h1 class="green_inactive">MY ACCOUNT</h1>
         <div v-if="!transferCompleted && !claimCompleted">
           <h2 class="green">nftberlin</h2>
-          <!-- SUCCES CLAIMING -->
           <div
             class="specs-location d-flex align-items-start"
             :class="{ 'mt-2': !isMobile, 'mt-2': isMobile }"
@@ -44,8 +43,24 @@
               "
               class="claim-tickets mt-5"
             >
-              <div class="title-container pb-4">
+              <div class="title-container pb-4 d-flex justify-content-between">
                 <h2 class="green m-0">success!</h2>
+                <div v-if="isMobile">
+                  <div
+                    class="sqr-btn"
+                    @click="
+                      tokenId = '';
+                      selected = {};
+                      initClaimProcess = false;
+                      initSendProcess = false;
+                      ticketSelection = false;
+                      claimCompleted = false;
+                      connect();
+                    "
+                  >
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+                </div>
               </div>
               <div
                 class="d-flex flex-column flex-md-row align-items-center ticket-select b-bottom b-top py-5"
@@ -66,7 +81,7 @@
                   </div>
                 </div>
                 <div :class="{ 'ml-5 pl-5': !isMobile }">
-                  <h4 class="green">
+                  <h4 class="green" :class="{ 'text-start mt-3': isMobile }">
                     see you <br />
                     in berlin.<br /><br />
 
@@ -77,7 +92,6 @@
                   </h4>
                 </div>
               </div>
-              <!-- TODO: insert this when layout complete:   v-if="claimed.qr !== undefined" -->
               <div
                 v-if="claimed.qr !== undefined"
                 class="d-flex flex-column flex-md-row align-items-center qr-generated mt-5"
@@ -120,11 +134,27 @@
               "
               class="claim-tickets mt-5"
             >
-              <div class="title-container pb-4">
+              <div class="title-container pb-4 d-flex justify-content-between">
                 <h2 class="green m-0">success!</h2>
+                <div v-if="isMobile">
+                  <div
+                    class="sqr-btn"
+                    @click="
+                      tokenId = '';
+                      selected = {};
+                      initClaimProcess = false;
+                      initSendProcess = false;
+                      ticketSelection = false;
+                      claimCompleted = false;
+                      connect();
+                    "
+                  >
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+                </div>
               </div>
               <div
-                class="d-flex align-items-center ticket-select b-bottom b-top py-5"
+                class="d-flex flex-column flex-md-row align-items-center ticket-select b-bottom b-top py-5"
               >
                 <div class="ticket-box-container">
                   <div class="ticket-box m-0">
@@ -270,6 +300,7 @@
         <div class="col-12 col-md-12 col-lg-4 offset-lg-1">
           <div
             v-if="
+              !isMobile &&
               claimCompleted &&
               (claimed.qr !== undefined || pending !== undefined)
             "
@@ -417,7 +448,7 @@
     </div>
     <!-- WORKING MESSAGE AND ERRORS -->
     <div
-      class="container-workingMessage"
+      class="container-workingMessage d-flex align-items-center justify-content-center"
       v-if="account && nfts.length === 0 && noNfts"
     >
       <div class="mt-5 text-center">
