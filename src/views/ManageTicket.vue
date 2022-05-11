@@ -6,10 +6,9 @@
     <div class="container mb-5" :class="{ 'mt-5': !isMobile }">
       <div class="title-container pt-3 pb-3">
         <h1 class="green_inactive">MY ACCOUNT</h1>
-        <div v-if="!processCompleted">
+        <div v-if="!transferCompleted && !claimCompleted">
           <h2 class="green">nftberlin</h2>
           <!-- SUCCES CLAIMING -->
-          <!-- TODO: insert "processCompleted" control when claiming goes right and hide this div -->
           <div
             class="specs-location d-flex align-items-start"
             :class="{ 'mt-2': !isMobile, 'mt-2': isMobile }"
@@ -39,7 +38,7 @@
             <div
               v-if="
                 !isClaiming &&
-                processCompleted &&
+                claimCompleted &&
                 selected.metadata !== undefined &&
                 claimed.qr !== undefined
               "
@@ -115,7 +114,7 @@
             <div
               v-if="
                 !isSending &&
-                processCompleted &&
+                transferCompleted &&
                 selected.metadata !== undefined &&
                 pending !== undefined
               "
@@ -181,14 +180,14 @@
           </Transition>
           <!-- END SUCCESS TRANSFERING -->
 
-          <div v-if="account && !isClaiming && !processCompleted && !isWorking">
+          <!-- ALL OWNED NFTS -->
+          <div v-if="account && !isClaiming && !claimCompleted && !isWorking">
             <Transition
               name="custom-fade"
               enter-active-class="animate__animated animate__fadeIn"
               leave-active-class="animate__animated animate__fadeOut"
             >
               <div v-if="nfts.length > 0 && !isClaiming">
-                <!-- ALL OWNED NFTS -->
                 <div class="ticket-select mt-3">
                   <h5 class="green">1. Choose an NFT ticket to entry</h5>
                   <p>
@@ -225,7 +224,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- END ALL OWNED NFTS -->
 
                 <!-- SELECT AN ACTION -->
                 <Transition
@@ -266,11 +264,13 @@
               </div>
             </Transition>
           </div>
+          <!-- END ALL OWNED NFTS -->
         </div>
+
         <div class="col-12 col-md-12 col-lg-4 offset-lg-1">
           <div
             v-if="
-              processCompleted &&
+              claimCompleted &&
               (claimed.qr !== undefined || pending !== undefined)
             "
             class="d-flex justify-content-end"
@@ -283,7 +283,7 @@
                 initClaimProcess = false;
                 initSendProcess = false;
                 ticketSelection = false;
-                processCompleted = false;
+                claimCompleted = false;
                 connect();
               "
             >
@@ -301,7 +301,7 @@
                 account &&
                 initClaimProcess &&
                 !isClaiming &&
-                !processCompleted &&
+                !claimCompleted &&
                 !isWorking &&
                 tokenId !== undefined &&
                 tokenId !== ''
@@ -362,7 +362,7 @@
                 account &&
                 initSendProcess &&
                 !isSending &&
-                !processCompleted &&
+                !transferCompleted &&
                 !isWorking &&
                 tokenId !== undefined &&
                 tokenId !== ''
@@ -499,7 +499,8 @@ export default {
       ticketSelection: false,
       initClaimProcess: false,
       initSendProcess: false,
-      processCompleted: false,
+      claimCompleted: false,
+      transferCompleted: false,
       infuraId: "57d9ea9ca92a4449933c2b7d7145187d",
       balance: 0,
       nfts: [],
@@ -615,7 +616,7 @@ export default {
             } else {
               app.isWorking = false;
               app.workingMessage = "";
-              app.processCompleted = true;
+              app.claimCompleted = true;
             }
             console.log(app.claimed);
           }, 2000);
@@ -661,7 +662,7 @@ export default {
               });
             const gasLimit = parseInt(estimated * 1.2).toString();
             console.log("This is gasLimit", gasLimit);
-            const gasPrice = await app.web3.eth.getGasPrice()
+            const gasPrice = await app.web3.eth.getGasPrice();
             await nftContract.methods
               .safeTransferFrom(app.account, app.receiver, app.tokenId)
               .send({
@@ -676,7 +677,7 @@ export default {
             app.isSending = false;
             app.isWorking = false;
             app.workingMessage = "";
-            app.processCompleted = true;
+            app.transferCompleted = true;
           } catch (e) {
             alert(e.message);
             app.isSending = false;
