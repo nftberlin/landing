@@ -1516,11 +1516,25 @@ footer {
       color: var(--green);
     }
 
+    
+
     .tags {
       display: flex;
       justify-content: space-around;
       align-items: flex-end;
     }
+
+    .active-day{
+      background-color: #C4C4C440;
+      cursor:default;
+    }
+    .active-link{
+      cursor: pointer;
+    }
+    a{
+        color: var(--green);
+        text-decoration: none;
+      }
 
     .tag {
       margin-left: 1rem;
@@ -1531,6 +1545,7 @@ footer {
       color: var(--green);
       font-size: 2rem;
       font-weight: 700;
+      
     }
   }
   .schedule-divider {
@@ -1578,10 +1593,17 @@ footer {
         padding: 2.25rem 4rem;
 
         .col {
+          max-height: 5rem;
+          overflow-y: scroll;
           padding: 0;
           p {
             line-height: 21.42px;
+            max-inline-size: 80%;
           }
+
+           li{
+        line-height: 30px;
+        }
         }
       }
     }

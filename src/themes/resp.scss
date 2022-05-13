@@ -163,6 +163,20 @@
   .anon .col-md-3:nth-child(5) {
     border-right: 1px solid var(--green) !important;
   }
+
+  .talks-page .rooms .greenrow {
+    
+    padding: 1.5rem 2.5rem;
+  }
+
+  .talks-page .rooms .schedule-program .programrow {
+    padding: 2.25rem 2.5rem;
+  }
+
+  .talks-page .rooms .schedule-program .programrow .col p {
+    line-height: 21.42px;
+    max-inline-size: 85%;
+  }
 }
 
 @media only screen and (min-width: 819px) and (max-width: 1180px) {
@@ -734,6 +748,20 @@
         height: 80%;
       }
     }
+  }
+
+
+
+  .talks-page .rooms .greenrow {
+    display: none;
+  }
+
+  .talks-page .rooms h1 {
+    font-size: 2rem;
+    font-family: var(--display-ext);
+    background-color: var(--green);
+    color: black;
+    padding: 2.5rem;
   }
 }
 
