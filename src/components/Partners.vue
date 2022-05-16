@@ -45,63 +45,30 @@
     </div>
 
     <div class="row partners-content">
-      <div class="col-6">
+      <div class="col-lg-4">
         <a href="https://www.berlin-partner.de/en" target="_blank">
           <div>
             <img src="../assets/partners/berlincity.png" draggable="false" />
           </div>
         </a>
       </div>
-      <div class="col-6">
-        <a href="https://www.nftparis.xyz/" target="_blank">
-          <div>
-            <img src="../assets/partners/NftParis.png" draggable="false" />
-          </div>
-        </a>
-      </div>
-      <div class="col-6">
+
+      <div class="col-lg-4">
         <a href="https://sadgirlsbar.io/" target="_blank">
           <div>
             <img src="../assets/partners/Logo.png" draggable="false" />
           </div>
         </a>
       </div>
-      <div class="col-6">
-        <a href="https://www.blockchance.eu/" target="_blank">
-          <div>
-            <img
-              src="../assets/partners/blockchance.png"
-              draggable="false"
-            /></div
-        ></a>
-      </div>
-      <div class="col-6">
+
+      <div class="col-lg-4">
         <a href="https://www.btc-echo.de/" target="_blank">
           <div>
             <img src="../assets/partners/btcecho.png" draggable="false" />
           </div>
         </a>
       </div>
-      <div class="col-6">
-        <a href="https://ethcc.io/" target="_blank">
-          <div>
-            <img src="../assets/partners/ethccc.png" draggable="false" />
-          </div>
-        </a>
-      </div>
-      <div class="col-6">
-        <a href="https://www.fanzone.io/" target="_blank">
-          <div>
-            <img src="../assets/partners/fanzone.png" draggable="false" />
-          </div>
-        </a>
-      </div>
-      <div class="col-6">
-        <a href="https://www.opera.com/" target="_blank">
-          <div>
-            <img src="../assets/partners/opera.png" draggable="false" /></div
-        ></a>
-      </div>
+
     </div>
   </div>
 </template>

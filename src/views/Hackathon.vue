@@ -464,7 +464,12 @@
             </svg>
           </div>
         </a>
-        <a href="https://discord.gg/gMQhjZQuSe" target="_blank" class="" style="margin-left: 1rem">
+        <a
+          href="https://discord.gg/gMQhjZQuSe"
+          target="_blank"
+          class=""
+          style="margin-left: 1rem"
+        >
           <div class="btn-contact">
             Discord
             <svg

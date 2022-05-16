@@ -1022,11 +1022,11 @@ body {
 
   .partners-content {
     padding: 0 11rem;
-    .col-6 {
+    .col-lg-4 {
       @include border-right();
       width: 50%;
       margin-bottom: 2rem;
-      &:nth-child(even) {
+      &:nth-last-child(1) {
         border: none;
       }
       div {
@@ -1039,7 +1039,7 @@ body {
         img {
           height: auto;
           width: auto;
-          max-width: 400px;
+          max-width: 230px;
           max-height: 7rem;
           
         }
