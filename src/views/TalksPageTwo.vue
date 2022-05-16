@@ -94,22 +94,30 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>11.30-12.15</p></div>
+                <div class="col schedule-hours"><p>11.30-12.00</p></div>
                 <div class="col">
-                  <p>NA</p>
+                  <p>
+                    Beatriz Helena Ramos <br />
+                    Co-founder, DADA NYC
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
                 </div>
                 <div class="col">
-                  <p>NA</p>
+                  <p>DADA + the Invisible Economy</p>
                 </div>
                 <div class="col">
-                  <p>NA</p>
+                  <p>
+                    We are NFT pioneers (First to introduce royalties on smart
+                    contracts in 2017). Currently developing an alternative
+                    socio economic system using blockchain & holochain (The
+                    Invisible Economy).
+                  </p>
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.00-13.30</p></div>
+                <div class="col schedule-hours"><p>13.00-13.20</p></div>
                 <div class="col">
                   <p>Tina - Head of Design, Element Finance</p>
                 </div>
@@ -128,7 +136,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.30-14.00</p></div>
+                <div class="col schedule-hours"><p>13.20-13.40</p></div>
                 <div class="col">
                   <p>Chris Minnis - Core Contributor, Goblin Sax</p>
                 </div>
@@ -149,7 +157,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>14.00-14.30</p></div>
+                <div class="col schedule-hours"><p>13.40-14.00</p></div>
                 <div class="col">
                   <p>Zhivko Todorov - Co-founder, EnterDAO</p>
                 </div>
@@ -170,7 +178,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>14.30-15.00</p></div>
+                <div class="col schedule-hours"><p>14.00-14.20</p></div>
                 <div class="col">
                   <p>
                     Alex Cuthbertson - Co-founder <br />and Production Lead,
@@ -195,46 +203,57 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>15.00-15.45</p></div>
+                <div class="col schedule-hours"><p>14.20-15.10</p></div>
+                <div class="col">
+                  <p>NA</p>
+                </div>
+                <div class="col">
+                  <p>4: Infrastructure & Research</p>
+                </div>
+                <div class="col">
+                  <p>NA</p>
+                </div>
+                <div class="col">
+                  <p>NA</p>
+                </div>
+              </div>
+              <div class="row programrow">
+                <div class="col schedule-hours"><p>15.10-16.00</p></div>
                 <div class="col">
                   <p>
-                    Tyler Golato - Co-founder <br />and CSO, Molecule & Founding
-                    Steward, VitaDaO and PsyDAO <br />
-                    Vincent - Founder, VitaDAO<br />
-                    Niklas Rindtorff - Founder, LabDAO<br />
-                    Paul Kohlhaas - Founder, Molecule
+                    Lili Feyerabend: Founder, NFTBERLIN <br />
+                    Maria Paula Fernandez: Co-founder, JPEG<br />
+                    Kaushik Swaminathan: CEO, Co-Museum <br />David Toh:
+                    Partner, Mirana Ventures
                   </p>
                 </div>
                 <div class="col">
                   <p>4: Infrastructure & Research</p>
                 </div>
                 <div class="col">
-                  <p>The Role of IP-NFTs in DeSci</p>
+                  <p>
+                    More than a jpeg: building a crypto-native cultural
+                    institution
+                  </p>
                 </div>
                 <div class="col">
                   <p>
-                    NFTs exploded out of the ether in recent years. The space
-                    has been instrumental in helping to usher in a “creator
-                    economy”, transferring power away from middlemen and towards
-                    creatives themselves. IP-NFTs extend this creator economy to
-                    the sciences for the first time. With IP-NFTs, biomedical
-                    researchers, TTOs, and biotech companies can: 1) fundraise
-                    commercially without needing to patent early or create a
-                    startup, 2) engage stakeholder groups like patients
-                    directly, collaborate with other researchers to promote open
-                    science, and get attention through a public marketplace, 3)
-                    collaborate on research tasks utilising data access control,
-                    and 4) create new funding/monetisation strategies that take
-                    advantage of data marketplaces.
+                    If one of the primary forms of cryptocultural expression is
+                    economics, what impact will this have on modes of ownership
+                    and artistic production? Should we think about NFTs as a
+                    medium or as a tool? A discussion on traditional forms of
+                    patronage versus crypto-native cultural institutions.
                   </p>
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>15.45-16.30</p></div>
+                <div class="col schedule-hours"><p>16.00-16.50</p></div>
                 <div class="col">
                   <p>
-                    Livepeer Konstantin Tkachuk <br />- Developer Advocate and
-                    Startup Operator, Protocol Labs
+                    Konstantin Tkachuk: Developer Advocate and Startup Operator,
+                    Protocol <br />
+                    Labs Philipp: Founder, Creco.xyz<br />
+                    Shannon Wells: Head of Community and Governance, Livepeer
                   </p>
                 </div>
                 <div class="col">
@@ -244,7 +263,12 @@ First floor, main hall -->
                   <p>Cross-chain infrastructure for NFTs</p>
                 </div>
                 <div class="col">
-                  <p>NA</p>
+                  <p>
+                    Discussion about liquidity and bootstrapping, UX challenges,
+                    value of L2 assets and supply challenges for omni-chain
+                    assets as well as interesting technical challenges with zk
+                    rollups and more
+                  </p>
                 </div>
               </div>
               <div class="row programrow">

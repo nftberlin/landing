@@ -75,13 +75,13 @@
           Prizes by
         </div>
         <div class="row epic no-margin-top">
-          <div class="col-sm-p no-margin-top">
+          <div class="col-6 no-margin-top">
             <a href="/">
               <div>
                 <img src="../assets/logo.svg" alt="" /></div
             ></a>
           </div>
-          <div class="col-sm-p no-margin-top">
+          <div class="col-6 no-margin-top">
             <a href="https://www.arweave.org/" target="_blank">
               <div>
                 <svg
@@ -131,7 +131,7 @@
               </div>
             </a>
           </div>
-          <div class="col-sm-p no-margin-top">
+          <div class="col-6 no-margin-top">
             <a href="https://livepeer.org/" target="_blank">
               <div>
                 <svg
@@ -169,7 +169,7 @@
               </div>
             </a>
           </div>
-          <div class="col-sm-p no-margin-top">
+          <div class="col-6 no-margin-top">
             <a href="https://urbit.org/" target="_blank">
               <div>
                 <img src="../assets/sponsor/epic_1.svg" alt="" />

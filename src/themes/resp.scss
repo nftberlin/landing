@@ -177,6 +177,9 @@
     line-height: 21.42px;
     max-inline-size: 85%;
   }
+  .partners .partners-content {
+    padding: 0 4rem;
+  }
 }
 
 @media only screen and (min-width: 819px) and (max-width: 1180px) {
@@ -237,7 +240,11 @@
   }
 
   .partners .partners-content {
-    padding: 0 7rem;
+    padding: 0 4rem;
+
+    .col-6 div img {
+      max-width: 14rem;
+    }
   }
 
   footer {
@@ -975,6 +982,10 @@
     }
   }
 
+  .partners .partners-content .col-6 div img {
+    max-width: 10rem;
+  }
+
   .sponsors .anon .col-md-3 {
     width: 50%;
   }
@@ -1069,6 +1080,10 @@
     padding-left: 0rem;
   }
 
+  .partners .partners-content .col-6 div img {
+    max-width: 8rem;
+  }
+
   .title .title-content h1,
   .talks .col-lg-10 .talks-date h1,
   .what .col-lg-6:nth-child(1) .what-title h1,
@@ -1122,6 +1137,10 @@
   }
   .speakers .swiper .speaker .speaker-img-wrapper .speaker-bg {
     left: 6px;
+  }
+
+  .partners .partners-content .col-6 div img {
+    max-width: 6rem;
   }
 
   .sponsors {

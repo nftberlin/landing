@@ -1026,8 +1026,7 @@ body {
       @include border-right();
       width: 50%;
       margin-bottom: 2rem;
-      &:nth-child(2),
-      &:nth-last-child(1) {
+      &:nth-child(even) {
         border: none;
       }
       div {
@@ -1039,7 +1038,10 @@ body {
         svg,
         img {
           height: auto;
-          max-width: 70%;
+          width: auto;
+          max-width: 400px;
+          max-height: 7rem;
+          
         }
       }
 
@@ -1404,6 +1406,19 @@ footer {
   }
   .sponsors {
     padding-bottom: 0;
+
+    .col-6{
+      margin-bottom: 1rem;
+      min-height: 8rem;
+      border-right: 1px solid var(--green);
+
+      div{
+        height: 100%;
+      }
+      &:nth-child(even){
+        border: none;
+      }
+    }
   }
   .title-section {
     font-family: var(--neuebit);
