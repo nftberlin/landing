@@ -1308,6 +1308,9 @@ footer {
 /* ===== >>>>> HACKATHON <<<<< ===== */
 
 #hackathon {
+  .menu-mobile {
+    height: unset;
+  }
   a:hover {
     text-decoration: none;
   }
