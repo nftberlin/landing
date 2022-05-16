@@ -180,6 +180,9 @@
   .partners .partners-content {
     padding: 0 4rem;
   }
+  .partners .partners-content .cols div img {
+    max-width: 143px;
+  }
 }
 
 @media only screen and (min-width: 819px) and (max-width: 1180px) {
@@ -243,9 +246,10 @@
     padding: 0 4rem;
 
     .col-6 div img {
-      max-width: 14rem;
+      max-width: 177px;
     }
   }
+
 
   footer {
     margin-top: 3.5rem;
@@ -982,8 +986,9 @@
     }
   }
 
-  .partners .partners-content .col-6 div img {
-    max-width: 10rem;
+  .partners .partners-content .col-lg-4 div img {
+    max-width: 136px;
+
   }
 
   .sponsors .anon .col-md-3 {
@@ -1080,8 +1085,8 @@
     padding-left: 0rem;
   }
 
-  .partners .partners-content .col-6 div img {
-    max-width: 8rem;
+  .partners .partners-content .cols div img {
+    max-width: 124px;
   }
 
   .title .title-content h1,
@@ -1139,8 +1144,8 @@
     left: 6px;
   }
 
-  .partners .partners-content .col-6 div img {
-    max-width: 6rem;
+  .partners .partners-content .cols div img {
+    max-width: 104px;
   }
 
   .sponsors {
@@ -1199,5 +1204,14 @@
 
   .speakers .speakers-new .speaker .speaker-img-wrapper {
     max-width: 247px;
+  }
+
+  #hackathon .title-container h1,
+  #hackathon .title-container h2 {
+    font-size: 2.3rem;
+  }
+
+  .partners .partners-content .col-lg-4 div img {
+    max-width: 100px;
   }
 }
