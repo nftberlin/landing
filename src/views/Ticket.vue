@@ -229,6 +229,13 @@
                   >
                     PAY WITH ETHEREUM
                   </div>
+                  <p class="green text-center mt-4 mb-4"
+                    style="cursor: pointer; text-decoration: underline"
+                    v-if="checkedNewsletter && email_address.length > 0"
+                    @click="askPaymentDetails('stripe')"
+                  >
+                    Claim Sponsor + Team Sponsor Ticket
+                  </p>
                 </div>
 
                 <div v-if="debug">
