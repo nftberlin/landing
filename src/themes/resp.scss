@@ -1095,6 +1095,16 @@
     .rooms .schedule-program .schedule-hours {
         min-width: 8rem;
       }
+    .rooms .schedule-program .programrow:nth-child(1) {
+      padding-top: 2.5rem;
+    }
+    .rooms .schedule-program .programrow .col{
+      min-width: 12rem;
+    }
+
+    .talk-scheduling .tag {
+      min-width: 5rem;
+    }
 
     .schedule-content {
       padding-top: 3rem;
@@ -1142,6 +1152,26 @@
   .talks .col-lg-10 .talks-types .row h3 {
     font-size: 1.7rem;
   }
+
+  .talks-page {
+    .rooms .schedule-program .programrow {
+        padding: 2.25rem 1rem;
+      }
+      
+    .rooms h1 {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+    .talk-scheduling {
+        padding: 0rem 1rem 2rem 1rem;
+
+        .tag {
+          font-size: 1.3rem;
+          min-width: 4rem;
+        }
+      }
+  }
+      
 }
 
 @media screen and (max-width: 320px) {
