@@ -1616,14 +1616,39 @@ footer {
           max-height: 8rem;
           overflow-y: scroll;
           padding: 0;
+          -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+            /* Firefox */
           p {
             line-height: 21.42px;
             max-inline-size: 80%;
           }
 
            li{
-        line-height: 30px;
+          line-height: 30px;
+          }
+
+          
+          
+          
         }
+        .col::-webkit-scrollbar {
+          display: none;
+          /* Safari and Chrome */
+        }
+
+        ::-webkit-scrollbar {
+          width: 20px;
+        }
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey;
+          border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background: #00ff00;
+          border-radius: 10px;
         }
       }
     }
