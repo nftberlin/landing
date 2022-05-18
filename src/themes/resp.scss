@@ -774,6 +774,21 @@
     color: black;
     padding: 2.5rem;
   }
+    .talks-page .talk-scheduling h1 {
+      font-size: 2.2rem;
+    }
+    .talks-page .talk-scheduling .tag {
+      min-width: 8rem;
+    }
+    .talks-page .rooms .schedule-program .programrow {
+      padding: 2.25rem 3rem;
+    }
+
+    .talks-page .talk-scheduling {
+      padding: 0rem 3rem 4rem 3rem;
+
+    }
+    
 }
 
 @media screen and (max-width: 425px) {
@@ -1075,6 +1090,33 @@
     font-size: 1.4rem;
     line-height: 120%;
   }
+
+  .talks-page{
+    .rooms .schedule-program .schedule-hours {
+        min-width: 8rem;
+      }
+
+    .schedule-content {
+      padding-top: 3rem;
+    }
+    .talk-scheduling {
+      padding: 0rem 2rem 2rem 2rem;
+
+      h1 {
+          font-size: 1.2rem;
+        }
+      .tag {
+        font-size: 1.5rem;
+      }
+    }
+    .rooms h1 {
+      font-size: 1.2rem;
+      padding: 1.5rem;
+    }
+  }
+
+    
+ 
 }
 
 @media screen and (max-width: 375px) {
