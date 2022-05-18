@@ -75,6 +75,13 @@
           </div>
         </a>
       </div>
+      <div class="col-lg-4" >
+        <a href="https://NA.com/" target="_blank">
+          <div>
+            <img src="../assets/partners/somelogo.svg" draggable="false" />
+          </div>
+        </a>
+      </div>
 
     </div>
   </div>

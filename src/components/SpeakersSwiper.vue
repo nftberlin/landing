@@ -312,6 +312,14 @@
       </button>
     </div>
 
+    <div class="external-btn fullprog">
+      <a href="/talks">
+        <button>
+          <p>Full program</p>
+        </button></a
+      >
+    </div>
+
     <div class="nft-ex">
       <div class="ex-title">NFT EXHIBITION</div>
       <div class="row">

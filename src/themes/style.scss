@@ -179,6 +179,15 @@ body {
   }
 }
 
+.fullprog{
+  display: flex;
+  justify-content: center;
+  a button p{
+    margin: 0;
+    text-decoration: none;
+  }
+}
+
 .marquee {
   box-sizing: border-box;
   border-bottom: 1px solid #00ff00;

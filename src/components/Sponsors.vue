@@ -744,10 +744,24 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-12 col-md-3" style="border:none">
+        <div class="col-sm-12 col-md-3">
           <a href="https://lens.dev/" target="_blank">
             <div>
               <img src="../assets/sponsor/lens.svg" draggable="false" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <a href="https://NA/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/justin.png" draggable="false" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-3" style="border:none">
+          <a href="https://NA/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/filecoin.svg" draggable="false" />
             </div>
           </a>
         </div>
