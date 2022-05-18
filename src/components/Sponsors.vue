@@ -673,6 +673,13 @@
             </div>
           </a>
         </div>
+        <div class="col-sm-12 col-md-3">
+          <a href="https://blackpool.finance/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/Opera_logo.png" draggable="false" />
+            </div>
+          </a>
+        </div>
       </div>
 
       <div class="ex-title">ANON</div>
@@ -734,6 +741,13 @@
           <a href="https://jpg.space/" target="_blank">
             <div>
               <img src="../assets/sponsor/jpg.svg" draggable="false" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-3" style="border:none">
+          <a href="https://lens.dev/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/lens.svg" draggable="false" />
             </div>
           </a>
         </div>

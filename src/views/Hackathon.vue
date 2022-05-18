@@ -78,7 +78,7 @@
           <div class="col-6 no-margin-top">
             <a href="/">
               <div>
-                <img src="../assets/logo.svg" alt="" /></div
+                <img src="../assets/logo.svg" draggable="false" /></div
             ></a>
           </div>
           <div class="col-6 no-margin-top">
@@ -172,7 +172,14 @@
           <div class="col-6 no-margin-top">
             <a href="https://urbit.org/" target="_blank">
               <div>
-                <img src="../assets/sponsor/epic_1.svg" alt="" />
+                <img src="../assets/sponsor/epic_1.svg" draggable="false" />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 no-margin-top">
+            <a href="https://urbit.org/" target="_blank">
+              <div>
+                <img src="../assets/partners/ledger-hackaton.svg" draggable="false" />
               </div>
             </a>
           </div>
@@ -427,7 +434,7 @@
             <img
               src="../assets/sponsor/encode_club.png"
               height="150px"
-              alt=""
+              draggable="false"
             />
           </a>
         </div>

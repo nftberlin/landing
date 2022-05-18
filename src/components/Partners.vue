@@ -61,10 +61,17 @@
         </a>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-4" style="border:none">
         <a href="https://www.btc-echo.de/" target="_blank">
           <div>
             <img src="../assets/partners/btcecho.png" draggable="false" />
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4" >
+        <a href="https://NA.com/" target="_blank">
+          <div>
+            <img src="../assets/partners/mempool.png" draggable="false" />
           </div>
         </a>
       </div>
