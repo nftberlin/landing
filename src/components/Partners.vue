@@ -82,6 +82,13 @@
           </div>
         </a>
       </div>
+      <div class="col-lg-4" >
+        <a href="https://beincrypto.com/" target="_blank">
+          <div>
+            <img src="../assets/partners/beincrypto.svg" draggable="false" />
+          </div>
+        </a>
+      </div>
 
     </div>
   </div>

@@ -165,7 +165,10 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>14.30-15.00</p></div>
                 <div class="col">
-                  <p>Urbit team</p>
+                  <p>
+                    Hocwyn Tipwex <br />
+                    Director of Technical Outreach<br />& Marketing, Uqbar
+                  </p>
                 </div>
                 <div class="col">
                   <p>4: Infrastructure & Research</p>
@@ -175,14 +178,20 @@ First floor, main hall -->
                 </div>
                 <div class="col">
                   <p>
-                    Uqbar is a rollup execution environment and crypto-first OS
-                    that allows native ERC-721 tokens to be traded and used
-                    socially with a powerful and simple UX that runs on Urbit.
+                    Old crypto was optimized for divisible quantities because
+                    transactions were expensive and clumsy - and they still are.
+                    Crypto’s future is a computational universe populated by
+                    discrete objects, and their interactions. A rich application
+                    environment - a p2p protocol plus mathematically-verifiable
+                    transaction scaling - is what transforms NFTs into a
+                    cryptoverse. A platform for building p2p networked apps
+                    without transaction scaling is limited to being a toy
+                    decoration.
                   </p>
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>15.00-15.30</p></div>
+                <div class="col schedule-hours"><p>15.30-15.30</p></div>
                 <div class="col">
                   <p>
                     Joel Thorstensson - Co-founder,<br />
@@ -207,35 +216,31 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>15.30-16.15</p></div>
                 <div class="col">
                   <p>
-                    Lili Feyerabend - Founder, NFTBERLIN <br />
-                    Maria Paula Fernandez - Co-founder, JPEG <br />
-                    Kaushik Swaminathan - CEO, Co-Museum <br />
-                    David Toh - Partner, Mirana Ventures
+                    Tyler Golato: <br />
+                    Co-founder and CSO, Molecule & Founding Steward, VitaDaO and
+                    PsyDAO. <br />
+                    Vincent: Founder, VitaDAO <br />Niklas Rindtorff: Founder,
+                    LabDAO <br />Paul Kohlhaas: Founder, Molecule"
                   </p>
                 </div>
                 <div class="col">
                   <p>4: Infrastructure & Research</p>
                 </div>
                 <div class="col">
-                  <p>
-                    More than a jpeg: Building a crypto-native cultural
-                    institution
-                  </p>
+                  <p>The Role of IP-NFTs in DeSci</p>
                 </div>
                 <div class="col">
                   <p>
-                    Look at what a crypto-native cultural institution might look
-                    like in the future. As cryptoculture expresses itself in
-                    different ways, the primary form of cryptocultural
-                    expression is undeniably economics. What impact will this
-                    have on our intrinsic motivation, amateurism, and creative
-                    process? Will we be able to connect the visual arts and the
-                    NFT arts, which currently exist in different silos?
+                    NFTs exploded out of the ether in recent years. Most would
+                    agree that the space has been instrumental in helping to
+                    usher in a “creator economy”, transferring power away from
+                    middlemen and towards creatives themselves. IP-NFTs extend
+                    this creator economy to the sciences for the first time.
                   </p>
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>16.15-17.00</p></div>
+                <div class="col schedule-hours"><p>17.15-17.30</p></div>
                 <div class="col">
                   <p>NA</p>
                 </div>

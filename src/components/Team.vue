@@ -218,23 +218,7 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
-            <div class="member">
-              <div class="member-ph">
-                <img
-                  src="../assets/team/sergio.png"
-                  alt="member image"
-                  draggable="false"
-                />
-              </div>
-              <h1>Sergio G. Gómez</h1>
-              <div class="member-social">
-                <img src="../assets/icon-twitter.svg" draggable="false" />
-                <a href="https://twitter.com/esdotge">@esdotge</a>
-              </div>
-              <p>#Brand3 Builder / Branding <br />Bruce Lead at FLOC*</p>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
