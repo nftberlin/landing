@@ -788,6 +788,10 @@
       padding: 0rem 3rem 4rem 3rem;
 
     }
+
+        .impressum .content {
+          padding: 0;
+        }
     
 }
 
@@ -1126,6 +1130,31 @@
     }
   }
 
+
+  .impressum{
+
+    .hideMobile{
+      display: none;
+    }
+    .hideDesktop{
+    display: inline !important;
+    }
+
+    .ex-title{
+      font-size: 1rem;
+    }
+
+    .content .col-lg-6 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h1{
+      font-size: 2rem;
+    }
+  }
+
+
     
  
 }
@@ -1171,6 +1200,25 @@
           min-width: 4rem;
         }
       }
+  }
+
+  .impressum h1{
+    font-size:1.5rem;
+  }
+
+  .impressum .content .row {
+    padding: 0 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .impressum footer {
+    padding: 2rem;
+
+    .footer-social svg {
+      margin: 0 .5rem;
+    }
+
   }
       
 }
