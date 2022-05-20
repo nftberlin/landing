@@ -43,7 +43,7 @@
                   bird ticket
                 </div>
                 <div
-                  v-if="boo_product === 'FIRSTWAVE'"
+                  v-if="boo_product === 'SECONDWAVE'"
                   class="checkout-ticket-title"
                 >
                   public ticket
@@ -82,7 +82,7 @@
                     ^ Admission to the NFTBERLIN After-Party
                   </div>
                 </div>
-                <div v-if="boo_product === 'FIRSTWAVE'">
+                <div v-if="boo_product === 'SECONDWAVE'">
                   <div class="ticket-text">
                     ^ 2-day admission to the unconference on May 25-26, 2022 at
                     Alte Münze, Berlin
@@ -620,7 +620,7 @@ export default {
         console.log("slug", app.$route.params.id);
       }
       if (app.$route.params.id === "public") {
-        app.boo_product = "FIRSTWAVE";
+        app.boo_product = "SECONDWAVE";
         console.log("slug", app.$route.params.id);
       }
       if (app.$route.params.id === "patron") {

@@ -144,8 +144,8 @@
             <div>
               <div
                 :class="{
-                  green: info['FIRSTWAVE'].active === true,
-                  green_inactive: info['FIRSTWAVE'].active === false,
+                  green: info['SECONDWAVE'].active === true,
+                  green_inactive: info['SECONDWAVE'].active === false,
                 }"
               >
                 <div class="ticket-title">Public / 2-day admission/</div>
@@ -155,11 +155,11 @@
                   <div
                     class="ticket-price"
                     :class="{
-                      green: info['FIRSTWAVE'].active === true,
-                      green_inactive: info['FIRSTWAVE'].active === false,
+                      green: info['SECONDWAVE'].active === true,
+                      green_inactive: info['SECONDWAVE'].active === false,
                     }"
                   >
-                    {{ info["FIRSTWAVE"].price }}€
+                    {{ info["SECONDWAVE"].price }}€
                   </div>
                   <div
                     v-if="isMobile"
@@ -177,8 +177,8 @@
                   v-if="openDetails2"
                   class="mt-3 p-3"
                   :class="{
-                    white: info['FIRSTWAVE'].active === true,
-                    white_inactive: info['FIRSTWAVE'].active === false,
+                    white: info['SECONDWAVE'].active === true,
+                    white_inactive: info['SECONDWAVE'].active === false,
                   }"
                 >
                   <div class="ticket-text">
@@ -199,9 +199,9 @@
             <a href="/ticket/public"
               ><div
                 v-if="
-                  info['FIRSTWAVE'] !== undefined &&
-                  info['FIRSTWAVE'].minted < info['FIRSTWAVE'].limit &&
-                  info['FIRSTWAVE'].active === true
+                  info['SECONDWAVE'] !== undefined &&
+                  info['SECONDWAVE'].minted < info['SECONDWAVE'].limit &&
+                  info['SECONDWAVE'].active === true
                 "
                 class="btn-ticket"
               >
@@ -210,8 +210,8 @@
             >
             <div
               v-if="
-                info['FIRSTWAVE'] !== undefined &&
-                info['FIRSTWAVE'].active === false
+                info['SECONDWAVE'] !== undefined &&
+                info['SECONDWAVE'].active === false
               "
               class="btn-ticket btn-disabled"
             >
@@ -219,8 +219,8 @@
             </div>
             <div
               v-if="
-                info['FIRSTWAVE'] !== undefined &&
-                info['FIRSTWAVE'].minted === info['FIRSTWAVE'].limit
+                info['SECONDWAVE'] !== undefined &&
+                info['SECONDWAVE'].minted === info['SECONDWAVE'].limit
               "
               class="btn-ticket btn-disabled"
             >
@@ -384,7 +384,10 @@ export default {
       app.info = info.data.minted;
       app.loaded = true;
       console.log(app.info);
-      console.log("FIRSTWAVE", app.info["FIRSTWAVE"].active);
+      console.log("SECONDWAVE", app.info["SECONDWAVE"].active);
+      console.log("VIP ACTIVE?", app.info["VIP"].active);
+      console.log("VIP MINTED", app.info["VIP"].minted);
+      console.log("VIP LIMIT", app.info["VIP"].limit);
     },
   },
 };
