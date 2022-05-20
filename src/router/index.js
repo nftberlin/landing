@@ -8,6 +8,7 @@ import Newsletter from "../views/Newsletter.vue";
 import Hackathon from "../views/Hackathon.vue";
 import TalksPage from "../views/TalksPage.vue";
 import TalksPageTwo from "../views/TalksPageTwo.vue";
+import Impressum from "../views/Impressum.vue";
 
 Vue.use(VueRouter);
 
@@ -51,6 +52,11 @@ const routes = [
     path: "/talks-2",
     name: "TalksPageTwo",
     component: TalksPageTwo,
+  },
+  {
+    path: "/impressum",
+    name: "Impressum",
+    component: Impressum,
   },
 ];
 

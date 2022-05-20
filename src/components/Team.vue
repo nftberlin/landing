@@ -218,7 +218,90 @@
               </p>
             </div>
           </div>
+        </div>
 
+        <h2 class="operation">Operation</h2>
+        <div class="row">
+          <div class="col">
+            <div class="member">
+              <div class="member-ph">
+                <img
+                  src="../assets/team/victor pfp.jpeg"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>Victor Robles</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/victoctero">@victoctero</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="member">
+              <div class="member-ph">
+                <img
+                  src="../assets/team/tara_pfp.jpeg"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>Tara</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/grounded_t">@grounded_t</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="member">
+              <div class="member-ph">
+                <img
+                  src="../assets/team/flavia_pfp.png"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>Flavia Bon</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/bon_flavia">@bon_flavia</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="member">
+              <div class="member-ph">
+                <img
+                  src="../assets/team/yusuf_pfp.jpeg"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>Barbaros</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/yusuf_barbaros">@yusuf_barbaros</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="member">
+              <div class="member-ph">
+                <img
+                  src="../assets/team/sergio_pfp.png"
+                  alt="member image"
+                  draggable="false"
+                />
+              </div>
+              <h1>Sergio</h1>
+              <div class="member-social">
+                <img src="../assets/icon-twitter.svg" draggable="false" />
+                <a href="https://twitter.com/esdotge">@esdotge</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

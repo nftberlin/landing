@@ -69,23 +69,30 @@
         </a>
       </div>
       <div class="col-lg-4" >
-        <a href="https://NA.com/" target="_blank">
+        <a href="https://https://twitter.com/mempoolclub/" target="_blank">
           <div>
             <img src="../assets/partners/mempool.png" draggable="false" />
           </div>
         </a>
       </div>
       <div class="col-lg-4" >
-        <a href="https://NA.com/" target="_blank">
+        <a href="https://blnft.io/" target="_blank">
           <div>
             <img src="../assets/partners/somelogo.svg" draggable="false" />
           </div>
         </a>
       </div>
-      <div class="col-lg-4" >
+      <div class="col-lg-4" style="border:none">
         <a href="https://beincrypto.com/" target="_blank">
           <div>
             <img src="../assets/partners/beincrypto.svg" draggable="false" />
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4" >
+        <a href="https://https://popkudamm.berlin/" target="_blank">
+          <div>
+            <img src="../assets/partners/popkdm.png" draggable="false" />
           </div>
         </a>
       </div>

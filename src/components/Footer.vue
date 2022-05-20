@@ -61,8 +61,7 @@
               target="_blank"
               >• Media Kit</a
             >
-            <!-- / NOT IN PHASE 1 -->
-            <!-- <a href="#team">Team</a> -->
+            <a href="/impressum">Impressum</a>
           </div>
         </div>
         <div class="col-lg-3">
