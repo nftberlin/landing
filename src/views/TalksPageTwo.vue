@@ -117,7 +117,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.00-13.20</p></div>
+                <div class="col schedule-hours"><p>13.00-13.30</p></div>
                 <div class="col">
                   <p>Tina - Head of Design, Element Finance</p>
                 </div>
@@ -136,7 +136,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.20-13.40</p></div>
+                <div class="col schedule-hours"><p>13.30-14.00</p></div>
                 <div class="col">
                   <p>Chris Minnis - Core Contributor, Goblin Sax</p>
                 </div>
@@ -157,7 +157,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.40-14.00</p></div>
+                <div class="col schedule-hours"><p>14.00-14.30</p></div>
                 <div class="col">
                   <p>Zhivko Todorov - Co-founder, EnterDAO</p>
                 </div>
@@ -178,7 +178,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>14.00-14.20</p></div>
+                <div class="col schedule-hours"><p>14.30-15.00</p></div>
                 <div class="col">
                   <p>
                     Alex Cuthbertson - Co-founder <br />and Production Lead,
@@ -203,27 +203,16 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>14.20-15.10</p></div>
-                <div class="col">
-                  <p>NA</p>
-                </div>
-                <div class="col">
-                  <p>4: Infrastructure & Research</p>
-                </div>
-                <div class="col">
-                  <p>NA</p>
-                </div>
-                <div class="col">
-                  <p>NA</p>
-                </div>
-              </div>
-              <div class="row programrow">
-                <div class="col schedule-hours"><p>15.10-16.00</p></div>
+                <div class="col schedule-hours"><p>15.00-15.50</p></div>
                 <div class="col">
                   <p>
-                    Lili Feyerabend: Founder, NFTBERLIN <br />
-                    Maria Paula Fernandez: Co-founder, JPEG<br />
-                    Kaushik Swaminathan: CEO, Co-Museum <br />David Toh:
+                    Lili Feyerabend: <br />
+                    Founder, NFTBERLIN<br />
+                    Maria Paula Fernandez: <br />
+                    Co-founder, JPEG<br />
+                    Kaushik Swaminathan: <br />
+                    CEO, Co-Museum<br />
+                    David Toh: <br />
                     Partner, Mirana Ventures
                   </p>
                 </div>
@@ -247,13 +236,17 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>16.00-16.50</p></div>
+                <div class="col schedule-hours"><p>15.50-16.40</p></div>
                 <div class="col">
                   <p>
-                    Konstantin Tkachuk: Developer Advocate and Startup Operator,
-                    Protocol <br />
-                    Labs Philipp: Founder, Creco.xyz<br />
-                    Shannon Wells: Head of Community and Governance, Livepeer
+                    Konstantin Tkachuk:<br />
+                    Protocol Labs<br />
+                    Philipp:<br />
+                    Founder, Creco.xyz<br />
+                    Shannon Wells:<br />
+                    Head of Community and Governance, Livepeer<br />
+                    Julien Bouteloup:<br />
+                    Co-founder, Blackpool and StakeDAO<br />
                   </p>
                 </div>
                 <div class="col">
@@ -272,12 +265,11 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>16.30-17.00</p></div>
+                <div class="col schedule-hours"><p>16.40-17.00</p></div>
                 <div class="col">
                   <p>
-                    Isa Kivlighan <br />
-                    Product Marketing,<br />
-                    The Fabricant
+                    Isa Kivlighan: <br />
+                    Product Marketing, The Fabricant
                   </p>
                 </div>
                 <div class="col">
@@ -296,9 +288,12 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>17.00-17.30</p></div>
+                <div class="col schedule-hours"><p>17.00-17.20</p></div>
                 <div class="col">
-                  <p>Bozena Rezab <br />CEO, Gamee</p>
+                  <p>
+                    Bozena Rezab:<br />
+                    CEO, Gamee
+                  </p>
                 </div>
                 <div class="col">
                   <p>2: Games & Experiences</p>
@@ -316,27 +311,64 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>17.30-18.00</p></div>
+                <div class="col schedule-hours"><p>17.20-17.35</p></div>
                 <div class="col">
                   <p>
-                    Simone Conti - <br />Head of Digital Asset<br />
-                    Trading and Yielding,<br />
-                    Dialectic
+                    Simone Conti:<br />
+                    Head of Digital Asset Trading and Yielding, Dialectic
                   </p>
                 </div>
                 <div class="col">
                   <p>2: Games & Experiences</p>
                 </div>
                 <div class="col">
-                  <p>
-                    Look Mum, I became<br />
-                    a gaming investor
-                  </p>
+                  <p>Look Mum, I became a gaming investor</p>
                 </div>
                 <div class="col">
                   <p>
                     As early believers in the p2e space, we talked to over 200
                     founders and here are our lessons learned.
+                  </p>
+                </div>
+              </div>
+              <div class="row programrow">
+                <div class="col schedule-hours"><p>17.35-17.50</p></div>
+                <div class="col">
+                  <p>
+                    Kaya Tilev:<br />
+                    Founder, Lava Labs
+                  </p>
+                </div>
+                <div class="col">
+                  <p>2: Games & Experiences</p>
+                </div>
+                <div class="col">
+                  <p>So you want to build an NFT game?</p>
+                </div>
+                <div class="col">
+                  <p>Real-world lessons learned in building and scaling</p>
+                </div>
+              </div>
+              <div class="row programrow">
+                <div class="col schedule-hours"><p>17.50-18.00</p></div>
+                <div class="col">
+                  <p>
+                    Lukas Amacher:<br />
+                    Head Curator, Dialectic
+                  </p>
+                </div>
+                <div class="col">
+                  <p>1: Art, Collectibles & Society</p>
+                </div>
+                <div class="col">
+                  <p>WTF are collector DAOs?</p>
+                </div>
+                <div class="col">
+                  <p>
+                    Creator DAOs are a relatively new paradigm in art
+                    collecting. The field is expansive, and many waters remain
+                    uncharted. This talk will dive into mechanics underlying
+                    various collector DAOs.
                   </p>
                 </div>
               </div>
@@ -374,7 +406,10 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>10.00-10.20</p></div>
                 <div class="col">
-                  <p>Sergio - Co-founder, <br />FLOC</p>
+                  <p>
+                    Sergio:<br />
+                    Co-founder, <br />FLOC
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
@@ -393,7 +428,10 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>10.20-10.40</p></div>
                 <div class="col">
-                  <p>Simon - Designer <br />and Entreprenuer</p>
+                  <p>
+                    Simon:<br />
+                    Designer <br />and Entreprenuer
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
@@ -434,7 +472,10 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>11.00-11.20</p></div>
                 <div class="col">
-                  <p>jiwa - Artist <br />and Founder, ntent.art</p>
+                  <p>
+                    jiwa:<br />
+                    Artist <br />and Founder, ntent.art
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
@@ -473,20 +514,20 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>11.40-12.00</p></div>
                 <div class="col">
-                  <p>Dennis Daiber - Head of Trading, Nuri</p>
+                  <p>Oliver Löffler</p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
                 </div>
                 <div class="col">
-                  <p>Historical NFTs</p>
+                  <p>Angry Dynomites Lab</p>
                 </div>
                 <div class="col">
-                  <p>NA</p>
+                  <p>The Worlds first massive Co-Op Game</p>
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.00-13.20</p></div>
+                <div class="col schedule-hours"><p>13.00-13.30</p></div>
                 <div class="col">
                   <p>
                     Johan Unger <br />
@@ -507,10 +548,10 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.20-13.40</p></div>
+                <div class="col schedule-hours"><p>13.30-14.00</p></div>
                 <div class="col">
                   <p>
-                    Phil Galaviz <br />
+                    Phil Galaviz:<br />
                     Head of NFT, REEF
                   </p>
                 </div>
@@ -529,7 +570,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.40-14.00</p></div>
+                <div class="col schedule-hours"><p>14.00-14.30</p></div>
                 <div class="col">
                   <p>
                     Alessandro Pericò <br />
@@ -553,10 +594,10 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>14.00-14.20</p></div>
+                <div class="col schedule-hours"><p>14.30-14.50</p></div>
                 <div class="col">
                   <p>
-                    Shrug Newton <br />
+                    Shrug Newton: <br />
                     Co-founder, Double Protocol
                   </p>
                 </div>
@@ -578,33 +619,10 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>14.20-14.40</p></div>
+                <div class="col schedule-hours"><p>14.50-15.20</p></div>
                 <div class="col">
                   <p>
-                    Fabian Burghardt <br />
-                    Co-founder, ravespace.io
-                  </p>
-                </div>
-                <div class="col">
-                  <p>4: Infrastructure & Research</p>
-                </div>
-                <div class="col">
-                  <p>Rethinking NFT's - Utility in the Metaverse</p>
-                </div>
-                <div class="col">
-                  <p>
-                    We've developed our own 3D Web Engine and built 7 Metaverse
-                    projects in the web3 space within the last year. Our focus
-                    lies on integrating seamless NFT utilities into virtual
-                    worlds.
-                  </p>
-                </div>
-              </div>
-              <div class="row programrow">
-                <div class="col schedule-hours"><p>14.40-15.00</p></div>
-                <div class="col">
-                  <p>
-                    Cameron Robertson <br />
+                    Cameron Robertson:<br />
                     Co-founder, Kong.cash
                   </p>
                 </div>
@@ -624,10 +642,10 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>15.00-15.20</p></div>
+                <div class="col schedule-hours"><p>15.20-15.50</p></div>
                 <div class="col">
                   <p>
-                    Marina Grujic <br />
+                    Marina Grujic: <br />
                     Growth Manager, NFTgo
                   </p>
                 </div>
@@ -646,10 +664,10 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>15.20-15.50</p></div>
+                <div class="col schedule-hours"><p>15.50-16.10</p></div>
                 <div class="col">
                   <p>
-                    Richard Muirhead <br />
+                    Richard Muirhead: <br />
                     Co-founder, Fabric Ventures
                   </p>
                 </div>
@@ -667,29 +685,6 @@ First floor, main hall -->
                     NFT as a new business model We are investors at NEAR,
                     Polkadot, Immutable, Dapper Labs, CAH, we would love to
                     share our research on NFT market with an audience.
-                  </p>
-                </div>
-              </div>
-              <div class="row programrow">
-                <div class="col schedule-hours"><p>15.50-16.10</p></div>
-                <div class="col">
-                  <p>
-                    Lucas Regueiro <br />
-                    Developer, Pulsr.ai
-                  </p>
-                </div>
-                <div class="col">
-                  <p>4: Infrastructure & Research</p>
-                </div>
-                <div class="col">
-                  <p>NFT Visual Discovery</p>
-                </div>
-                <div class="col">
-                  <p>
-                    This session aims to explain how Visual Search, Visual
-                    Discovery, and Social Interaction will influence the future
-                    of NFTs and CryptoArt. As well as the role Pulsr (pulsr.ai)
-                    will have in it.
                   </p>
                 </div>
               </div>
@@ -861,24 +856,25 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>11.00-12.00</p></div>
+                <div class="col schedule-hours"><p>11.00-11.30</p></div>
                 <div class="col">
                   <p>
-                    Anika Meier - Writer and Curator <br />Simon Denny - Artist
-                    <br />Sarah Friend - Artist <br />Harm van den Dorpel -
-                    Artist <br />Johanna Neuschäfer - Co-founder, Office Impart
-                    <br />Susanne Päch - Journalist, Managing director of mce
-                    mediacomeurope
+                    Stani Kulechov:<br />
+                    Founder, Lens & Aave Protocols
                   </p>
                 </div>
                 <div class="col">
-                  <p>1: Art, Collectibles & Society</p>
+                  <p>4: Infrastructure & Research</p>
                 </div>
                 <div class="col">
-                  <p>Exploring Emergent Technology.</p>
+                  <p>Web3 Social: Live Footage of the Lens Protocol</p>
                 </div>
                 <div class="col">
-                  <p>The Past and Future of Art on the Blockchain</p>
+                  <p>
+                    Say goodbye to Twitter. Here is a talk from a OG web3
+                    frontline builder on why a composable and decentralized
+                    social graph is the future.
+                  </p>
                 </div>
               </div>
               <div class="row programrow">
@@ -1211,8 +1207,12 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>12:45-13:30</p></div>
                 <div class="col">
                   <p>
-                    Mod: Zuzana Bastian <br />
-                    Founder, JEVELS
+                    Zuzana Bastian:<br />
+                    Founder of JEVELS<br />
+                    Amber Slooten:<br />
+                    Co-Founder and Creative Director of The Fabricant<br />
+                    Lauren Kacher:<br />
+                    Founder of Alterrage<br />
                   </p>
                 </div>
                 <div class="col">
@@ -1257,6 +1257,27 @@ First floor, main hall -->
                     media and community play involving decentralized narration
                     and co-creative worldbuilding that's happening in some NFT
                     communities.
+                  </p>
+                </div>
+              </div>
+              <div class="row programrow">
+                <div class="col schedule-hours"><p>14.00-14.30</p></div>
+                <div class="col">
+                  <p>
+                    Winston Robson:<br />
+                    Co-founder and CEO, WeMeta
+                  </p>
+                </div>
+                <div class="col">
+                  <p>2: Games & Experiences</p>
+                </div>
+                <div class="col">
+                  <p>Pricing the Metaverse</p>
+                </div>
+                <div class="col">
+                  <p>
+                    What drives value in the Metaverse? Is land scarce? How can
+                    I understand what’s going on? Where is the data?
                   </p>
                 </div>
               </div>
@@ -1351,18 +1372,22 @@ First floor, main hall -->
                 <div class="col">
                   <ol>
                     <li>Life after</li>
-                    <li>NA</li>
+
                     <li>Onboarding of the fine art world in the metaverse</li>
                     <li>How NFTs are used in creating RWA DeFi</li>
                     <li>Holzmarkt project</li>
-                    <li>NA</li>
                   </ol>
                 </div>
               </div>
               <div class="row programrow">
                 <div class="col schedule-hours"><p>16:30-17:00</p></div>
                 <div class="col">
-                  <p>NeonDAO</p>
+                  <p>
+                    Fabian Wetekamp:<br />
+                    Member, TheLAO and other various Tribute Labs DAOs Stefano
+                    Sandri:<br />
+                    Member, TheLAO and other various Tribute Labs DAOs
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
@@ -1371,14 +1396,19 @@ First floor, main hall -->
                   <p>DAOs and the future of work</p>
                 </div>
                 <div class="col">
-                  <p>NA</p>
+                  <p>
+                    We'll be talking how DAOs shape the workforce of Web3 and
+                    how members of DAOs benefit from the hive-mind. TheLAO is
+                    one of the oldest and most prominent for-profit investment
+                    DAOs in the space.
+                  </p>
                 </div>
               </div>
               <div class="row programrow">
                 <div class="col schedule-hours"><p>17.00-17.30</p></div>
                 <div class="col">
                   <p>
-                    Dennis Denyo Lisko <br />
+                    Dennis Denyo Lisko: <br />
                     Founder and CEO, Proof of Taste
                   </p>
                 </div>
@@ -1399,7 +1429,7 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>17.30-18.00</p></div>
                 <div class="col">
                   <p>
-                    Dennis Peqas <br />
+                    Dennis: Peqas <br />
                     Founder, NFT Club Berlin
                   </p>
                 </div>

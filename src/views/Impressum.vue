@@ -7,49 +7,45 @@
 
       <div class="row">
         <div class="col-sm-12 col-lg-6">
-          <h1>LEGAL NOTICE <br />
-          <span class="hideMobile"
-              >////</span>
+          <h1>
+            LEGAL NOTICE <br />
+            <span class="hideMobile">////</span>
           </h1>
-          <h1 class="hideDesktop">
-            ////
-          </h1>
+          <h1 class="hideDesktop">////</h1>
         </div>
         <div class="col-sm-12 col-sm-12 col-lg-3 text">
           <div>
             <p>
-              Information pursuant <br />
-              to Sect. 5 German Telemedia Act (TMG)
+              Litentry Technologies GmbH<br />
+              Eichhornstr. 3<br />
+              10785 Berlin
             </p>
+            <p>Sales Tax Identification Number: DE335594764</p>
             <p>
-              berlinft GmbH<br />
-              Holzmarkt 25<br />
-              D-10243 Berlin
-            </p>
-            <p>
-              EM mailto@berlinft.berlin<br />
-              PH +49 30 27573777 Umsatzsteuer-ID<br />
-              DE343785663
+              Concept:<br /><br />
+
+              NFTBerlin Verein<br />
+              Bahnhofstrasse 20<br />
+              6300 Zug<br />
+              Switzerland
             </p>
           </div>
         </div>
         <div class="col-sm-12 col-sm-12 col-lg-3 text">
           <div>
             <p>
-              Geltungsbereich<br />
-              <a href="https://nftberlin.org">https://nftberlin.org</a>
+              Contact:<br /><br />
+
+              Email: Team@nftberlin.org
             </p>
             <p>
-              Register<br />
-              Registergericht AG Berlin
-            </p>
-            <p>
-              Register-Nummer<br />
-              HRB 229475 B
-            </p>
-            <p>
-              Vertretungsberechtige<br />
-              Sven Barth, Torben Jacobi
+              Online contractual information:<br /><br />
+              Online dispute resolution (ODR): The European Commission offers an
+              Online Dispute Resolution (ODS) platform for consumers, which is
+              accessible via the external link
+              <a href="www.ec.europa.eu/consumers/odr"
+                >www.ec.europa.eu/consumers/odr</a
+              >.
             </p>
           </div>
         </div>

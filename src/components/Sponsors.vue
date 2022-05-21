@@ -117,7 +117,7 @@
             </div>
           </a>
         </div>
-        <div class="col-6" style="border:none">
+        <div class="col-6" style="border: none">
           <a href="https://twitter.com/CL207" target="_blank">
             <div>
               <img
@@ -127,14 +127,14 @@
           ></a>
         </div>
         <div class="col-6">
-          <a href="" target="_blank">
+          <a href="https://twitter.com/justinsuntron" target="_blank">
             <div>
               <img src="../assets/sponsor/justin.png" draggable="false" />
             </div>
           </a>
         </div>
         <div class="col-6">
-          <a href="" target="_blank">
+          <a href=" https://protocol.ai/" target="_blank">
             <div>
               <img src="../assets/sponsor/filecoin.svg" draggable="false" />
             </div>

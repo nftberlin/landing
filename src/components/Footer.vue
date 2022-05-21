@@ -61,7 +61,7 @@
               target="_blank"
               >• Media Kit</a
             >
-            <a href="/impressum">Impressum</a>
+            <!-- <a href="/impressum">Impressum</a> -->
           </div>
         </div>
         <div class="col-lg-3">
