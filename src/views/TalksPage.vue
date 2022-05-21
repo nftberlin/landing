@@ -51,7 +51,7 @@ First floor, main hall -->
                   <p>NFTs for Ukraine</p>
                 </div>
                 <div class="col">
-                  <p>Pending</p>
+                  <p>We ♥ Ukraine</p>
                 </div>
               </div>
               <div class="row programrow">
@@ -191,7 +191,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>15.30-15.30</p></div>
+                <div class="col schedule-hours"><p>15.00-15.30</p></div>
                 <div class="col">
                   <p>
                     Joel Thorstensson - Co-founder,<br />
@@ -240,18 +240,26 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>17.15-17.30</p></div>
+                <div class="col schedule-hours"><p>16.15-16.45</p></div>
                 <div class="col">
-                  <p>NA</p>
+                  <p>
+                    George Spasov <br />
+                    Co-founder, LimeChain & Partner, EnterDAO
+                  </p>
                 </div>
                 <div class="col">
                   <p>4: Infrastructure & Research</p>
                 </div>
                 <div class="col">
-                  <p>NFT Policy and Regulation</p>
+                  <p>EIP4400 - Enabling the NFT renting tsunami</p>
                 </div>
                 <div class="col">
-                  <p>NA</p>
+                  <p>
+                    EIP4400 is a draft standard for NFT renting, already
+                    recognized by major players in the NFT world. In this talk,
+                    I will share how it works and how it enables the large scale
+                    renting economy to begin.
+                  </p>
                 </div>
               </div>
               <div class="row programrow">
@@ -353,22 +361,22 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>10.30-11.00</p></div>
                 <div class="col">
                   <p>
-                    Lenara - Co-founder, StatelessDAO <br />
-                    Ilan Katin - Co-founder, StatelessDAO
+                    Fabian Burghardt <br />
+                    Co-founder, ravespace.io
                   </p>
                 </div>
                 <div class="col">
                   <p>4: Infrastructure & Research</p>
                 </div>
                 <div class="col">
-                  <p>StatelessDAO: A cooperative NFT protocol</p>
+                  <p>Rethinking NFT's - Utility in the Metaverse</p>
                 </div>
                 <div class="col">
                   <p>
-                    Why a cooperative NFT platform? The cooperative model allows
-                    a significant portion of each sale to be shared equally
-                    among members and also used to fund maintenance and other
-                    projects, as decided by an integrated DAO.
+                    We've developed our own 3D Web Engine and built 7 Metaverse
+                    projects in the web3 space within the last year. Our focus
+                    lies on integrating seamless NFT utilities into virtual
+                    worlds.
                   </p>
                 </div>
               </div>
@@ -419,7 +427,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>12:45-13:15</p></div>
+                <div class="col schedule-hours"><p>13.00-13.30</p></div>
                 <div class="col">
                   <p>Emily Rosa Shahaj - CEO, Gravity the Studio</p>
                 </div>
@@ -438,7 +446,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13:15-13:45</p></div>
+                <div class="col schedule-hours"><p>13:30-14.00</p></div>
                 <div class="col">
                   <p>Roman Frank - Founder, Legendary Play</p>
                 </div>
@@ -458,7 +466,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.45-14.30</p></div>
+                <div class="col schedule-hours"><p>14.00-14.30</p></div>
                 <div class="col">
                   <p>
                     Edua Sykes <br />
@@ -557,28 +565,50 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>16.30-17.00</p></div>
+                <div class="col schedule-hours"><p>16.30-16.40</p></div>
                 <div class="col">
-                  <p>Josh Petty - Founder and CEO, Twetch</p>
+                  <p>
+                    Dennis Peqas <br />
+                    Founder, NFT Club Berlin
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
                 </div>
                 <div class="col">
-                  <p>Freedomware: Digital Objects on Bitcoin</p>
+                  <p>Local NFT community</p>
                 </div>
                 <div class="col">
                   <p>
-                    Creativity is simply experimenting to gain new information
-                    to learn from. For maximum creativity, you need a system
-                    free of interference.
+                    A local community helps the city to grow and iterate faster.
                   </p>
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>17.00-17.30</p></div>
+                <div class="col schedule-hours"><p>16.40-17.05</p></div>
                 <div class="col">
-                  <p>Leila Ismailova - Special Projects Curator, ARTISANT</p>
+                  <p>Denis Daiber <br />Crypto OG - Head of Trading Nuri</p>
+                </div>
+                <div class="col">
+                  <p>1: Art, Collectibles & Society</p>
+                </div>
+                <div class="col">
+                  <p>Pre-Punk NFTs on Bitcoin (and previous)</p>
+                </div>
+                <div class="col">
+                  <p>
+                    How NFTs started in 2014 on NMC, came to life on BTC and how
+                    they're accessible on ETH
+                  </p>
+                </div>
+              </div>
+              <div class="row programrow">
+                <div class="col schedule-hours"><p>17.05-17.30</p></div>
+                <div class="col">
+                  <p>
+                    Leila Ismailova <br />
+                    Special Projects Curator, ARTISANT
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
@@ -600,13 +630,17 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>17.30-18.00</p></div>
                 <div class="col">
-                  <p>Timo Springer</p>
+                  <p>
+                    Timo Springer <br />
+                    Twire <br />Jan Karnath <br />
+                    Co-Founder and Ceo Timeless
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
                 </div>
                 <div class="col">
-                  <p>The service DAO revolution</p>
+                  <p>The service DAO revolution / Cro Nft</p>
                 </div>
                 <div class="col">
                   <p>The service DAO revolution</p>
@@ -669,7 +703,8 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>10.30-10.50</p></div>
                 <div class="col">
                   <p>
-                    Jasmine - General Partner, A&T Capital <br />
+                    Jasmine - General Partner<br />
+                    A&T Capital <br />
                     Justin Sun - Founder, Tron
                   </p>
                 </div>
@@ -694,21 +729,22 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>10.50-11.10</p></div>
                 <div class="col">
                   <p>
-                    Nate Geier - CEO, Mintbase <br />
-                    Carolin Wend - COO, Mintbase
+                    Maria Magdalena Neu <br />
+                    Community Manager and Guild Lead, Mintbase<br />
+                    Yiannis Bampis <br />
+                    Community Manager, TENK
                   </p>
                 </div>
                 <div class="col">
-                  <p>3: Finance</p>
+                  <p>4: Infrastructure & Research</p>
                 </div>
                 <div class="col">
-                  <p>Utility NFTs</p>
+                  <p>NFT Infrastructure on NEAR</p>
                 </div>
                 <div class="col">
                   <p>
-                    Niche utility NFT marketplaces are the new wave. By
-                    fractionalizing revenues of one NFT, new business models are
-                    created that will shake up traditional industries
+                    A Dialogue and Presentation about how Utility NFTs meets
+                    Gernerative Art
                   </p>
                 </div>
               </div>
@@ -736,7 +772,7 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.00-13.20</p></div>
+                <div class="col schedule-hours"><p>13.00-13.30</p></div>
                 <div class="col">
                   <p>Pedro Granate - Co-founder and COO, Zharta</p>
                 </div>
@@ -754,31 +790,11 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>13.20-13.50</p></div>
-                <div class="col">
-                  <p>Rikard @0xsublime - Security Auditor</p>
-                </div>
-                <div class="col">
-                  <p>4: Infrastructure & Research</p>
-                </div>
-                <div class="col">
-                  <p>How To Hack Everyone</p>
-                </div>
+                <div class="col schedule-hours"><p>13.30-14.00</p></div>
                 <div class="col">
                   <p>
-                    Coding smart contracts is a high-stakes game. Join a
-                    professional DeFi auditor hitting up the NFT game and
-                    sharing war stories. We'll cover the do's, don'ts and omg
-                    plz don'ts of NFT contracts.
-                  </p>
-                </div>
-              </div>
-              <div class="row programrow">
-                <div class="col schedule-hours"><p>13.40-14.20</p></div>
-                <div class="col">
-                  <p>
-                    Anjali Young - Co-founder and <br />Chief Community Officer,
-                    Collab.Land
+                    Anjali Young <br />
+                    Co-founder and Chief <br />Community Officer, Collab.Land
                   </p>
                 </div>
                 <div class="col">
@@ -796,32 +812,34 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>14.20-14.50</p></div>
+                <div class="col schedule-hours"><p>14.00-14.30</p></div>
                 <div class="col">
                   <p>
-                    George Spasov - Co-founder, <br />LimeChain & Partner,
-                    EnterDAO
+                    Jose Nuno Pinto<br />
+                    Web3 Lawyer, MJP PARTNERS
                   </p>
                 </div>
                 <div class="col">
                   <p>4: Infrastructure & Research</p>
                 </div>
                 <div class="col">
-                  <p>EIP4400 - Enabling the NFT renting tsunami</p>
+                  <p>NFT Law and Regulation</p>
                 </div>
                 <div class="col">
                   <p>
-                    EIP4400 is a draft standard for NFT renting, already
-                    recognized by major players in the NFT world. In this talk,
-                    I will share how it works and how it enables the large scale
-                    renting economy to begin.
+                    Legal considerations on NFTs: Ownership, Licensing,
+                    Royalties, Taxes and Regulation. This session will also
+                    include Q&A. It is not legal advice!
                   </p>
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>14.50-15.10</p></div>
+                <div class="col schedule-hours"><p>14.30-15.00</p></div>
                 <div class="col">
-                  <p>Carlo Moretti - Founder, Overdroid and Hexarchia</p>
+                  <p>
+                    Carlo Moretti <br />
+                    Founder, Overdroid and Hexarchia
+                  </p>
                 </div>
                 <div class="col">
                   <p>2: Games & Experiences</p>
@@ -838,9 +856,12 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>15.10-15.30</p></div>
+                <div class="col schedule-hours"><p>15.00-15.30</p></div>
                 <div class="col">
-                  <p>Bradley Clarke - Creative Technologist</p>
+                  <p>
+                    Bradley Clarke <br />
+                    Creative Technologist
+                  </p>
                 </div>
                 <div class="col">
                   <p>2: Games & Experiences</p>
@@ -858,9 +879,12 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>15.30-15.50</p></div>
+                <div class="col schedule-hours"><p>15.30-16.00</p></div>
                 <div class="col">
-                  <p>Jouni Helminen - Director of Design, Aave</p>
+                  <p>
+                    Jouni Helminen <br />
+                    Director of Design, Aave
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
@@ -877,45 +901,34 @@ First floor, main hall -->
                   </p>
                 </div>
               </div>
-
               <div class="row programrow">
-                <div class="col schedule-hours"><p>15.50-16.20</p></div>
-                <div class="col">
-                  <p>Stani Kulechov - Founder, Lens & Aave Protocols</p>
-                </div>
-                <div class="col">
-                  <p>1: Art, Collectibles & Society</p>
-                </div>
-                <div class="col">
-                  <p>Web3 Social: Live Footage of the Lens Protocol</p>
-                </div>
+                <div class="col schedule-hours"><p>16.00-16.30</p></div>
                 <div class="col">
                   <p>
-                    Say goodbye to Twitter. Here is a talk from a OG web3
-                    frontline builder on why a composable and decentralized
-                    social graph is the future.
+                    Robert Schlunze <br />
+                    Artist/Founder<br />
+                    Florian Aplowski <br />
+                    Dev/Founder
                   </p>
-                </div>
-              </div>
-              <div class="row programrow">
-                <div class="col schedule-hours"><p>16.20-16.40</p></div>
-                <div class="col">
-                  <p>Henrik Mauler - Founder, ZEITGUISED</p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
                 </div>
                 <div class="col">
-                  <p>Zeitguised</p>
+                  <p>ROKATOONZ RADIO PICTURES</p>
                 </div>
                 <div class="col">
-                  <p>rumpelgraph</p>
+                  <p>Transformation - the road from Web2 to Web3</p>
                 </div>
               </div>
+
               <div class="row programrow">
-                <div class="col schedule-hours"><p>16.40-17.00</p></div>
+                <div class="col schedule-hours"><p>16.30-17.00</p></div>
                 <div class="col">
-                  <p>Kabuki - Music producer and Lecturer</p>
+                  <p>
+                    Kabuki <br />
+                    Music producer and Lecturer
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
@@ -935,26 +948,29 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>17.00-17.20</p></div>
                 <div class="col">
                   <p>
-                    Rebecca Miller (Signer of <br />the Bright Moments sub-DAO
-                    Berlin) <br />Malte Rauch (Bright Moments<br />
-                    Partnerships Manager,<br />
-                    Europe & Signer of the sub-DAO Berlin)
+                    Rebecca Miller <br />Signer of the Bright Moments sub-DAO
+                    Berlin<br />
+                    Malte Rauch <br />Bright Moments Partnerships Manager,
+                    Europe & Signer of the sub-DAO Berlin
                   </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
                 </div>
                 <div class="col">
-                  <p>Bright Moments</p>
+                  <p>The Bright Moments DAO: Around the World in 10,000 NFTs</p>
                 </div>
                 <div class="col">
-                  <p>NA</p>
+                  <p>The Bright Moments DAO: Around the World in 10,000 NFTs</p>
                 </div>
               </div>
               <div class="row programrow">
                 <div class="col schedule-hours"><p>17.20-17.40</p></div>
                 <div class="col">
-                  <p>Paul Schmidt - Founders Associate, Fractal Protocol</p>
+                  <p>
+                    Paul Schmidt <br />
+                    Founders Associate, Fractal Protocol
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
@@ -975,7 +991,8 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>17.40-18.00</p></div>
                 <div class="col">
                   <p>
-                    Marc Andre Schaumburg-Ingwersen - Executive Producer, Sony
+                    Marc Andre Schaumburg-Ingwersen <br />
+                    Executive Producer, Sony
                   </p>
                 </div>
                 <div class="col">
@@ -989,7 +1006,7 @@ First floor, main hall -->
                     GameFi the MovieBiz. Tv series, movies and animated series
                     are created with the help of NFT, Defi(fi) and community
                     building. As Hideo Kojima stated, the future will merge
-                    games and movies, I add NFT
+                    games and movies I add NFT
                   </p>
                 </div>
               </div>
@@ -1094,13 +1111,13 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>13.00-14.00</p></div>
                 <div class="col">
-                  <p>Mahoney Turnbull - Co-founder, Supertilt and Frothy</p>
+                  <p>We support Ukraine!</p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
                 </div>
                 <div class="col">
-                  <p>NA</p>
+                  <p>Regenerative Culture Design for NFT ecosystems</p>
                 </div>
                 <div class="col">
                   <p>
@@ -1114,21 +1131,18 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>14.00-15.00</p></div>
                 <div class="col">
-                  <p>Leon Erichsen - Builder relations, Gitcoin</p>
+                  <p>
+                    Bengisu Berispek -Founder of Sustain.ALL & RHEA Collective
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
                 </div>
                 <div class="col">
-                  <p>Plural Funding of Digital Art: Gitcoin Can Help</p>
+                  <p>Workshop on Sustainable NFTs</p>
                 </div>
                 <div class="col">
-                  <p>
-                    In this workshop, we want to introduce the Quadratic Funding
-                    and Plurality paradim and together, explore its applications
-                    to fund and govern the products of artistis in the
-                    information age.
-                  </p>
+                  <p>How to bring & support sustainability in NFT World?</p>
                 </div>
               </div>
               <div class="row programrow">
