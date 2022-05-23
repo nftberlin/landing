@@ -59,7 +59,7 @@
             <a
               href="https://www.notion.so/wearefloc/301a733ed69c4c45bfcfa9fe632f8b36?v=be21a3c063ef45d18ab9c074c5769e78"
               target="_blank"
-              >• Media Kit</a
+              >Media Kit</a
             >
             <!-- <a href="/impressum">Impressum</a> -->
           </div>

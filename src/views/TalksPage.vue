@@ -781,7 +781,10 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>13.00-13.30</p></div>
                 <div class="col">
-                  <p>Pedro Granate:<br> Co-founder and COO, Zharta</p>
+                  <p>
+                    Pedro Granate:<br />
+                    Co-founder and COO, Zharta
+                  </p>
                 </div>
                 <div class="col">
                   <p>3: Finance</p>
@@ -1126,9 +1129,9 @@ First floor, main hall -->
                 <div class="col">
                   <p>
                     Mahoney Turnbull:<br />
-                    Community + Culture strategist, Frother<br />
+                    Community + Culture strategist, Frothy Cofounder<br />
                     Blaise Turnbull:<br />
-                    Community + Culture strategist, Frother
+                    Community + Culture strategist, Frothy Cofounder
                   </p>
                 </div>
                 <div class="col">
