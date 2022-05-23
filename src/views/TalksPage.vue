@@ -40,18 +40,25 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>10.00-10.30</p></div>
                 <div class="col">
                   <p>
-                    Viktor Diordiiev <br />
-                    Ex-Head of Economics and CCO, Arweave
+                    Viktor Diordiiev:<br />
+                    Ex-Head of Economics and CCO, Arweave<br />
+                    Enara Nazarova
                   </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
                 </div>
                 <div class="col">
-                  <p>NFTs for Ukraine</p>
+                  <p>Web3 and the Russia-Ukraine war</p>
                 </div>
                 <div class="col">
-                  <p>We ♥ Ukraine</p>
+                  <p>
+                    How web3 tech and the global blockchain community are
+                    helping Ukraine to win in the war against Russia? Why
+                    Ukraine’s victory will accelerate the global movement toward
+                    a freer (digital) world? We will also have a representative
+                    of a Ukrainian charity and a Ukrainian NFT artist speak.
+                  </p>
                 </div>
               </div>
               <div class="row programrow">
@@ -752,12 +759,12 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>11.10-12.00</p></div>
                 <div class="col">
                   <p>
-                    Anika Meier - Writer and Curator <br />
-                    Simon Denny - Artist <br />
-                    Sarah Friend - Artist <br />
-                    Harm van den Dorpel - Artist<br />
-                    Johanna Neuschäfer - Co-founder, Office Impart<br />
-                    Susanne Päch - Journalist,<br />
+                    Anika Meier: Writer and Curator <br />
+                    Simon Denny: Artist <br />
+                    Sarah Friend: Artist <br />
+                    Harm van den Dorpel: Artist<br />
+                    Johanna Neuschäfer: Co-founder, Office Impart<br />
+                    Susanne Päch: Journalist,<br />
                     Managing director of mce mediacomeurope
                   </p>
                 </div>
@@ -774,7 +781,7 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>13.00-13.30</p></div>
                 <div class="col">
-                  <p>Pedro Granate - Co-founder and COO, Zharta</p>
+                  <p>Pedro Granate:<br> Co-founder and COO, Zharta</p>
                 </div>
                 <div class="col">
                   <p>3: Finance</p>
@@ -793,7 +800,7 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>13.30-14.00</p></div>
                 <div class="col">
                   <p>
-                    Anjali Young <br />
+                    Anjali Young: <br />
                     Co-founder and Chief <br />Community Officer, Collab.Land
                   </p>
                 </div>
@@ -815,7 +822,7 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>14.00-14.30</p></div>
                 <div class="col">
                   <p>
-                    Jose Nuno Pinto<br />
+                    Jose Nuno Pinto:<br />
                     Web3 Lawyer, MJP PARTNERS
                   </p>
                 </div>
@@ -837,7 +844,7 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>14.30-15.00</p></div>
                 <div class="col">
                   <p>
-                    Carlo Moretti <br />
+                    Carlo Moretti: <br />
                     Founder, Overdroid and Hexarchia
                   </p>
                 </div>
@@ -859,7 +866,7 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>15.00-15.30</p></div>
                 <div class="col">
                   <p>
-                    Bradley Clarke <br />
+                    Bradley Clarke: <br />
                     Creative Technologist
                   </p>
                 </div>
@@ -882,7 +889,7 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>15.30-16.00</p></div>
                 <div class="col">
                   <p>
-                    Jouni Helminen <br />
+                    Jouni Helminen: <br />
                     Director of Design, Aave
                   </p>
                 </div>
@@ -905,9 +912,9 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>16.00-16.30</p></div>
                 <div class="col">
                   <p>
-                    Robert Schlunze <br />
+                    Robert Schlunze: <br />
                     Artist/Founder<br />
-                    Florian Aplowski <br />
+                    Florian Aplowski: <br />
                     Dev/Founder
                   </p>
                 </div>
@@ -926,7 +933,7 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>16.30-17.00</p></div>
                 <div class="col">
                   <p>
-                    Kabuki <br />
+                    Kabuki: <br />
                     Music producer and Lecturer
                   </p>
                 </div>
@@ -948,9 +955,9 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>17.00-17.20</p></div>
                 <div class="col">
                   <p>
-                    Rebecca Miller <br />Signer of the Bright Moments sub-DAO
+                    Rebecca Miller: <br />Signer of the Bright Moments sub-DAO
                     Berlin<br />
-                    Malte Rauch <br />Bright Moments Partnerships Manager,
+                    Malte Rauch: <br />Bright Moments Partnerships Manager,
                     Europe & Signer of the sub-DAO Berlin
                   </p>
                 </div>
@@ -968,7 +975,7 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>17.20-17.40</p></div>
                 <div class="col">
                   <p>
-                    Paul Schmidt <br />
+                    Paul Schmidt: <br />
                     Founders Associate, Fractal Protocol
                   </p>
                 </div>
@@ -991,7 +998,7 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>17.40-18.00</p></div>
                 <div class="col">
                   <p>
-                    Marc Andre Schaumburg-Ingwersen <br />
+                    Marc Andre Schaumburg-Ingwersen: <br />
                     Executive Producer, Sony
                   </p>
                 </div>
@@ -1043,7 +1050,10 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>10.00-10.45</p></div>
                 <div class="col">
-                  <p>Joshia Seam - Co-founder, Zesty Market</p>
+                  <p>
+                    Joshia Seam:<br />
+                    Co-founder, Zesty Market
+                  </p>
                 </div>
                 <div class="col">
                   <p>2: Games & Experiences</p>
@@ -1070,7 +1080,10 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>10.45-11.30</p></div>
                 <div class="col">
-                  <p>Alper Akalin - Founder and Researcher, ARSUITE</p>
+                  <p>
+                    Alper Akalin:<br />
+                    Founder and Researcher, ARSUITE
+                  </p>
                 </div>
                 <div class="col">
                   <p>2: Games & Experiences</p>
@@ -1111,7 +1124,12 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>13.00-14.00</p></div>
                 <div class="col">
-                  <p>We support Ukraine!</p>
+                  <p>
+                    Mahoney Turnbull:<br />
+                    Community + Culture strategist, Frother<br />
+                    Blaise Turnbull:<br />
+                    Community + Culture strategist, Frother
+                  </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
@@ -1132,7 +1150,8 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>14.00-15.00</p></div>
                 <div class="col">
                   <p>
-                    Bengisu Berispek -Founder of Sustain.ALL & RHEA Collective
+                    Bengisu Berispek:<br />Founder of Sustain.ALL & RHEA
+                    Collective
                   </p>
                 </div>
                 <div class="col">
@@ -1149,7 +1168,8 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>15.00-16.00</p></div>
                 <div class="col">
                   <p>
-                    Maria Magdalena Neu - Community Manager<br />
+                    Maria Magdalena Neu:<br />
+                    Community Manager<br />
                     and Guild Lead, Mintbase
                   </p>
                 </div>
@@ -1175,7 +1195,10 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>16.00-17.00</p></div>
                 <div class="col">
-                  <p>Nathan van der Heyden - Ecosystem Lead, Snapshot</p>
+                  <p>
+                    Nathan van der Heyden:<br />
+                    Ecosystem Lead, Snapshot
+                  </p>
                 </div>
                 <div class="col">
                   <p>4: Infrastructure & Research</p>
@@ -1193,7 +1216,10 @@ First floor, main hall -->
               <div class="row programrow">
                 <div class="col schedule-hours"><p>17.00-18.00</p></div>
                 <div class="col">
-                  <p>Diogo Pires - Co-founder and CTO, Zharta</p>
+                  <p>
+                    Diogo Pires:<br />
+                    Co-founder and CTO, Zharta
+                  </p>
                 </div>
                 <div class="col">
                   <p>3: Finance</p>
