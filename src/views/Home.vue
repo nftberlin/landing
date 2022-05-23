@@ -86,7 +86,7 @@
         <div class="row">
           <div class="col-lg-6 hideIpad">
             
-              <video width="100%" height="100%" controls loop mute autoplay>
+              <video width="100%" height="100%" controls loop autoplay muted>
                 <source src="../media/afterparty.mp4" type="video/mp4" />
                 <source src="../media/afterparty.ogg" type="video/ogg" />
                 <source src="../media/afterparty.webm" type="video/webm" />
@@ -94,7 +94,7 @@
             
           </div>
           <div class="col-lg-6 hideDesktop">
-            <video width="100%" height="100%" controls loop mute autoplay>
+            <video width="100%" height="100%" controls loop autoplay muted>
               <source src="../media/afterparty.mp4" type="video/mp4" />
               <source src="../media/afterparty.ogg" type="video/ogg" />
               <source src="../media/afterparty.webm" type="video/webm" />
