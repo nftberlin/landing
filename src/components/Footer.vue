@@ -50,18 +50,15 @@
         </div>
         <div class="col-lg-6">
           <div class="footer-links">
-            <!--  <a href="#team">Team</a> -->
-            <a href="#events">Event</a>
             <a href="#what">What/Why?</a>
             <!-- NOT IN PHASE 1 -->
             <a href="#sponsors">Sponsors</a>
-            <a href="/talks">Talks</a>
             <a
               href="https://www.notion.so/wearefloc/301a733ed69c4c45bfcfa9fe632f8b36?v=be21a3c063ef45d18ab9c074c5769e78"
               target="_blank"
-              >Media Kit</a
+              >MediaKit</a
             >
-            <!-- <a href="/impressum">Impressum</a> -->
+            <a href="/impressum">Impressum</a>
           </div>
         </div>
         <div class="col-lg-3">

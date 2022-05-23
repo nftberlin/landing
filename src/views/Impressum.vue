@@ -50,7 +50,9 @@
           </div>
         </div>
       </div>
-      <div class="row">
+
+
+      <!-- <div class="row">
         <div class="col-sm-12 col-lg-6">
           <h1>
             Liability <br />
@@ -155,9 +157,9 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
-    <footer>
+    <!-- <footer>
       <div class="links">
         <a href="">About</a>
         <a href="">Legal Notice</a>
@@ -214,7 +216,7 @@
           </svg>
         </a>
       </div>
-    </footer>
+    </footer> -->
   </div>
 </template>
 
