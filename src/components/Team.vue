@@ -231,7 +231,7 @@
                   draggable="false"
                 />
               </div>
-              <h1>Victor Robles</h1>
+              <h1>Victor</h1>
               <div class="member-social">
                 <img src="../assets/icon-twitter.svg" draggable="false" />
                 <a href="https://twitter.com/victoctero">@victoctero</a>
