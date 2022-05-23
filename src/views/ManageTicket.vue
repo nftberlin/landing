@@ -146,8 +146,7 @@
                       initSendProcess = false;
                       ticketSelection = false;
                       claimCompleted = false;
-                      transferCompleted = false,
-                      connect();
+                      (transferCompleted = false), connect();
                     "
                   >
                     <i class="fa-solid fa-arrow-left"></i>
@@ -188,7 +187,10 @@
                 v-if="pending !== undefined"
                 class="d-flex flex-column flex-md-row align-items-center qr-generated mt-5"
               >
-                <div class="details-transfer" :class="{ 'ml-5': !isMobile, 'd-flex flex-column': isMobile }">
+                <div
+                  class="details-transfer"
+                  :class="{ 'ml-5': !isMobile, 'd-flex flex-column': isMobile }"
+                >
                   <i class="fa-solid fa-triangle-exclamation"></i>
                   <h3 class="mt-3 white">Transaction details:</h3>
                   <h3 class="grey">
@@ -212,7 +214,15 @@
           <!-- END SUCCESS TRANSFERING -->
 
           <!-- ALL OWNED NFTS -->
-          <div v-if="account && !isClaiming && !claimCompleted && !isWorking && !transferCompleted">
+          <div
+            v-if="
+              account &&
+              !isClaiming &&
+              !claimCompleted &&
+              !isWorking &&
+              !transferCompleted
+            "
+          >
             <Transition
               name="custom-fade"
               enter-active-class="animate__animated animate__fadeIn"
@@ -316,7 +326,7 @@
                 initSendProcess = false;
                 ticketSelection = false;
                 claimCompleted = false;
-                transferCompleted = false
+                transferCompleted = false;
                 connect();
               "
             >
@@ -579,28 +589,24 @@ export default {
       app.web3 = await new Web3(provider);
 
       // Checking if networkId matches
-      const netId = await app.web3.eth.net.getId();
-      if (parseInt(netId) !== app.networks[app.network]) {
-        alert("Switch to " + app.network + " network!");
-      } else {
-        const accounts = await app.web3.eth.getAccounts();
-        if (accounts.length > 0) {
-          app.account = accounts[0];
-          // Checking nfts owned
-          app.isWorking = true;
-          app.workingMessage = "Checking your NFTs";
-          const owned = await axios.get(
-            process.env.VUE_APP_API_URL + "/nfts/owned/" + app.account
-          );
-          app.nfts = owned.data.owned;
-          app.isWorking = false;
-          if (app.nfts.length === 0) {
-            app.noNfts = true;
-          }
-          if (this.isDebug === true) {
-            console.log("My owned Tickets are:", owned.data);
-            console.log("My address", app.account);
-          }
+
+      const accounts = await app.web3.eth.getAccounts();
+      if (accounts.length > 0) {
+        app.account = accounts[0];
+        // Checking nfts owned
+        app.isWorking = true;
+        app.workingMessage = "Checking your NFTs";
+        const owned = await axios.get(
+          process.env.VUE_APP_API_URL + "/nfts/owned/" + app.account
+        );
+        app.nfts = owned.data.owned;
+        app.isWorking = false;
+        if (app.nfts.length === 0) {
+          app.noNfts = true;
+        }
+        if (this.isDebug === true) {
+          console.log("My owned Tickets are:", owned.data);
+          console.log("My address", app.account);
         }
       }
     },
@@ -668,46 +674,52 @@ export default {
         const accounts = await app.web3.eth.getAccounts();
         if (accounts.length > 0) {
           app.account = accounts[0];
-          try {
-            console.log("this is token ID", this.tokenId);
-            console.log("this is FROM account", app.account);
-            console.log("this is RECEIVIER account", app.receiver);
+          const netId = await app.web3.eth.net.getId();
+          if (parseInt(netId) !== app.networks[app.network]) {
+            alert("Switch to " + app.network + " network!");
+          } else {
+            try {
+              console.log("this is token ID", this.tokenId);
+              console.log("this is FROM account", app.account);
+              console.log("this is RECEIVIER account", app.receiver);
 
-            const nftContract = new app.web3.eth.Contract(
-              app.ABI,
-              app.contract
-            );
-            const estimated = await nftContract.methods
-              .safeTransferFrom(app.account, app.receiver, app.tokenId)
-              .estimateGas({
-                from: app.account,
-              });
-            const gasLimit = parseInt(estimated * 1.2).toString();
-            console.log("This is gasLimit", gasLimit);
-            const gasPrice = await app.web3.eth.getGasPrice();
-            await nftContract.methods
-              .safeTransferFrom(app.account, app.receiver, app.tokenId)
-              .send({
-                gasPrice: gasPrice,
-                gasLimit: gasLimit,
-                from: app.account,
-              })
-              .on("transactionHash", (pending) => {
-                app.workingMessage = "Waiting for confirmation at: " + pending;
-                app.pending = pending;
-              });
-            app.isSending = false;
-            app.isWorking = false;
-            app.workingMessage = "";
-            app.transferCompleted = true;
-          } catch (e) {
-            alert(e.message);
-            app.isSending = false;
-            app.workingMessage = "Transfer failed, please retry...";
-            setTimeout(function () {
-              app.workingMessage = "";
+              const nftContract = new app.web3.eth.Contract(
+                app.ABI,
+                app.contract
+              );
+              const estimated = await nftContract.methods
+                .safeTransferFrom(app.account, app.receiver, app.tokenId)
+                .estimateGas({
+                  from: app.account,
+                });
+              const gasLimit = parseInt(estimated * 1.2).toString();
+              console.log("This is gasLimit", gasLimit);
+              const gasPrice = await app.web3.eth.getGasPrice();
+              await nftContract.methods
+                .safeTransferFrom(app.account, app.receiver, app.tokenId)
+                .send({
+                  gasPrice: gasPrice,
+                  gasLimit: gasLimit,
+                  from: app.account,
+                })
+                .on("transactionHash", (pending) => {
+                  app.workingMessage =
+                    "Waiting for confirmation at: " + pending;
+                  app.pending = pending;
+                });
+              app.isSending = false;
               app.isWorking = false;
-            }, 3000);
+              app.workingMessage = "";
+              app.transferCompleted = true;
+            } catch (e) {
+              alert(e.message);
+              app.isSending = false;
+              app.workingMessage = "Transfer failed, please retry...";
+              setTimeout(function () {
+                app.workingMessage = "";
+                app.isWorking = false;
+              }, 3000);
+            }
           }
         }
       }
