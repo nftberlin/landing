@@ -769,10 +769,17 @@
           </a>
         </div>
 
-        <div class="col-sm-12 col-md-3" style="border: none">
+        <div class="col-sm-12 col-md-3" >
           <a href="https://NA/" target="_blank">
             <div>
               <img src="../assets/sponsor/nftgo.png" draggable="false" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-3" style="border: none">
+          <a href="https://NA/" target="_blank">
+            <div>
+              <img src="../assets/sponsor/nftport.svg" draggable="false" />
             </div>
           </a>
         </div>
@@ -808,8 +815,6 @@
         </div>
       </div> -->
     </div>
-
-
   </div>
 </template>
 

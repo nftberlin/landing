@@ -127,8 +127,8 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>13.30-14.00</p></div>
                 <div class="col">
                   <p>
-                    Jen Kim - Head of Product, NFTBank <br />
-                    Daniel Minsu Kim - Founder and CEO, NFTBank
+                    Daniel Minsu Kim: <br />
+                    Founder and CEO, NFTBank
                   </p>
                 </div>
                 <div class="col">
@@ -541,7 +541,7 @@ First floor, main hall -->
                   <p>3: Finance</p>
                 </div>
                 <div class="col">
-                  <p>How NFTs will onboard the next billion DeFi users</p>
+                  <p>How NFTs can fix DeFi</p>
                 </div>
                 <div class="col">
                   <p>

@@ -160,7 +160,7 @@
             <div class="member">
               <div class="member-ph">
                 <img
-                  src="../assets/team/ricardo.png"
+                  src="../assets/team/ricardo2.jpeg"
                   alt="member image"
                   draggable="false"
                 />

@@ -215,7 +215,7 @@
               "
               class="btn-ticket btn-disabled"
             >
-              COMING SOON
+              SOLD OUT
             </div>
             <div
               v-if="

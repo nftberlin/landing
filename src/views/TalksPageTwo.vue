@@ -697,11 +697,7 @@ First floor, main hall -->
                       Full Stack Autonomist, Autonolas
                     </li>
                     <li>David Call to Crypto <br />Co-founder, Gloomins</li>
-                    <li>
-                      Alexander Ho
-                      <br />
-                      Co-founder, Pine
-                    </li>
+
                     <li>
                       Ania Pilipenko
                       <br />
@@ -759,7 +755,6 @@ First floor, main hall -->
                       DAO
                     </li>
                     <li>Intro to Gloomins NFT</li>
-                    <li>How Pine helps you leverage your NFT</li>
                     <li>Street Art & tokenomics</li>
                     <li>
                       Infinite NFTs: Turning Gamers into Creators with AI Music
@@ -949,32 +944,7 @@ First floor, main hall -->
                   </p>
                 </div>
               </div>
-              <div class="row programrow">
-                <div class="col schedule-hours"><p>14.00-14.20</p></div>
-                <div class="col">
-                  <p>
-                    Philipp Banhardt <br />
-                    Co-founder, Violet
-                  </p>
-                </div>
-                <div class="col">
-                  <p>4: Infrastructure & Research</p>
-                </div>
-                <div class="col">
-                  <p>
-                    NFT markets - the missing incentive layer for decentralized
-                    identity?
-                  </p>
-                </div>
-                <div class="col">
-                  <p>
-                    The usage of NFTs is intertwined with composing and
-                    expressing identity in web3. This talk is a primer on why
-                    NFTs itself can be an on-ramp for identity, building a
-                    foundational layer in process
-                  </p>
-                </div>
-              </div>
+
               <div class="row programrow">
                 <div class="col schedule-hours"><p>14.20-14.40</p></div>
                 <div class="col">
