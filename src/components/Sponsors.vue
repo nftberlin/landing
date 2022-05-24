@@ -693,7 +693,7 @@
         <div class="col-sm-12 col-md-3">
           <a href="https://blackpool.finance/" target="_blank">
             <div>
-              <img src="../assets/sponsor/Opera_logo.png" draggable="false" />
+              <img src="../assets/sponsor/Opera.svg" draggable="false" />
             </div>
           </a>
         </div>
