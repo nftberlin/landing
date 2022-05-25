@@ -311,32 +311,14 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>17.20-17.35</p></div>
+                <div class="col schedule-hours"><p>17.20-17.55</p></div>
                 <div class="col">
                   <p>
-                    Simone Conti:<br />
-                    Head of Digital Asset Trading and Yielding, Dialectic
-                  </p>
-                </div>
-                <div class="col">
-                  <p>2: Games & Experiences</p>
-                </div>
-                <div class="col">
-                  <p>Look Mum, I became a gaming investor</p>
-                </div>
-                <div class="col">
-                  <p>
-                    As early believers in the p2e space, we talked to over 200
-                    founders and here are our lessons learned.
-                  </p>
-                </div>
-              </div>
-              <div class="row programrow">
-                <div class="col schedule-hours"><p>17.35-17.50</p></div>
-                <div class="col">
-                  <p>
-                    Kaya Tilev:<br />
-                    Founder, Lava Labs
+                    Zuzana Bastian:<br />
+                    Founder, JEVELS<br />
+                    Amber Slooten:<br />
+                    Co-Founder and Creative Director, The Fabricant<br />
+                    Lauren Kacher:<br />Founder, Alterrage
                   </p>
                 </div>
                 <div class="col">
@@ -1107,6 +1089,31 @@ First floor, main hall -->
               </div>
             </div>
             <div class="schedule-program">
+              <div class="row programrow">
+                <div class="col schedule-hours"><p>10.00-10.30</p></div>
+                <div class="col">
+                  <p>
+                    Lenara:<br />
+                    Co-founder, StatelessDAO<br />
+                    Ilan Katin:<br />
+                    Co-founder, StatelessDAO"
+                  </p>
+                </div>
+                <div class="col">
+                  <p>Solo Talk</p>
+                </div>
+                <div class="col">
+                  <p>StatelessDAO: A cooperative NFT protocol</p>
+                </div>
+                <div class="col">
+                  <p>
+                    Why a cooperative NFT platform? The cooperative model allows
+                    a significant portion of each sale to be shared equally
+                    among members and also used to fund maintenance and other
+                    projects, as decided by an integrated DAO.
+                  </p>
+                </div>
+              </div>
               <div class="row programrow">
                 <div class="col schedule-hours"><p>10.30-11.00</p></div>
                 <div class="col">

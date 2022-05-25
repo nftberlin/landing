@@ -179,7 +179,7 @@
           <div class="col-6 no-margin-top">
             <a href="https://urbit.org/" target="_blank">
               <div>
-                <img src="../assets/partners/ledger-hackaton.svg" draggable="false" />
+                <img src="../assets/sponsor/ledger_hackaton.svg" draggable="false" />
               </div>
             </a>
           </div>
