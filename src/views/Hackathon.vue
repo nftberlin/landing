@@ -170,16 +170,19 @@
             </a>
           </div>
           <div class="col-6 no-margin-top">
-            <a href="https://urbit.org/" target="_blank">
+            <a href="https://www.ledger.com/" target="_blank">
               <div>
                 <img src="../assets/sponsor/epic_1.svg" draggable="false" />
               </div>
             </a>
           </div>
           <div class="col-6 no-margin-top">
-            <a href="https://urbit.org/" target="_blank">
+            <a href="https://www.ledger.com/" target="_blank">
               <div>
-                <img src="../assets/sponsor/ledger_hackaton.svg" draggable="false" />
+                <img width="230"
+                  src="../assets/sponsor/ledger_hackaton.svg"
+                  draggable="false"
+                />
               </div>
             </a>
           </div>
