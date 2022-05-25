@@ -997,29 +997,6 @@ First floor, main hall -->
                   </p>
                 </div>
               </div>
-              <div class="row programrow">
-                <div class="col schedule-hours"><p>17.40-18.00</p></div>
-                <div class="col">
-                  <p>
-                    Marc Andre Schaumburg-Ingwersen: <br />
-                    Executive Producer, Sony
-                  </p>
-                </div>
-                <div class="col">
-                  <p>1: Art, Collectibles & Society</p>
-                </div>
-                <div class="col">
-                  <p>NFTs and the gamefication of movie biz</p>
-                </div>
-                <div class="col">
-                  <p>
-                    GameFi the MovieBiz. Tv series, movies and animated series
-                    are created with the help of NFT, Defi(fi) and community
-                    building. As Hideo Kojima stated, the future will merge
-                    games and movies I add NFT
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
