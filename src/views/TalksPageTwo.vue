@@ -311,18 +311,36 @@ First floor, main hall -->
                 </div>
               </div>
               <div class="row programrow">
-                <div class="col schedule-hours"><p>17.20-17.55</p></div>
+                <div class="col schedule-hours"><p>17.20-17.35</p></div>
                 <div class="col">
                   <p>
-                    Zuzana Bastian:<br />
-                    Founder, JEVELS<br />
-                    Amber Slooten:<br />
-                    Co-Founder and Creative Director, The Fabricant<br />
-                    Lauren Kacher:<br />Founder, Alterrage
+                    Simone Conti: <br />
+                    Head of Digital Asset Trading and Yielding, Dialectic
                   </p>
                 </div>
                 <div class="col">
-                  <p>2: Games & Experiences</p>
+                  <p>Solo Talk</p>
+                </div>
+                <div class="col">
+                  <p>Look Mum, I became a gaming investor</p>
+                </div>
+                <div class="col">
+                  <p>
+                    As early believers in the p2e space, we talked to over 200
+                    founders and here are our lessons learned.
+                  </p>
+                </div>
+              </div>
+              <div class="row programrow">
+                <div class="col schedule-hours"><p>17:35-17:50</p></div>
+                <div class="col">
+                  <p>
+                    Kaya Tilev:<br />
+                    Founder, Lava Labs
+                  </p>
+                </div>
+                <div class="col">
+                  <p>Solo Talk</p>
                 </div>
                 <div class="col">
                   <p>So you want to build an NFT game?</p>
