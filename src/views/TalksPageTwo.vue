@@ -1403,20 +1403,21 @@ First floor, main hall -->
                 <div class="col schedule-hours"><p>17.00-17.30</p></div>
                 <div class="col">
                   <p>
-                    Dennis Denyo Lisko: <br />
-                    Founder and CEO, Proof of Taste
+                    Dennis Lisk: <br />
+                    Founder and CEO The District VR, Co-Founder Fabian
+                    Vogelsteller,Blockchain Architect and CTO Ioulia Isserlis
                   </p>
                 </div>
                 <div class="col">
                   <p>1: Art, Collectibles & Society</p>
                 </div>
                 <div class="col">
-                  <p>District VR</p>
+                  <p>Virtual Live Events in Web3D</p>
                 </div>
                 <div class="col">
                   <p>
-                    Future outlook of one of the first decentralized,
-                    music-driven VR platforms in the metaverse.
+                    Music Culture + Virtual Reality + Blockchain = The District
+                    VR
                   </p>
                 </div>
               </div>
