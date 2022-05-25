@@ -386,8 +386,8 @@ export default {
       console.log(app.info);
       console.log("SECONDWAVE", app.info["SECONDWAVE"].active);
       console.log("VIP ACTIVE?", app.info["VIP"].active);
-      console.log("VIP MINTED", app.info["VIP"].minted);
-      console.log("VIP LIMIT", app.info["VIP"].limit);
+      console.log("Minted SECONDWAVE", app.info["SECONDWAVE"].minted);
+      console.log("Total SECONDWAVE", app.info["SECONDWAVE"].limit);
     },
   },
 };
