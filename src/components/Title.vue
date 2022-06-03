@@ -8,7 +8,7 @@
             <h1>The Whole</h1>
             <h1>Is Greater than the Sum</h1>
             <h1>of Its Parts</h1>
-            <div>
+            <!-- <div>
               <p>
                 Public tickets are now on sale<br />Full
                 unconference admission + NFT crypto art ticket + After-party
@@ -16,7 +16,7 @@
               <button>
                 <router-link to="/ticket/"> BUY NOW</router-link>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
 

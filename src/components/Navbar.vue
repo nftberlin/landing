@@ -11,7 +11,7 @@
           <div class="nav-links hideIpad">
             <!-- <a href="#team">Team</a> -->
             <a href="/#events">Event</a>
-            <a href="/ticket">Tickets</a>
+            <!-- <a href="/ticket">Tickets</a> -->
             <a href="/hackathon">Hackathon</a>
             <a href="/talks">Talks</a>
             <a href="http://community.nftberlin.org/" target="_blank">Side Events</a>
@@ -68,12 +68,12 @@
                 />
               </svg>
             </a>
-            <!-- TODO: rimettere questo pulsante quando la pagina "Menage my tickets è definitiva" -->
-            <a href="/manage-ticket">
+          
+            <!-- <a href="/manage-ticket">
               <div class="btn-mint" style="margin-left: 3rem">
                 My Account
               </div></a
-            >
+            > -->
           </div>
         </div>
       </div>
