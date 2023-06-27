@@ -12,8 +12,8 @@
             <!-- <a href="#team">Team</a> -->
             <a href="/#events">Event</a>
             <!-- <a href="/ticket">Tickets</a> -->
-            <a href="/hackathon">Hackathon</a>
-            <a href="/talks">Talks</a>
+            <a href="/#/hackathon">Hackathon</a>
+            <a href="/#/talks">Talks</a>
             <a href="http://community.nftberlin.org/" target="_blank">Side Events</a>
             <!-- / NOT IN PHASE 1 -->
             <!-- <a href="#team">Team</a> -->

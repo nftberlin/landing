@@ -51,9 +51,11 @@
           <a href="/#what" @click="toggleMenu()">What/Why?</a>
           <a href="/#sponsors" @click="toggleMenu()">Sponsors</a>
           <a href="/ticket" @click="toggleMenu()">TICKETS</a>
-          <a href="/hackathon" @click="toggleMenu()">HACKATHON</a>
-          <a href="/talks" @click="toggleMenu()">Talks</a>
-          <a href="http://community.nftberlin.org/" target="_blank">Side Events</a>
+          <a href="/#/hackathon" @click="toggleMenu()">HACKATHON</a>
+          <a href="/#/talks" @click="toggleMenu()">Talks</a>
+          <a href="http://community.nftberlin.org/" target="_blank"
+            >Side Events</a
+          >
           <!-- <a href="#team" @click="toggleMenu()">Team</a> -->
         </div>
 

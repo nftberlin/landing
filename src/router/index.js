@@ -61,9 +61,20 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
+  mode: "hash", // Use hash mode
   routes,
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+      };
+    } else {
+      return {
+        x: 0,
+        y: 0,
+      };
+    }
+  },
 });
 
 export default router;
